@@ -25,6 +25,10 @@ Route::group(['prefix'=>'ru','as'=>'ru.'], function(){
     Route::get('/gallery', [RuIndexController::class, 'gallery'])->name('gallery');
     Route::get('/jobs', [RuIndexController::class, 'jobs'])->name('jobs');
     Route::get('/courses', [RuIndexController::class, 'courses'])->name('courses');
+    Route::get('/courses_in', [RuIndexController::class, 'courses_in'])->name('courses_in');
+    Route::get('/about_us', [RuIndexController::class, 'about_us'])->name('about_us');
+    Route::get('/news', [RuIndexController::class, 'news'])->name('news');
+    Route::get('/news_pages', [RuIndexController::class, 'news_pages'])->name('news_pages');
 });
 
 Route::group(['prefix'=>'eng','as'=>'eng.'], function(){
@@ -32,6 +36,10 @@ Route::group(['prefix'=>'eng','as'=>'eng.'], function(){
     Route::get('/gallery', [EngIndexController::class, 'gallery'])->name('gallery');
     Route::get('/jobs', [EngIndexController::class, 'jobs'])->name('jobs');
     Route::get('/courses', [EngIndexController::class, 'courses'])->name('courses');
+    Route::get('/courses_in', [EngIndexController::class, 'courses_in'])->name('courses_in');
+    Route::get('/about_us', [EngIndexController::class, 'about_us'])->name('about_us');
+    Route::get('/news', [EngIndexController::class, 'news'])->name('news');
+    Route::get('/news_pages', [EngIndexController::class, 'news_pages'])->name('news_pages');
 });
 
 Route::group(['prefix'=>'uz','as'=>'uz.'], function(){
@@ -39,6 +47,10 @@ Route::group(['prefix'=>'uz','as'=>'uz.'], function(){
     Route::get('/gallery', [IndexController::class, 'gallery'])->name('gallery');
     Route::get('/jobs', [IndexController::class, 'jobs'])->name('jobs');
     Route::get('/courses', [IndexController::class, 'courses'])->name('courses');
+    Route::get('/courses_in', [IndexController::class, 'courses_in'])->name('courses_in');
+    Route::get('/about_us', [IndexController::class, 'about_us'])->name('about_us');
+    Route::get('/news', [IndexController::class, 'news'])->name('news');
+    Route::get('/news_pages', [IndexController::class, 'news_pages'])->name('news_pages');
 });
 
 
