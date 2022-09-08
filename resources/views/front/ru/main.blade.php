@@ -69,11 +69,11 @@
                             <li class="nav-item">
                                 <div class="dropdown">
                                     <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      UZ
+                                      RU
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">RU</a>
-                                        <a class="dropdown-item" href="#">EN</a>
+                                        <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
+                                        <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
                                     </div>
                                 </div>
                             </li>
@@ -167,25 +167,22 @@
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Локатции</a>
+                            <a class="nav-link" href="{{ route('ru.index') }}#location">Локатции</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Фото</a>
+                            <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Карьера</a>
+                            <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Курсы</a>
+                            <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Мероприятия</a>
+                            <a class="nav-link" href="{{ route('ru.news') }}">Новости</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Новости</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">О компании</a>
+                            <a class="nav-link" href="{{ route('ru.about_us') }}">О компании</a>
                         </li>
                     </ul>
                 </div>

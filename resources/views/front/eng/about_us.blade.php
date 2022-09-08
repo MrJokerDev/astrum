@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.eng.main')
 
 @section('style')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
@@ -43,10 +43,10 @@
         font-weight: 700;
         background-color: #fff;
     }
-    .carousel-inner{ 
+    .carousel-inner{
         max-width: 100%;
     }
-    .carousel{ 
+    .carousel{
         padding: 0;
         min-height: 55vh;
     }
@@ -55,7 +55,7 @@
         left: 0;
     }
 
-    .tabcontent{ 
+    .tabcontent{
         background-color: #F5F4FF;
     }
     #scrolling {
@@ -104,7 +104,7 @@
             flex-direction: row;
         }
     }
-    
+
 </style>
 @endsection
 
@@ -177,7 +177,7 @@
                             <br>
                             <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
                         </ul>
-                    </nav>    
+                    </nav>
                 </div>
                 <div class="col-md-8">
                     <div>
@@ -188,7 +188,7 @@
 
                     <h1 class="fw-bold mt-5">Наше решение — сделать обучение доступным</h1>
                     <p class="mt-5">Мы обмениваем классы в дорогих институтах на современные классы, с современной техникой, что позволяет учиться в наиболее комфортных условиях. Мы ограничиваем размер классов до пятнадцати, чтобы каждый ученик получил действительно личный опыт обучения. Мы устанавливаем доступные цены на наши учебные курсы в соответствии с тем, каким должно быть образование. Мы применяем наш многолетний опыт проектирования продуктов для обучения, гарантируя, что студентов обучают активные программисты, увлеченные обучением. Мы постоянно обновляем нашу учебную программу с помощью новейших рабочих процессов и инструментов, помогая учащимся приобретать достойные привычки и изучать то, что актуально в отрасли сегодня.</p>
-                    
+
                     <div class="image-gallery">
                         <div class="column">
                             <div class="image-item">
@@ -214,7 +214,7 @@
                                 <img src="https://source.unsplash.com/FV3GConVSss" alt="" />
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                     <h1 class="fw-bold mt-5">Курсы Astrum рассчитаны на удобство. В первую очередь на удобство удаленной работы</h1>
                     <p class="mt-3">В последние годы удаленная работа стала “кругом” спасения для многих людей. В особенности в выиграше оказались IT спецыалисты. В данную категорию относят, как продуктовых менеджеров, дизайнеров и разработчиков. Обучась в Asirum Вы, так же сможете работать как удаленно так и в офиссе Вашей будующей компании. Учась на наших курсах Вы сможете частично испытать привелегии удаленной работы выполняя некоторые задания наших менторов из дома. Проходя наш любой курс, мы стараемся вовлеч студента как можно больше в рабочую среду, что бы при окончании Вы смогли слегкостью влится в коллектив Вашей будующей компании.</p>
@@ -226,7 +226,7 @@
 
                     <h1 class="fw-bold mt-5">Познакомьтесь с нашей хорошей энергетической командой!</h1>
                     <p class="mt-3">За последние пару лет мы вырастили хорошую энергетическую команду. Как хорошая команда, мы равиваем наш коллектив и умнажаем наше количество  и повышая качество преподавания.</p>
-                    
+
                     <div class="row">
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
@@ -241,7 +241,7 @@
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
-                        </div> 
+                        </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
                                 <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
@@ -311,7 +311,7 @@
             type: 'carousel',
             perView: 6
         })
-    
+
         glide.mount()
     </script>
 @endsection

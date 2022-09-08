@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.ru.main')
 
 @section('style')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -43,10 +43,10 @@
         font-weight: 700;
         background-color: #fff;
     }
-    .carousel-inner{ 
+    .carousel-inner{
         max-width: 100%;
     }
-    .carousel{ 
+    .carousel{
         padding: 0;
         min-height: 55vh;
     }
@@ -55,10 +55,10 @@
         left: 0;
     }
 
-    .tabcontent{ 
+    .tabcontent{
         background-color: #F5F4FF;
     }
-    
+
 </style>
 @endsection
 @section('content')
@@ -122,7 +122,7 @@
                             <br>
                             <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
                         </ul>
-                    </nav>    
+                    </nav>
                 </div>
                 <div class="col-md-8">
                     <div>
@@ -130,7 +130,7 @@
                         <h1>ОВЛАДАЙТЕ НАВЫКАМИ ПРОГРАММИРОВАНИЯ</h1>
                         <p>Наш неполный рабочий день, живой учебный курс по Full stack разработке  — это захватывающий 12-недельный учебный процесс. Вы будете учиться на практике во время живых занятий с 20 дружественними студентами. Что позволит Вам лучше принять информацию от ментора и получить его помощь.
                             Во время занятий вы освоите программные навыки, необходимые для создания красивых и функциональных сайтов и програм. Этот учебный курс — один из полулярнных и востребованых знаний на рынке труда.</p>
-                    
+
                         <video class="w-100 rounded" playsinline="playsinline" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
                             <source src="images/video/video_1.MP4" type="video/mp4">
                         </video>
@@ -236,7 +236,7 @@
                             </li>
                             <li class="mb-4 border shadow-sm rounded-1">
                               <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                Клиентские технологии JavaScript / FrontEnd 
+                                Клиентские технологии JavaScript / FrontEnd
                               </button>
                                 <div class="collapse" id="dashboard-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
@@ -276,7 +276,7 @@
                             </li>
                             <li class="mb-4 border shadow-sm rounded-1">
                                 <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses12" aria-expanded="false">
-                                    Soft skills, тех. английский, подготовка к собеседованию 
+                                    Soft skills, тех. английский, подготовка к собеседованию
                                 </button>
                                 <div class="collapse" id="orders-collapses12">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
@@ -286,7 +286,7 @@
                             </li>
                             <li class="mb-4 border shadow-sm rounded-1">
                                 <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses123" aria-expanded="false">
-                                    Финальный проект  
+                                    Финальный проект
                                 </button>
                                 <div class="collapse" id="orders-collapses123">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
@@ -329,7 +329,7 @@
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
@@ -382,35 +382,35 @@
                         <p style="color: #62BC9E;" class="fw-bold mt-5">современные классы</p>
                         <h1 class="fw-bold">Классы которые удивляют и помагаютв обучении</h1>
                         <p>Мы считаем, что индивидуальный подход к обучению крайне важен, и мы намеренно ограничиваем размер класса примерно 20 дизайнерами. Небольшой размер классов гарантирует, что мы сможем охватить больше за то время, которое у нас есть, и вы будете учиться непосредственно у других программистов. Кроме того, это удобное место для обучения, когда весь класс участвует в обсуждениях и делится отзывами.</p>
-                        
+
                     </div>
                     <div class="container-fluid" style="width: 1200px;">
                         <div class="carousel">
                             <div class="carusel-top">
                                 <div class="carousel-inner">
                                     <div class="most-inner">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
+                                        <img src="images/DSC_6349.jpg">
                                         <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg"> 
-                                        <img src="images/DSC_6383.jpg">   
+                                        <img src="images/DSC_6349.jpg">
+                                        <img src="images/DSC_6383.jpg">
                                     </div>
                                 </div>
                             </div>
-                        </div>        
+                        </div>
                     </div>
 
                     <hr class="mt-5 mb-5">
@@ -418,7 +418,7 @@
                     <p style="color: #62BC9E;" class="fw-bold mt-5">современные классы</p>
                     <h1 class="fw-bold">Классы которые удивляют и помагаютв обучении</h1>
                     <p>Мы считаем, что индивидуальный подход к обучению крайне важен, и мы намеренно ограничиваем размер класса примерно 20 дизайнерами. Небольшой размер классов гарантирует, что мы сможем охватить больше за то время, которое у нас есть, и вы будете учиться непосредственно у других программистов. Кроме того, это удобное место для обучения, когда весь класс участвует в обсуждениях и делится отзывами.</p>
-                    
+
                     <div class="row mt-5">
                         <div class="col-md-3">
                             <img class="w-100" src="images/DSC_6383.jpg" alt="img">
@@ -502,7 +502,7 @@
                                 <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'London')" id="defaultOpen"><span class="fw-bold">Оплата сегодня</span></button>
                                 <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'Paris')"><span class="fw-bold">Оплата по месячно</span> </button>
                             </div>
-                              
+
                             <div id="London" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
                                 <p class="text-muted">Оплата сегодня</p>
                                 <p><span class="fw-bold">Оплата сегодня</span> - Скидка 6 000 UZS</p>
@@ -522,7 +522,7 @@
                                 <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Выполняйте еженедельные задания</p>
                                 <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Получите сертификат от Asirum</p>
                             </div>
-                              
+
                             <div id="Paris" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
                                 <p class="text-muted">План оплата</p>
                                 <p class="fw-bold">5 ежемесячных платежей</p>
@@ -556,7 +556,7 @@
                     </div>
 
                     <p class="fw-bold mt-5">30 августа 2022 - 03 ноября 2023 </p>
-                      
+
                     <div id="moon_1" class="tabcontent p-5 ps-3 pe-3 rounded">
                         <p class="fw-bold">Full stack developer</p>
                         <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
@@ -572,7 +572,7 @@
                             <button class="btn btn-dark bg-dark w-100 ms-4">Зарегистрируйтесь сейчас</button>
                         </div>
                     </div>
-                      
+
                     <div id="moon_2" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
                         <p class="fw-bold">Data science</p>
                         <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
@@ -604,7 +604,7 @@
                             <button class="btn btn-dark bg-dark w-100 ms-4">Зарегистрируйтесь сейчас</button>
                         </div>
                     </div>
-                
+
 
                     <hr class="mt-5 mb-5">
 
@@ -661,19 +661,6 @@
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <p class="fs-5">12 месяцув / 450 часов</p>
-                                <hr class="w-25 border border-success border-2">    
-                                <a id="btn" href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
-                        <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p>Начала курсв - 03/03/2022</p>
-                                <h4 class="card-title fw-bold">Full stack Developer</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="fs-5">12 месяцув / 450 часов</p>
                                 <hr class="w-25 border border-success border-2">
                                 <a id="btn" href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                             </div>
@@ -713,7 +700,20 @@
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <p class="fs-5">12 месяцув / 450 часов</p>
-                                <hr class="w-25 border border-success border-2">    
+                                <hr class="w-25 border border-success border-2">
+                                <a id="btn" href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4">
+                        <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
+                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p>Начала курсв - 03/03/2022</p>
+                                <h4 class="card-title fw-bold">Full stack Developer</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="fs-5">12 месяцув / 450 часов</p>
+                                <hr class="w-25 border border-success border-2">
                                 <a id="btn" href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                             </div>
                         </div>
@@ -760,7 +760,7 @@
             </div>
         </div>
     </section>
-   
+
 
 @section('js')
     <script>
@@ -777,7 +777,7 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
-        
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>

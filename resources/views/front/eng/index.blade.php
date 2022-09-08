@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.eng.main')
 
 @section('style')
 <style>
@@ -6,7 +6,7 @@
      position: absolute;
     z-index: 9999;
   }
-</style>  
+</style>
 @endsection
 
 @section('content')
@@ -250,12 +250,6 @@
                             <h2 class="title">Brayden
                                 <span>Designer & Developer</span>
                             </h2>
-                            <!-- <ul class="social-link">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-google"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-youtube"></a></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -268,12 +262,6 @@
                             <h2 class="title">Jasephine
                                 <span>Designer & Developer</span>
                             </h2>
-                            <!-- <ul class="social-link">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-google"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-youtube"></a></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -286,12 +274,6 @@
                             <h2 class="title">Marco
                                 <span>Designer & Developer</span>
                             </h2>
-                            <!-- <ul class="social-link">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-google"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-youtube"></a></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -304,17 +286,11 @@
                             <h2 class="title">Amaira
                                 <span>Designer & Developer</span>
                             </h2>
-                            <!-- <ul class="social-link">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-google"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-youtube"></a></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <button id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Всеь коллектив</button>
+            <a href="{{ route('eng.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Всеь коллектив</a>
         </div>
     </section>
 

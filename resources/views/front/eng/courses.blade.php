@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.eng.main')
 @section('style')
 <style>
     .navbar{
@@ -46,7 +46,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a id="btn_1" href="{{ route('eng.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.eng.main')
 
 @section('style')
 <style>
@@ -11,7 +11,7 @@
     }
     #lang_btn{
         border: 2px solid #333;
-        color: #333; 
+        color: #333;
     }
 </style>
 @endsection
@@ -22,8 +22,8 @@
         <p><span class="fw-bold"><a href="#" class="text-success text-decoration-none">Главная</a></span> | <a href="#" class="text-success text-decoration-none">новости</a> | <a href="#" class="text-success text-decoration-none">Обучение и перспективы</a></p>
         <h1 class="fw-bold" style="font-size: 60px;">Обучение и перспективы</h1>
         <div class="d-flex w-25 justify-content-center m-auto mt-4">
-            <a href="#" class="text-dark"><i class="bi bi-telegram me-4 m-auto" style="font-size: 45px;"></i></a> 
-            <a href="#" class="text-dark"><i class="bi bi-facebook me-4 m-auto" style="font-size: 45px;"></i></a> 
+            <a href="#" class="text-dark"><i class="bi bi-telegram me-4 m-auto" style="font-size: 45px;"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-facebook me-4 m-auto" style="font-size: 45px;"></i></a>
             <a href="#" class="text-dark"><i class="bi bi-instagram me-4 m-auto" style="font-size: 45px;"></i> </a>
         </div>
     </section>
@@ -79,25 +79,25 @@
                             <li class ="nav-item mt-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
                                     <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
-                                    Full stack developer 
+                                    Full stack developer
                                 </a>
                             </li>
                             <li class ="nav-item mt-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
                                     <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
-                                    Software engineerv 
+                                    Software engineerv
                                 </a>
                             </li>
                             <li class ="nav-item mt-3 mb-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
                                     <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
-                                    Data science 
+                                    Data science
                                 </a>
                             </li>
 
                             <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
                         </ul>
-                    </nav>    
+                    </nav>
                 </div>
             </div>
         </div>

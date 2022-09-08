@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.ru.main')
 
 @section('style')
 <style>
@@ -9,7 +9,7 @@
   	position: absolute;
     z-index: 999;
   }
-    
+
 </style>
 @endsection
 
@@ -152,5 +152,5 @@
             </div>
         </div>
     </section>
-   
+
 @endsection

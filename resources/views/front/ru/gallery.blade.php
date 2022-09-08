@@ -1,4 +1,4 @@
-@extends('front.main')
+@extends('front.ru.main')
 
 @section('style')
     <style>
