@@ -1,4 +1,4 @@
-@extends('front.uz.main')
+@extends('front.main')
 
 @section('style')
     <style>
@@ -46,6 +46,10 @@
         #container:hover .overlay {
             opacity: 1;
         }
+      .navbar{
+      	position: absolute;
+        z-index: 9999;
+      }
 
     </style>
 @endsection
@@ -53,7 +57,7 @@
 @section('content')
 
     <div class="img-fon position-relative">
-        <img id="img-fon" class="img-fluid" src="{{ asset('images/DSC03587.JPG')}}" alt="image">
+        <img id="img-fon" class="img-fluid" src="images/DSC03587.JPG" alt="image">
         <div class="container position-absolute top-50 start-50 translate-middle">
             <p class="text-center text-white"><span><a class="text-white text-decoration-none fw-bold" href="#">Главная</a></span> | <a class="text-white text-decoration-none" href="#">Фото</a></p>
             <h1 class="text-center text-white" style="font-size: 60px;">Галерея мест и собитий</h1>
@@ -66,10 +70,10 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded image"
                                 alt="Boat on Calm Water"
                             />
@@ -81,10 +85,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('images/DSC_6393.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC_6393.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC_6393.JPG')}}"
+                                src="images/DSC_6393.jpg"
                                 class="w-100 h-100 shadow rounded image"
                                 alt="Boat on Calm Water"
                             />
@@ -98,10 +102,10 @@
 
             <div class="row pb-5">
                 <div class="col-md-6">
-                    <a href="{{ asset('images/DSC03268.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03268.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03268.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -113,10 +117,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -130,10 +134,10 @@
 
             <div class="row pb-5">
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -145,10 +149,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -160,10 +164,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -184,10 +188,10 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -199,10 +203,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -216,10 +220,10 @@
 
             <div class="row pb-5">
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -231,10 +235,10 @@
                 </div>
 
                 <div class="col-md-8">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -255,10 +259,10 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -270,10 +274,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -285,10 +289,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('{{ asset('images/DSC03614.JPG')}}')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -302,10 +306,10 @@
 
             <div class="row pb-5">
                 <div class="col-md-4">
-                    <a href="{{ asset('images/DSC03614.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03614.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -317,10 +321,10 @@
                 </div>
 
                 <div class="col-md-8">
-                    <a href="{{ asset('images/DSC03614.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03614.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -334,10 +338,10 @@
 
             <div class="row pb-5">
                 <div class="col-md-4">
-                    <a href="{{ asset('images/DSC03614.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03614.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -349,10 +353,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('images/DSC03614.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03614.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />
@@ -364,10 +368,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="{{ asset('images/DSC03614.JPG')}}" style="text-decoration: none;">
+                    <a href="images/DSC03614.JPG" style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
-                                src="{{ asset('images/DSC03614.JPG')}}"
+                                src="images/DSC03614.JPG"
                                 class="w-100 h-100 shadow rounded"
                                 alt="Boat on Calm Water"
                             />

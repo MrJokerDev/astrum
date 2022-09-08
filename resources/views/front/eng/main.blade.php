@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrum ENG</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Astrum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset("css/animate.css")}}">
     <link rel="stylesheet" href="{{ asset("css/carousel.css")}}">
     <link rel="stylesheet" href="{{ asset('css/img_animate.css')}}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  	@yield('style')
 </head>
 
-@yield('style')
+
 
 <body>
 
     <div id="top-header" class="top-header top-header_1">
         <div class="text-center">
-            <p class="p-3 mb-0 text-white">Full stack разработчик с Javascript! <a id="arrow" href="#">Присоединится к
+            <p class="p-3 mb-0 text-white"><span>&#129395;</span> Full stack разработчик с Javascript! <a id="arrow" href="#">Присоединится к
                     группе <i id="arrow_1" class="bi bi-arrow-right"></i></a></p>
         </div>
     </div>
@@ -30,34 +30,35 @@
         <div class="container top-navbar">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="navbar-brand" href="{{ route('index') }}">logo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                        <ul class="navbar-nav ms-auto">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#location">Локатции</a>
+                                <a class="nav-link" href="{{ route('index') }}#location">Локатции</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Фото</a>
+                                <a class="nav-link" href="{{ route('gallery') }}">Фото</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Карьера</a>
+                                <a class="nav-link" href="{{ route('job') }}">Карьера</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Курсы</a>
+                                <a class="nav-link" href="{{ route('courses') }}">Курсы</a>
+                            </li>
+                          	<li class="nav-item">
+                                <a class="nav-link" href="{{ route('index') }}#mentors">Менторы</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('news') }}">Новости</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#mentors">Менторы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Новости</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">О компании</a>
+                                <a class="nav-link" href="{{ route('about_us') }}">О компании</a>
                             </li>
                             <li class="nav-item">
                                 <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
@@ -68,18 +69,11 @@
                             <li class="nav-item">
                                 <div class="dropdown">
                                     <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @php if($request->route()->getPrefix() === '/uz'){
-                                            echo 'UZ';
-                                        }elseif ($request->route()->getPrefix() == '/ru') {
-                                            echo 'RU';
-                                        }else{
-                                            echo 'EN';
-                                        }
-                                    @endphp
+                                      UZ
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="{{ route('ru.index') }}">RU</a>
-                                        <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
+                                        <a class="dropdown-item" href="#">RU</a>
+                                        <a class="dropdown-item" href="#">EN</a>
                                     </div>
                                 </div>
                             </li>
@@ -111,7 +105,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg')}}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
                                     <p>Full Stack developer <br>
                                         12 moon
                                     </p>
@@ -121,7 +115,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg')}}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
                                     <p>Software engineer<br>
                                         12 moon
                                     </p>
@@ -131,7 +125,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg')}}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
                                     <p>Data science engineer <br>
                                         12 moon
                                     </p>
@@ -141,7 +135,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg')}}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
                                     <p>3D max specialist <br>
                                         12 moon
                                     </p>
@@ -217,7 +211,7 @@
 
             <div class="row pt-5 pb-5">
                 <div class="col-md-3">
-                    <img src="{{ asset('images/logo_1.png')}}" width="100" alt="">
+                    <img src="images/logo_1.png" width="100" alt="">
                 </div>
                 <div class="col-md-5">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet molestiae facere nihil, optio eos quia nulla facilis id libero placeat possimus ipsum quis quasi magnam enim, saepe beatae adipisci?</p>
@@ -229,17 +223,11 @@
         </div>
     </footer>
 
-
+ 	@yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

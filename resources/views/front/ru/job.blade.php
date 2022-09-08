@@ -1,4 +1,4 @@
-@extends('front.ru.main')
+@extends('front.main')
 
 @section('style')
 <style>
@@ -24,19 +24,19 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg')}}" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow" src="{{ asset('images/DSC_6383.jpg')}}" alt="image">
+                    <img class="w-100 h-100 rounded shadow" src="images/DSC_6383.jpg" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg')}}" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow" src="{{ asset('images/DSC_6383.jpg')}}" alt="image">
+                    <img class="w-100 h-100 rounded shadow" src="images/DSC_6383.jpg" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg')}}" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
                 </div>
               </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -89,7 +89,7 @@
             <div class="row pt-5">
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>

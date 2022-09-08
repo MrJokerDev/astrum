@@ -1,17 +1,26 @@
-@extends('front.eng.main')
+@extends('front.main')
+
+@section('style')
+<style>
+  .navbar{
+     position: absolute;
+    z-index: 9999;
+  }
+</style>  
+@endsection
 
 @section('content')
     <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
-            <source src="{{ asset("images/video/video_1.MP4")}}" type="video/mp4">
+            <source src="images/video/video_1.MP4" type="video/mp4">
         </video>
 
         <div class="container">
             <div class="row h-100">
                 <div class="col-md-7 align-self-end mb-5">
                     <div class="text-white">
-                        <h1 class="font_size"><span></span>The best place <br> for education, entertainment and <br> your future</h1>
+                        <h1 class="font_size"><span></span>Лутшиее место для <br> обучения, развлечения <br> и Вашего будующего</h1>
                     </div>
                 </div>
                 <div class="col-md-5"></div>
@@ -33,10 +42,10 @@
                     <h1 class="about_us">About us</h1>
                     <div class="img">
                         <div class="img_1">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/DSC_6349.jpg')}}" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="images/DSC_6349.jpg" alt="images">
                         </div>
                         <div class="img_2">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/DSC_6383.jpg')}}" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="images/DSC_6383.jpg" alt="images">
                         </div>
                     </div>
                     <div class="w-100 text-end">
@@ -69,7 +78,7 @@
 
     <section class="container-fluid">
         <div class="astrum_img">
-            <img src="{{ asset('images/astrum_foto.png')}}" alt="">
+            <img src="images/astrum_foto.png" alt="">
         </div>
     </section>
 
@@ -77,28 +86,24 @@
         <div class="carusel-top">
             <div class="carousel-inner">
                     <div class="most-inner">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
-                        <img src="{{ asset('images/DSC_6349.jpg')}}">
-                        <img src="{{ asset('images/DSC_6383.jpg')}}">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
+                        <img src="images/DSC_6349.jpg">
+                        <img src="images/DSC_6383.jpg">
                     </div>
             </div>
         </div>
@@ -117,7 +122,7 @@
             <div class="row">
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -130,7 +135,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -143,7 +148,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -156,7 +161,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -226,7 +231,7 @@
 
     <section>
         <div class="container">
-            <img src="{{ asset('images/AST04894.JPG')}}" class="w-100 rounded" alt="image">
+            <img src="images/AST04894.JPG" class="w-100 rounded" alt="image">
         </div>
     </section>
 
@@ -245,6 +250,12 @@
                             <h2 class="title">Brayden
                                 <span>Designer & Developer</span>
                             </h2>
+                            <!-- <ul class="social-link">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-google"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-youtube"></a></li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -257,6 +268,12 @@
                             <h2 class="title">Jasephine
                                 <span>Designer & Developer</span>
                             </h2>
+                            <!-- <ul class="social-link">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-google"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-youtube"></a></li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -269,6 +286,12 @@
                             <h2 class="title">Marco
                                 <span>Designer & Developer</span>
                             </h2>
+                            <!-- <ul class="social-link">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-google"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-youtube"></a></li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -281,6 +304,12 @@
                             <h2 class="title">Amaira
                                 <span>Designer & Developer</span>
                             </h2>
+                            <!-- <ul class="social-link">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-google"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-youtube"></a></li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -296,7 +325,7 @@
             <div class="row pt-5">
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -306,7 +335,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -316,7 +345,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -326,7 +355,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
                     <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
