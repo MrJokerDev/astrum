@@ -30,7 +30,7 @@
         <div class="container top-navbar">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ route('index') }}">logo</a>
+                    <a class="navbar-brand" href="{{ route('eng.index') }}">logo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -39,26 +39,26 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('index') }}#location">Локатции</a>
+                                <a class="nav-link" href="{{ route('eng.index') }}#location">Локатции</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('gallery') }}">Фото</a>
+                                <a class="nav-link" href="{{ route('eng.gallery') }}">Фото</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('job') }}">Карьера</a>
+                                <a class="nav-link" href="{{ route('eng.job') }}">Карьера</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('courses') }}">Курсы</a>
+                                <a class="nav-link" href="{{ route('eng.courses') }}">Курсы</a>
                             </li>
                           	<li class="nav-item">
-                                <a class="nav-link" href="{{ route('index') }}#mentors">Менторы</a>
+                                <a class="nav-link" href="{{ route('eng.index') }}#mentors">Менторы</a>
                             </li>
-                           
+
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('news') }}">Новости</a>
+                                <a class="nav-link" href="{{ route('eng.news') }}">Новости</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('about_us') }}">О компании</a>
+                                <a class="nav-link" href="{{ route('eng.about_us') }}">О компании</a>
                             </li>
                             <li class="nav-item">
                                 <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
@@ -227,7 +227,7 @@
     <script src="{{ asset('js/carusel.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
- 
+
 </body>
 
 </html>
