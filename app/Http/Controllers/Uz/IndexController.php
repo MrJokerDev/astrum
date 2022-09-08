@@ -24,7 +24,7 @@ class IndexController extends Controller
     }
 
     public function gallery(){
-        return view('front.ru.gallery');
+        return view('front.uz.gallery');
     }
 
     public function about_us(){
