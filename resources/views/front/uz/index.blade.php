@@ -231,7 +231,7 @@
 
     <section>
         <div class="container">
-            <img src="images/AST04894.JPG" class="w-100 rounded" alt="image">
+            <img src="images/AST04894.jpg" class="w-100 rounded" alt="image">
         </div>
     </section>
 
