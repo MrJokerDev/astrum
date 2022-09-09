@@ -133,14 +133,6 @@ header {
     }
   }
 
-  .navbar{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: absolute;
-    width: 65%;
-    z-index:1000  ;
-  }
-
   .nav-item{
     margin-right: 10px;
   }
