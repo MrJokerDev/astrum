@@ -2,4 +2,17 @@
     .back {
       height: 40%;
     }
+
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .nav-item #btn{
+      display: none;
+    }
+
+  }
+  @media only screen and (max-width: 992px) {
+    .astrum_img{
+      top: 170rem;
+    }
   }
