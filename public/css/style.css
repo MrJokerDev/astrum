@@ -141,10 +141,9 @@ header {
     color: white;
   }
 
-  /* .display-3{
-    padding-top: 600px;
-    font-weight: 700;
-  } */
+  .navbar{
+    width: 100%;
+  }
 
   section{
     margin: 55px 0;

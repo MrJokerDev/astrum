@@ -26,63 +26,61 @@
         </div>
     </div>
 
-    <div class="navbar-top">
-        <div class="container top-navbar">
-            <nav class="navbar navbar-expand-md">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ route('ru.index') }}">logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand text-right" href="{{ route('ru.index') }}">Logo</a>
+                <div class="w-100 text-end">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar7">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.index') }}#location">Локатции</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
-                            </li>
-                          	<li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.index') }}#mentors">Менторы</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.news') }}">Новости</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('ru.about_us') }}">О компании</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Лутшие курсы</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      RU
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
-                                        <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.index') }}#location">Локатции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.index') }}#mentors">Менторы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.news') }}">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.about_us') }}">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Лутшие курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ru
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
+                                <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
     @yield('content')
 
@@ -223,7 +221,7 @@
  	@yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culruyK" crossorigin="anonymous"></script>
 
 </body>
 

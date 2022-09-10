@@ -121,7 +121,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
@@ -300,7 +300,7 @@
             <h1 class="fw-bold">Статьи которые помогут <br> Вам узнать больше</h1>
             <div class="row pt-5">
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -310,7 +310,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -320,7 +320,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -330,7 +330,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
+                    <div class="card hvr-float m-auto" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
