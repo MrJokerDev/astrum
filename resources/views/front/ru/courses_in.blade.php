@@ -26,6 +26,7 @@
 
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
         background-color: #F5F4FF;
+        color: #333;
     }
     #navbar-bg{
         width: 100%;
@@ -64,7 +65,7 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-center p-5"><span class="fw-bold">ГЛАВНАЯ</span> | КУРСЫ И ОБРАЗОВАНИЕ | FULL STACK DEVELOPER</p>
+            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('ru.index') }}" class="text-success text-decoration-none">ГЛАВНАЯ</a> </span> | <a href="{{ route('ru.courses') }}" class="text-success text-decoration-none">КУРСЫ И ОБРАЗОВАНИЕ</a> | <a href="{{ route('ru.courses_in') }}" class="text-success text-decoration-none">FULL STACK DEVELOPER</a></p>
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="fw-bold">Full Stack Developer</h1>
@@ -73,10 +74,10 @@
 
                     <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, <br> ExpressJs Ruby, RubyonRails, SQL</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quibusdam voluptatem consequuntur repellendus quisquam quia cumque ratione labore eaque, ducimus earum non ullam enim, laudantium iste, corrupti blanditiis cupiditate.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3">Зарегистрируйтесь сейчас</button>
+                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
                 </div>
                 <div class="col-md-6">
-                    <img class="rounded w-100" src="images/DSC_6384.jpg" alt="">
+                    <img class="rounded w-100" src="{{ asset('images/DSC_6384.jpg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -93,46 +94,43 @@
                             </li>
                             <hr>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Обзор </a>
+                                <a class ="nav-link fw-bold" href="#about"> Обзор </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Учебная программа </a>
+                                <a class ="nav-link fw-bold" href="#lessons"> Учебная программа </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Ментор </a>
+                                <a class ="nav-link fw-bold" href="#mentors"> Ментор </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Инструменты разработки </a>
+                                <a class ="nav-link fw-bold" href="#developers"> Инструменты разработки </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Класы для курсов </a>
+                                <a class ="nav-link fw-bold" href="#kurs_room"> Класы для курсов </a>
                             </li>
-                            <li class ="nav-item">
+                            {{-- <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#"> Выпускники </a>
+                            </li> --}}
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#kurs_total"> Расписание курсов </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Цены </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Расписание курсов </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Вопросы </a>
+                                <a class ="nav-link fw-bold" href="#quetions"> Вопросы </a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-8">
                     <div>
-                        <p class="fw-bold text-success">ОБЗОР</p>
+                        <p id="about" class="fw-bold text-success">ОБЗОР</p>
                         <h1>ОВЛАДАЙТЕ НАВЫКАМИ ПРОГРАММИРОВАНИЯ</h1>
                         <p>Наш неполный рабочий день, живой учебный курс по Full stack разработке  — это захватывающий 12-недельный учебный процесс. Вы будете учиться на практике во время живых занятий с 20 дружественними студентами. Что позволит Вам лучше принять информацию от ментора и получить его помощь.
                             Во время занятий вы освоите программные навыки, необходимые для создания красивых и функциональных сайтов и програм. Этот учебный курс — один из полулярнных и востребованых знаний на рынке труда.</p>
 
                         <video class="w-100 rounded" playsinline="playsinline" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
-                            <source src="images/video/video_1.MP4" type="video/mp4">
+                            <source src="{{ asset('images/video/video_1.MP4') }}" type="video/mp4">
                         </video>
                     </div>
                     <div class="mt-5 pt-5">
@@ -174,7 +172,7 @@
                     </div>
                     <hr class="fw-bold">
                     <div class="row mt-5">
-                        <p class="fw-bold text-success">Учебная программа</p>
+                        <p id="lessons" class="fw-bold text-success">Учебная программа</p>
                         <h1 class="fw-bold mb-5">Чему вы научитесь во время нашего учебного курса Full stack разработчик</h1>
 
                         <div class="d-flex">
@@ -298,13 +296,13 @@
                     </div>
                     <hr class="mt-5 mb-5">
                     <div class="row">
-                        <p style="color: #62BC9E;" class="fw-bold mt-5">КОМАНДА РАЗРАБОТЧИКОВ</p>
+                        <p id="mentors" style="color: #62BC9E;" class="fw-bold mt-5">КОМАНДА РАЗРАБОТЧИКОВ</p>
                         <h1 class="fw-bold">Учитесь у экспертов программировать</h1>
                         <p>Наши преподаватели программирования одержимы своей работой! Они научат вас передовым методам и навыкам создания хорошего кода на современных языках программирования. О, и они очень дружелюбны и приносят кучу хорошей энергии на занятиях!</p>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                            <img src="i{{ asset('mages/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                         </div>
                         <div class="col-md-7">
                             <div class="">
@@ -318,42 +316,42 @@
                         <div class="row">
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
@@ -362,51 +360,51 @@
 
                         <hr class="mt-5 mb-5">
 
-                        <p style="color: #62BC9E;" class="fw-bold mt-5">инструменты РАЗРАБОТЧИКа</p>
+                        <p id="developers" style="color: #62BC9E;" class="fw-bold mt-5">инструменты РАЗРАБОТЧИКа</p>
                         <h1 class="fw-bold">С нуля к профи</h1>
                         <p>Наши учебные курсы разработаны на основе новейших инструментов программирования. В отличие от корпоративных курсов, которые имеют фиксированный набор инструментов прошлых десятилетий, мы считаем важным вооружить программистов новейшим набором инструментов, чтобы преуспеть в своей карьере.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="images/ruby.png" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="images/SQLite.jpg" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="images/python.png" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
                             </div>
                         </div>
 
                         <hr class="mt-5 mb-5">
 
-                        <p style="color: #62BC9E;" class="fw-bold mt-5">современные классы</p>
+                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">современные классы</p>
                         <h1 class="fw-bold">Классы которые удивляют и помагаютв обучении</h1>
                         <p>Мы считаем, что индивидуальный подход к обучению крайне важен, и мы намеренно ограничиваем размер класса примерно 20 дизайнерами. Небольшой размер классов гарантирует, что мы сможем охватить больше за то время, которое у нас есть, и вы будете учиться непосредственно у других программистов. Кроме того, это удобное место для обучения, когда весь класс участвует в обсуждениях и делится отзывами.</p>
 
                     </div>
-                    <div class="container-fluid" style="width: 1200px;">
+                    <div class="container-fluid" style="width: 110%">
                         <div class="carousel">
                             <div class="carusel-top">
                                 <div class="carousel-inner">
                                     <div class="most-inner">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
-                                        <img src="images/DSC_6349.jpg">
-                                        <img src="images/DSC_6383.jpg">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
                                     </div>
                                 </div>
                             </div>
@@ -421,25 +419,25 @@
 
                     <div class="row mt-5">
                         <div class="col-md-3">
-                            <img class="w-100" src="images/DSC_6383.jpg" alt="img">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
                             <p class="fw-bold m-0">Азиза</p>
                             <p>Full Stack Developer</p>
                             <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="images/DSC_6383.jpg" alt="img">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
                             <p class="fw-bold m-0">Азиза</p>
                             <p>Full Stack Developer</p>
                             <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="images/DSC_6383.jpg" alt="img">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
                             <p class="fw-bold m-0">Азиза</p>
                             <p>Full Stack Developer</p>
                             <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="images/DSC_6383.jpg" alt="img">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
                             <p class="fw-bold m-0">Азиза</p>
                             <p>Full Stack Developer</p>
                             <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
@@ -491,12 +489,12 @@
                         </div>
                     </div>
 
-                    <hr class="mt-5 mb-5">
+                    {{-- <hr class="mt-5 mb-5">
 
                     <p style="color: #62BC9E;" class="fw-bold mt-5">Цена</p>
-                    <h1 class="fw-bold">Простые, прозрачные и гибкие планы платежей</h1>
-                    <p>В отличие от других курсов, которые скрывают свои цены, мы полностью прозрачны в отношении цен на курсы и гордимся тем, что они доступны и доступны.</p>
-                    <div class="row">
+                    <h1 class="fw-bold">Простые, прозрачные и гибкие планы платежей</h1> --}}
+                    {{-- <p>В отличие от других курсов, которые скрывают свои цены, мы полностью прозрачны в отношении цен на курсы и гордимся тем, что они доступны и доступны.</p> --}}
+                    {{-- <div class="row">
                         <div class="col-md-8">
                             <div class="tab">
                                 <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'London')" id="defaultOpen"><span class="fw-bold">Оплата сегодня</span></button>
@@ -541,51 +539,51 @@
                                 <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Получите сертификат от Asirum</p>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <hr class="mt-5 mb-5">
 
-                    <p style="color: #62BC9E;" class="fw-bold mt-5">Расписание курсов</p>
-                    <h1 class="fw-bold">Быстрый набор!</h1>
-                    <p>Наши учебные курсы, как правило, набираются довольно быстро, поэтому мы открываем их за несколько месяцев. И мы намеренно ограничиваем размер классов примерно до 20 дизайнеров, чтобы каждый учебный курс предлагал индивидуальный опыт обучения.</p>
+                        <p id="kurs_total" style="color: #62BC9E;" class="fw-bold mt-5">Расписание курсов</p>
+                        <h1 class="fw-bold">Быстрый набор!</h1>
+                        <p>Наши учебные курсы, как правило, набираются довольно быстро, поэтому мы открываем их за несколько месяцев. И мы намеренно ограничиваем размер классов примерно до 20 дизайнеров, чтобы каждый учебный курс предлагал индивидуальный опыт обучения.</p>
 
-                    <div class="tab">
-                        <button class="tablinks btn btn-info text-dark active" onclick="openCity(event, 'moon_1')" id="active"><span class="fw-bold">Февраль</span></button>
-                        <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_2')"><span class="fw-bold">Май</span> </button>
-                        <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_3')"><span class="fw-bold">Август</span> </button>
-                    </div>
-
-                    <p class="fw-bold mt-5">30 августа 2022 - 03 ноября 2023 </p>
-
-                    <div id="moon_1" class="tabcontent p-5 ps-3 pe-3 rounded">
-                        <p class="fw-bold">Full stack developer</p>
-                        <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
-                        <hr class="w-25" style="border: 2px solid #62BC9E;">
-                        <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
-                        <hr>
-                        <div class="d-flex">
-                            <img class="rounded-circle h-25 border border-warning me-3" src="images/python.png" style="width: 6%;" alt="image">
-                            <div class="d-block w-100">
-                            <p class="w-100"><span class="fw-bold">Джасур Шукуров</span><br> Full Stack Developer - Mentor</p>
-                            <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            </div>
-                            <button class="btn btn-dark bg-dark w-100 ms-4">Зарегистрируйтесь сейчас</button>
+                        <div class="tab">
+                            <button class="tablinks btn btn-info text-dark active" onclick="openCity(event, 'moon_1')" id="active"><span class="fw-bold">Февраль</span></button>
+                            <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_2')"><span class="fw-bold">Май</span> </button>
+                            <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_3')"><span class="fw-bold">Август</span> </button>
                         </div>
-                    </div>
 
-                    <div id="moon_2" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
-                        <p class="fw-bold">Data science</p>
-                        <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
-                        <hr class="w-25" style="border: 2px solid #62BC9E;">
-                        <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
-                        <hr>
-                        <div class="d-flex">
-                            <img class="rounded-circle h-25 border border-warning me-3" src="images/python.png" style="width: 6%;" alt="image">
-                            <div class="d-block w-100">
-                            <p class="w-100"><span class="fw-bold">Хамиджанов Комилжон</span><br> Data science - Mentor</p>
+                        <p class="fw-bold mt-5">30 августа 2022 - 03 ноября 2023 </p>
+
+                        <div id="moon_1" class="tabcontent p-5 ps-3 pe-3 rounded">
+                            <p class="fw-bold">Full stack developer</p>
+                            <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
+                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
+                                <div class="d-block w-100">
+                                <p class="w-100"><span class="fw-bold">Джасур Шукуров</span><br> Full Stack Developer - Mentor</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                </div>
+                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
-                            <button class="btn btn-dark bg-dark w-100 ms-4">Зарегистрируйтесь сейчас</button>
+                        </div>
+
+                        <div id="moon_2" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
+                            <p class="fw-bold">Data science</p>
+                            <p>Аудитория 102, <span class="fw-bold">Вторнник 18:00 - 20:00</span></p>
+                            <hr class="w-25" style="border: 2px solid #62BC9E;">
+                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset("images/python.png") }}" style="width: 6%;" alt="image">
+                                <div class="d-block w-100">
+                                <p class="w-100"><span class="fw-bold">Хамиджанов Комилжон</span><br> Data science - Mentor</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                </div>
+                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
                         </div>
                     </div>
 
@@ -596,19 +594,19 @@
                         <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
                         <hr>
                         <div class="d-flex">
-                            <img class="rounded-circle h-25 border border-warning me-3" src="images/python.png" style="width: 6%;" alt="image">
+                            <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                             <div class="d-block w-100">
                             <p class="w-100"><span class="fw-bold">Озодов Сарвар</span><br> Software engineering - Mentor</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
                             </div>
-                            <button class="btn btn-dark bg-dark w-100 ms-4">Зарегистрируйтесь сейчас</button>
+                            <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
                         </div>
                     </div>
 
 
                     <hr class="mt-5 mb-5">
 
-                    <p style="color: #62BC9E;" class="fw-bold mt-5">Цена</p>
+                    <p id="quetions" style="color: #62BC9E;" class="fw-bold mt-5">Вопросы</p>
 
                     <h1>У вас есть вопрос о нашем учебном курсе по Full stack developer?</h1>
                     <p>Скорее всего, на этом этапе у вас есть пара вопросов. Мы призываем наших студентов задавать вопросы напрямую, и вы можете организовать быстрый звонок с нами в любое время.</p>
@@ -653,9 +651,9 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xl-3 col-sm-6 col-md-4">
+                <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -666,9 +664,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -679,9 +677,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -692,9 +690,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -705,9 +703,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -718,9 +716,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -731,9 +729,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-4 mt-3">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6 col-md-4 mt-3">
                         <div class="card hvr-float m-auto" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -746,7 +744,7 @@
                     </div>
                     <div class="col-xl-3 col-sm-6 col-md-4">
                         <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                            <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                            <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <p>Начала курсв - 03/03/2022</p>
                                 <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -763,7 +761,7 @@
 
 
 @section('js')
-    <script>
+    {{-- <script>
         function openCity(evt, cityName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
@@ -780,7 +778,7 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-    </script>
+    </script> --}}
 @endsection
 
 @endsection

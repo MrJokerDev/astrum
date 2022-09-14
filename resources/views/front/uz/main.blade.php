@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             UZ
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -101,7 +101,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Full Stack developer <br>
                                         12 moon
                                     </p>
@@ -111,7 +111,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Software engineer<br>
                                         12 moon
                                     </p>
@@ -121,7 +121,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Data science engineer <br>
                                         12 moon
                                     </p>
@@ -131,7 +131,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="images/web-developer.jpg" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>3D max specialist <br>
                                         12 moon
                                     </p>
@@ -204,7 +204,7 @@
 
             <div class="row pt-5 pb-5">
                 <div class="col-md-3">
-                    <img src="images/logo_1.png" width="100" alt="">
+                    <img src="{{ asset('images/logo_1.png') }}" width="100" alt="">
                 </div>
                 <div class="col-md-5">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet molestiae facere nihil, optio eos quia nulla facilis id libero placeat possimus ipsum quis quasi magnam enim, saepe beatae adipisci?</p>
@@ -216,11 +216,11 @@
         </div>
     </footer>
 
- 	@yield('js')
-    <script src="{{ asset('js/carusel.js')}}"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
+    @yield('js')
+    <script src="{{ asset('js/carusel.js')}}"></script>
 </body>
 
 </html>
