@@ -1,6 +1,9 @@
 @media only screen and (max-width: 600px) {
     .back {
-      height: 40%;
+      height: 30%;
+    }
+    #navbar-bg{
+        margin: auto;
     }
 
   }

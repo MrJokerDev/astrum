@@ -6,6 +6,49 @@
      position: absolute;
     z-index: 9999;
   }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      margin: auto;
+    }
+    .font_size{
+        font-size: 2rem;
+    }
+    h1 span{
+        height: 45px;
+        width: 45px;
+        left: 0px;
+    }
+    .astrum_img{
+        top: 198rem;
+    }
+    .location_h1{
+        font-size: 80px;
+        left: 40px;
+        position: inherit;
+    }
+    #location{
+        margin: 0px;
+    }
+    .container-fluid{
+        margin: 0px;
+    }
+
+    .carousel{
+        padding: 0rem;
+        min-height: 40vh;
+        margin: 0px;
+    }
+    .carousel img{
+        max-width: 70%;
+        height: 55vw;
+    }
+
+    .profile-card{
+        margin: 10px 50px;
+    }
+
+  }
 </style>
 @endsection
 
@@ -113,7 +156,7 @@
         <div class="container p-5 align-items-center">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">КУРСЫ И ОБРАЗОВАНИЕ</p>
             <h1 class="text-white">Измените свой жизнь, <br> изучит UX/UI и программирование</h1>
-            <p class="text-white pt-4 fs-5">Наши учебные курсы по программированию разработаты, <br> чтобы помочь Вам учитсия на практике в современных классах на <br> современном оборудовании.</p>
+            <p class="text-white pt-4">Наши учебные курсы по программированию разработаты, <br> чтобы помочь Вам учитсия на практике в современных классах на <br> современном оборудовании.</p>
         </div>
     </section>
 

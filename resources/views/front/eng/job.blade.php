@@ -8,13 +8,19 @@
     .card-img-top{
         border-radius: 20px 20px 100px 15px;
     }
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+        background-color: #F5F4FF;
+        border-color: #333;
+        color: #333;
+    }
 </style>
 @endsection
 
 @section('content')
     <section>
         <div class="container text-center pt-5">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold " >КАРЬЕРА С ASTRUM</p>
+            <p class="text-success"><span class="fw-bold"><a href="{{ route('eng.index') }}" class="text-decoration-none text-success">ГЛАВНАЯ</a></span> | <a href="{{ route('eng.job') }}" class="text-decoration-none text-success">КАРЬЕРА С ASTRUM</a></p>
+            {{-- <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold " ></p> --}}
             <h1 class="fw-bold" style="font-size: 60px;">Лутшие работают у нас. <br> Присоединится!</h1>
             <p class="fw-bolder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eaque. <br> Quasi earum error quidem fuga accusamus nostrum quod voluptates tempore?.</p>
         </div>
@@ -24,19 +30,19 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg') }}" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow" src="images/DSC_6383.jpg" alt="image">
+                    <img class="w-100 h-100 rounded shadow" src="{{ asset('images/DSC_6383.jpg') }}" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg') }}" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow" src="images/DSC_6383.jpg" alt="image">
+                    <img class="w-100 h-100 rounded shadow" src="{{ asset('images/DSC_6383.jpg') }}" alt="image">
                 </div>
                 <div class="col">
-                    <img class="w-100 h-100 rounded shadow mt-5" src="images/DSC_6383.jpg" alt="image">
+                    <img class="w-100 h-100 rounded shadow mt-5" src="{{ asset('images/DSC_6383.jpg') }}" alt="image">
                 </div>
               </div>
         </div>
@@ -48,7 +54,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -61,7 +67,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -74,7 +80,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -89,7 +95,7 @@
             <div class="row pt-5">
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -102,7 +108,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -115,7 +121,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto hvr-float" style="width: 20rem; border-radius: 20px">
-                        <img class="card-img-top" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
