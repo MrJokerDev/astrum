@@ -383,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" id="btn" class="btn btn-outline-success p-3 mt-5 mb-5 rounded">Больше новости</a>
+            <a href="{{ route('eng.news') }}" id="btn" class="btn btn-outline-success p-3 mt-5 mb-5 rounded">Больше новости</a>
         </div>
     </section>
 

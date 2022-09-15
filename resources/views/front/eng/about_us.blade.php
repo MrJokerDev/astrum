@@ -127,7 +127,7 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="#">Главная</a></span> | <a class="text-success text-decoration-none" href="#">о компании</a></p>
+            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('eng.index') }}">Главная</a></span> | <a class="text-success text-decoration-none" href="{{ route('eng.about_us') }}">о компании</a></p>
             <h1 class="about_h1 fw-bold text-center">Наша цель - помочь и передать <br> Вам наши навыки и умения!</h1>
             <p class="about_p text-center">Мы передаем свои навыки нашим студентам и так же повышаем свои навыки на крупных проектах, что помогает постоянно вносить новые елементы современных технологий в наши курсы!</p>
         </div>

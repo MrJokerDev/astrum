@@ -26,6 +26,7 @@
 
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
         background-color: #F5F4FF;
+        color: #333;
     }
     #navbar-bg{
         width: 100%;
@@ -81,8 +82,6 @@
         bottom: 15px;
     }
 
-
-
     .image-gallery {
         display: flex;
         flex-direction: column;
@@ -99,11 +98,28 @@
         object-fit: cover;
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
         .image-gallery {
             flex-direction: row;
         }
+        h1.about_h1{
+        font-size: 22px;
+        }
+        p.about_p{
+            width: 100%;
+            margin: 0px;
+        }
+        .glide{
+            display: none;
+        }
+        div.position-relative{
+            margin: 0 50px;
+        }
+        div.back > div.col-md-7{
+            display: none;
+        }
     }
+
 
 </style>
 @endsection
@@ -111,9 +127,9 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="#">Главная</a></span> | <a class="text-success text-decoration-none" href="#">о компании</a></p>
-            <h1 class="fw-bold text-center" style="font-size: 55px;">Наша цель - помочь и передать <br> Вам наши навыки и умения!</h1>
-            <p class="text-center w-50 m-auto">Мы передаем свои навыки нашим студентам и так же повышаем свои навыки на крупных проектах, что помогает постоянно вносить новые елементы современных технологий в наши курсы!</p>
+            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('ru.index') }}">Главная</a></span> | <a class="text-success text-decoration-none" href="{{ route('ru.about_us') }}">о компании</a></p>
+            <h1 class="about_h1 fw-bold text-center">Наша цель - помочь и передать <br> Вам наши навыки и умения!</h1>
+            <p class="about_p text-center">Мы передаем свои навыки нашим студентам и так же повышаем свои навыки на крупных проектах, что помогает постоянно вносить новые елементы современных технологий в наши курсы!</p>
         </div>
     </section>
 
@@ -141,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75" style="font-size: 10px;">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Full stack developer
@@ -175,7 +191,7 @@
                                 <a class ="nav-link fw-bold" href="#"> Вопросы </a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-2 text-white" style="font-size: 10px;">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
@@ -184,7 +200,7 @@
                         <h1 class="fw-bold">Что бы стать хорошим специалистом не нужно платить 150 000 UZS+ за изучение программированию в престижных институтах и тратить на это >5 лет.</h1>
                         <p>В течение последнего десятилетия программным продуктам обучали в  престижных институтах тратив на это более 5 лет своей жизни. Студенты платили и платят огромную сумму (мы говорим о 150 000 UZS +) за изучение навыков программированию с помощью не совсем компетентных програм в классе из 40 студентов. Учебный план и инструменты остаются неизменными в течение многих лет, и курсы, как правило, преподают неопытными программистами, которые оказались доступны.</p>
                     </div>
-                    <img src="images/DSC_6366.jpg" class="w-100 rounded mt-4 shadow" alt="image">
+                    <img src="{{ asset('images/DSC_6366.jpg') }}" class="w-100 rounded mt-4 shadow" alt="image">
 
                     <h1 class="fw-bold mt-5">Наше решение — сделать обучение доступным</h1>
                     <p class="mt-5">Мы обмениваем классы в дорогих институтах на современные классы, с современной техникой, что позволяет учиться в наиболее комфортных условиях. Мы ограничиваем размер классов до пятнадцати, чтобы каждый ученик получил действительно личный опыт обучения. Мы устанавливаем доступные цены на наши учебные курсы в соответствии с тем, каким должно быть образование. Мы применяем наш многолетний опыт проектирования продуктов для обучения, гарантируя, что студентов обучают активные программисты, увлеченные обучением. Мы постоянно обновляем нашу учебную программу с помощью новейших рабочих процессов и инструментов, помогая учащимся приобретать достойные привычки и изучать то, что актуально в отрасли сегодня.</p>
@@ -218,11 +234,11 @@
 
                     <h1 class="fw-bold mt-5">Курсы Astrum рассчитаны на удобство. В первую очередь на удобство удаленной работы</h1>
                     <p class="mt-3">В последние годы удаленная работа стала “кругом” спасения для многих людей. В особенности в выиграше оказались IT спецыалисты. В данную категорию относят, как продуктовых менеджеров, дизайнеров и разработчиков. Обучась в Asirum Вы, так же сможете работать как удаленно так и в офиссе Вашей будующей компании. Учась на наших курсах Вы сможете частично испытать привелегии удаленной работы выполняя некоторые задания наших менторов из дома. Проходя наш любой курс, мы стараемся вовлеч студента как можно больше в рабочую среду, что бы при окончании Вы смогли слегкостью влится в коллектив Вашей будующей компании.</p>
-                    <img src="images/DSC_6391.jpg" class="w-100 rounded shadow" alt="">
+                    <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
 
                     <h1 class="fw-bold mt-5">Учебные курсы по разным направлениям с микроклассов помамагает получить максимум</h1>
                     <p class="mt-3">Поскольку наши курсы не содержат презентаций, мы используем подход «обучение на практике», когда студенты совместно работают в режиме реального времени с использованием новейших инструментов проектирования в реальном времени. На сегодняшний день это было удивительное путешествие в качестве основателя-одиночки. В отличие от других, Asirum работает для наших студентов, на 100% самозагружено и призвано помочь новым и опытным студентам эффективно работать как удаленно в качестве удаленных рабочих, так и непосредственно в офиссе.</p>
-                    <img src="images/DSC_6393.jpg" class="w-100 rounded shadow" alt="">
+                    <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
 
                     <h1 class="fw-bold mt-5">Познакомьтесь с нашей хорошей энергетической командой!</h1>
                     <p class="mt-3">За последние пару лет мы вырастили хорошую энергетическую команду. Как хорошая команда, мы равиваем наш коллектив и умнажаем наше количество  и повышая качество преподавания.</p>
@@ -230,63 +246,63 @@
                     <div class="row">
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="position-relative">
-                                <img src="images/DSC_6349.jpg" class="rounded w-100" alt="image">
+                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
                                 <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                 <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                             </div>
@@ -296,7 +312,7 @@
                     <h1 class="fw-bold mt-5">Мы устойчиво растем как полностью уверенная в себе компания!</h1>
                     <p>Мы продолжают вдохновлять каждый день, нашими действиями и выполнениями обещаний и обязательст перед нашими студентами. Гордимся нашими студентами которе работают над разработкой программых продуктов, будущего и приглашаем коллег и друзей учиться в Asirum!
                         Итак, вот она, история о том, как Asirum развивалась и развивается. Если Вы принимаете нашу историю и согласны с нашими ценностями, мы призываем Вас учиться вместе с нами или присоединиться к нашей команде!</p>
-                    <img src="images/AST04926.JPG" class="w-100 rounded shadow mb-5" alt="">
+                    <img src="{{ asset('images/AST04894.jpg') }}" class="w-100 rounded shadow mb-5" alt="">
                 </div>
             </div>
         </div>
@@ -309,7 +325,7 @@
 	<script>
         var glide = new Glide('.glide', {
             type: 'carousel',
-            perView: 6
+            perView: 4
         })
 
         glide.mount()

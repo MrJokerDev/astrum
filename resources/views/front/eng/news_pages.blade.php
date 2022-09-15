@@ -13,13 +13,17 @@
         border: 2px solid #333;
         color: #333;
     }
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+        background-color: #F5F4FF;
+        color: #333;
+    }
 </style>
 @endsection
 
 @section('content')
 
     <section class="text-center mt-5 pt-5">
-        <p><span class="fw-bold"><a href="#" class="text-success text-decoration-none">Главная</a></span> | <a href="#" class="text-success text-decoration-none">новости</a> | <a href="#" class="text-success text-decoration-none">Обучение и перспективы</a></p>
+        <p><span class="fw-bold"><a href="{{ route('eng.index') }}" class="text-success text-decoration-none">Главная</a></span> | <a href="{{ route('eng.news') }}" class="text-success text-decoration-none">новости</a> | <a href="{{ route('eng.news_pages') }}" class="text-success text-decoration-none">Обучение и перспективы</a></p>
         <h1 class="fw-bold" style="font-size: 60px;">Обучение и перспективы</h1>
         <div class="d-flex w-25 justify-content-center m-auto mt-4">
             <a href="#" class="text-dark"><i class="bi bi-telegram me-4 m-auto" style="font-size: 45px;"></i></a>
@@ -29,7 +33,7 @@
     </section>
 
     <section>
-        <img src="images/DSC03614.JPG" class="w-100" alt="image">
+        <img src="{{ asset('images/DSC03614.JPG') }}" class="w-100" alt="image">
     </section>
 
     <section>
@@ -48,7 +52,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <div>
-                        <img src="images/DSC_6366.jpg" class="w-100 rounded" alt="image">
+                        <img src="{{ asset('images/DSC_6366.jpg') }}" class="w-100 rounded" alt="image">
                     </div>
 
                     <div class="row">
@@ -59,7 +63,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="images/DSC_6366.jpg" class="w-100 rounded" alt="image">
+                        <img src="{{ asset('images/DSC_6366.jpg') }}" class="w-100 rounded" alt="image">
                     </div>
 
                     <div class="row">
@@ -78,24 +82,24 @@
                             </li>
                             <li class ="nav-item mt-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
-                                    <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
+                                    <img src="{{ asset('images/DSC_6375.jpg') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Full stack developer
                                 </a>
                             </li>
                             <li class ="nav-item mt-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
-                                    <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
+                                    <img src="{{ asset('images/DSC_6375.jpg') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Software engineerv
                                 </a>
                             </li>
                             <li class ="nav-item mt-3 mb-3">
                                 <a class ="d-flex text-dark fw-bold text-decoration-none" href="#">
-                                    <img src="images/DSC_6375.jpg" class="w-50 h-50 rounded me-2" alt="image">
+                                    <img src="{{ asset('images/DSC_6375.jpg') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Data science
                                 </a>
                             </li>
 
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3">Зарегистрируйтесь сейчас</a>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>

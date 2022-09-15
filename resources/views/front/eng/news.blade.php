@@ -16,10 +16,10 @@
 @section('content')
 
     <div class="img-fon position-relative">
-        <img id="img-fon" class="img-fluid" src="images/DSC_6541.JPG" alt="image">
+        <img id="img-fon" class="img-fluid" src="{{ asset('images/DSC_6541.JPG') }}" alt="image">
         <div class="container">
         <div class="position-absolute bottom-0 start-25 translate-middle">
-            <p class="text-white"><span><a class="text-white text-decoration-none fw-bold" href="#">Главная</a></span> | <a class="text-white text-decoration-none" href="#">курсы и образование</a></p>
+            <p class="text-white"><span><a class="text-white text-decoration-none fw-bold" href="{{ route('eng.index') }}">Главная</a></span> | <a class="text-white text-decoration-none" href="{{ route('eng.courses') }}">курсы и образование</a></p>
             <h1 class="text-white" style="font-size: 60px;"><span></span> Статьи которые помогут <br> Вам узнать больше</h1>
         </div>
     </div>
@@ -31,121 +31,121 @@
             <div class="row pt-5">
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
                     <div class="card hvr-float m-auto" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ route('news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ route('eng.news_pages') }}" class="href_arrow">Читатть <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
