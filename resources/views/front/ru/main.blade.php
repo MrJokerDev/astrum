@@ -91,7 +91,7 @@
                 <div class="col-md-5 align-self-center">
                     <h1 class="text-white">Готовы стать <br> наши студентом?</h1>
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati dicta recusandae ex molestias beatae nostrum sapiente ab! Perspiciatis, commodi tenetur nostrum molestias veritatis excepturi assumenda libero? Fuga, deserunt accusantium!</p>
-                    <a href="#" class="btn btn-light p-3 mt-5 rounded">Выбратть курс</a>
+                    <a href="{{ route('ru.courses') }}" class="btn btn-light p-3 mt-5 rounded">Выбратть курс</a>
                 </div>
             </div>
 

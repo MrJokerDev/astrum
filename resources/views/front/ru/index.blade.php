@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="w-100 text-end">
-                        <a href="#" class="href_arrow">Фото <i class="bi bi-arrow-right"></i></a>
+                        <a href="{{ route('ru.gallery') }}" class="href_arrow">Фото <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

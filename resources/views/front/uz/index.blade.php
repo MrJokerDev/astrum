@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="w-100 text-end">
-                        <a href="#" class="href_arrow">Фото <i class="bi bi-arrow-right"></i></a>
+                        <a href="{{ route('uz.gallery') }}" class="href_arrow">Фото <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('uz.courses') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('uz.courses') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('uz.courses') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('uz.courses') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
