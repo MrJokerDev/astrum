@@ -6,6 +6,9 @@
      position: absolute;
     z-index: 9999;
   }
+  .font_size{
+    font-size: 3.1rem;
+  }
 </style>
 @endsection
 
@@ -13,17 +16,17 @@
     <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
-            <source src="images/video/video_1.MP4" type="video/mp4">
+            <source src="images/video_gif.mp4" type="video/mp4">
         </video>
 
         <div class="container">
             <div class="row h-100">
-                <div class="col-md-7 align-self-end mb-5">
+                <div class="col-md-9 align-self-end mb-5">
                     <div class="text-white">
-                        <h1 class="font_size"><span></span>Лутшиее место для <br> обучения, развлечения <br> и Вашего будующего</h1>
+                        <h1 class="font_size"><span></span>O'rta Osiyodagi eng katta va QWASAR sertifikatini beruvchi yagona IT Akademiya. <br> Sening yorqin kelajaging shu yerdan boshlanadi!</h1>
                     </div>
                 </div>
-                <div class="col-md-5"></div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </header>
@@ -32,11 +35,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">КТО МЫ</p>
-                    <h1 class="fw-bold">Знания и <br> профессиональная <br> команда - залог Вашей <br> карьеры и обеспеченного <br> будущего</h1> <br>
-                    <p class="fw-semibold fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Nesciunt accusamus alias quo, mollitia hic aperiam corporis eum fugit tenetur aut modi fugiat molestias error molestiae voluptatum asperiores? Iure, provident ratione?</p>
-                    <p class="fw-semibold fs-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, est! Aperiam aliquam nostrum dicta eveniet! Ipsam aliquam quaerat soluta nihil in. Soluta explicabo amet sed illum, quos quidem nam eum!</p>
-                    <button id="btn" class="btn btn-outline-success p-3 rounded">Узнать больше</button>
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Biz haqimizda</p>
+                    <h1 class="fw-bold">Professional ustozlar va zamonaviy atmosfera sizning muvaffaqiyatingiz garovidir</h1> <br>
+                    <p class="fw-semibold fs-5">Astrum IT Akademiyasi nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va eng katta IT Akademiya bo'lib, bu yerda sun'iy intellekt yordamida ta'lim berishning innovatsion usuli yo'lga qo'yilgan.</p>
+                    <p class="fw-semibold fs-5"> Zamonaviy texnologiyalar, 24/7 ishlaydigan o'quv kampusi, mingga yaqing iMac'lar va qulay sharoitlar sizga haqiqiy dasturchi bo'lib yetishish imkonini beradi. </p>
+                    <button id="btn" class="btn btn-outline-success p-3 rounded">Batafsil</button>
                 </div>
                 <div class="col-md-7">
                     <h1 class="about_us">About us</h1>
@@ -60,15 +63,15 @@
         <div class="container pt-4">
             <div class="row">
                 <div class="text-center">
-                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">ЛОКАЦИИ КОМПЛЕКСА</p>
-                    <h1 class="fw-bold">Лутшие локации <br> для обучения и творчества</h1>
-                    <p class="fw-semibold">Идеа рождаются толка в удобном для человека место. <br> У нас место много!</p>
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Akademiya joylashuvi</p>
+                    <h1 class="fw-bold">Buyuk g'oyalar eng yaxshi joylarda tug'iladi</h1>
+                    <p class="fw-semibold">Biz esa sizga eng qulay lokatsiyani taqdim etamiz</p>
                 </div>
             </div>
             <div class="row justify-content-end">
                 <div class="col-12 col-md-6 col-xl-5">
                     <div class="border shadow bg-white rounded p-4 fw-semibold fs-5">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad assumenda repudiandae pariatur amet aperiam libero officia, dignissimos atque magnam placeat sapiente earum exercitationem mollitia eveniet ipsa accusantium laboriosam blanditiis deserunt?
+                        Astrum IT Akademiyasi shahardan 25 daqiqalik yo'l uzoqlikda, tabiat qo'ynida joylashgan. Bu yerdagi toza ob-havo va shovqinsiz muhit orqali siz ortiqcha chalg'ishlarsiz IT sohasini mukammal o'rgana olasiz.
                     </div>
                 </div>
             </div>
@@ -111,9 +114,9 @@
 
     <section class="section-fon">
         <div class="container p-5 align-items-center">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">КУРСЫ И ОБРАЗОВАНИЕ</p>
-            <h1 class="text-white">Измените свой жизнь, <br> изучит UX/UI и программирование</h1>
-            <p class="text-white pt-4 fs-5">Наши учебные курсы по программированию разработаты, <br> чтобы помочь Вам учитсия на практике в современных классах на <br> современном оборудовании.</p>
+            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Ta'lim va kurslar</p>
+            <h1 class="text-white">IT sohasini Astrum IT Akademiyasida o'rganing va o'z hayotingizni yaxshi tomonga o'zgartiring</h1>
+            <p class="text-white pt-4 fs-5">Akademiyamizda dasturlash kurslari sun'iy intellekt yordami shunday tizimlashtirilganki, o'qishni tugatishingiz bilan siz yetarlicha bilim va yaxshigina portfolioga ega bo'lasiz. <br> современном оборудовании.</p>
         </div>
     </section>
 
@@ -179,51 +182,42 @@
     <section>
         <div class="container">
             <div>
-                <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">КУРСЫ И ОБРАЗОВАНИЕ</p>
-                <h1 class="fw-bold mb-5">Почему многие выберают <br> обучение с Astrum ?</h1>
+                <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">KURSLAR VA TA'LIM</p>
+                <h1 class="fw-bold mb-5">Nimaga ko'pchilik Astrum IT Akademiyasini tanlaydi? </h1>
             </div>
             <div class="row mb-5">
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder">Yuqori atmosfera</p>
+                    <p>Astrum o'quv binosida Mac Valley joylashgan bo'lib, bu yerda mingdan ortiq iMac'lar mavjud. Siz xohlagan paytingiz ulardan foydalana olasiz. </p>
                 </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder"> Innovatsion ta'lim tizimi</p>
+                    <p>Astrumda o'qituvchilar yo'q. Darslar sun'iy intellekt yordamida olib boriladi. Siz platformadagi darslarda qatnashishingiz va uyga vazifalarni yuklab borishingiz lozim. Savollarga esa professional mentorlarimiz javob berishadi</p>
                 </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
-                </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
-                    <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder">QWASAR sertifikati</p>
+                    <p>O'qishni tugatganingizdan so'ng sizga Amerikaning Silikon vodiysida ishlash imkonini beruvchi QWASAR sertifikati topshiriladi. Bu sertifikat orqali Yevropa va Amerikaning nufuzli kompaniyalarida faoliyat olib borishingiz mumkin.</p>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder">24/7 qo'riqlash tizimi</p>
+                    <p>Astrumda IT Akademiyasida to'laqonli xavfsizlik choralari ko'rilgan bo'lib, o'quv kampusi tun-u kun qo'riqlanadi. Bu esa o'quvchilarimizga o'zlari xohlagan payt Astrumga tashrif buyurish va darslarni davom ettirish imkoniyatini beradi.</p>
                 </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder">Yaratilgan qulay sharoitlar</p>
+                    <p>Bu yerda dam olishingiz uchun sport maydonchalari, dam olish xonalari, qulay sharoitlarga ega xonalar, chill zone va katta hovli mavjud.</p>
                 </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
+                <div class="col-md-6 col-xl-4 col-xxl-4">
                     <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
-                </div>
-                <div class="col-md-6 col-xl-4 col-xxl-3">
-                    <p class="border-start border-dark border-4 ps-3">100%</p>
-                    <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                    <p class="text-muted fw-bolder">Darslarni tezroq yakunlash imkoniyati </p>
+                    <p>Darslar sun'iy intellekt yordamida o'tilishi hisobiga, siz darslarni tezroq ko'rishingiz va o'quv dasturini tezroq tugatib TOP dasturchilar safiga qo'shilishingiz mumkin.</p>
                 </div>
             </div>
         </div>
@@ -237,9 +231,9 @@
 
     <section id="mentors" class="pt-5">
         <div class="container">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">НАШИ МЕНТОРЫ</p>
-            <h1 class="text-center fw-bold">Мы здесь для того, что бы передат Вам <br> свои знания и стать Вам другом, а не <br> проста преподавателам</h1>
-            <p class="text-center mb-5">Ментор - источник информации и ответов на <br> возникающие у вас вопросы</p>
+            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Bizning mentorlar </p>
+            <h1 class="text-center fw-bold">Astrumda IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
+            <p class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <div class="profile-card">
@@ -247,8 +241,8 @@
                             <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
                         </div>
                         <div class="profile-content">
-                            <h2 class="title">Brayden
-                                <span>Designer & Developer</span>
+                            <h2 class="title">Shukurov Jasur
+                                <span>Full Satack Developer</span>
                             </h2>
                         </div>
                     </div>
@@ -259,8 +253,8 @@
                             <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
                         </div>
                         <div class="profile-content">
-                            <h2 class="title">Jasephine
-                                <span>Designer & Developer</span>
+                            <h2 class="title">Aziza Azizova
+                                <span>Full Satack Developer</span>
                             </h2>
                         </div>
                     </div>
@@ -271,8 +265,8 @@
                             <img src="https://i.postimg.cc/g0M0R0kp/profile1.jpg" alt="Team Image"/>
                         </div>
                         <div class="profile-content">
-                            <h2 class="title">Marco
-                                <span>Designer & Developer</span>
+                            <h2 class="title">Komiljon Xamidjonov
+                                <span>Data Science</span>
                             </h2>
                         </div>
                     </div>
@@ -283,18 +277,18 @@
                             <img src="https://i.postimg.cc/SsJxGpJM/profile4.jpg" alt="Team Image"/>
                         </div>
                         <div class="profile-content">
-                            <h2 class="title">Amaira
-                                <span>Designer & Developer</span>
+                            <h2 class="title">Ozodov Sarvar
+                                <span>Software Engineering</span>
                             </h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="{{ route('uz.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Всеь коллектив</a>
+            <a href="{{ route('uz.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Barcha jamoa</a>
         </div>
     </section>
 
-    <section>
+    {{-- <section>
         <div class="container">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">НОВОСТИ</p>
             <h1 class="fw-bold">Статьи которые помогут <br> Вам узнать больше</h1>
@@ -342,7 +336,7 @@
             </div>
             <a href="{{ route('uz.news') }}" id="btn" class="btn btn-outline-success p-3 mt-5 mb-5 rounded">Больше новости</a>
         </div>
-    </section>
+    </section> --}}
 
     <section>
         <div class="container">

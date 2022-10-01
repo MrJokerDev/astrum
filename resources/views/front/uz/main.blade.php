@@ -52,9 +52,9 @@
                         <a class="nav-link" href="{{ route('uz.index') }}#mentors">Менторы</a>
                     </li>
 
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.news') }}">Новости</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.about_us') }}">О компании</a>
                     </li>

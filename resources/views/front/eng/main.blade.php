@@ -52,9 +52,9 @@
                         <a class="nav-link" href="{{ route('eng.index') }}#mentors">Менторы</a>
                     </li>
 
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('eng.news') }}">Новости</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('eng.about_us') }}">О компании</a>
                     </li>
