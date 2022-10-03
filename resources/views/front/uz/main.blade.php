@@ -37,32 +37,32 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.index') }}#location">Локатции</a>
+                        <a class="nav-link" href="{{ route('uz.index') }}#location">Manzil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.gallery') }}">Фото</a>
+                        <a class="nav-link" href="{{ route('uz.gallery') }}">Foto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.job') }}">Карьера</a>
+                        <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.courses') }}">Курсы</a>
+                        <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.index') }}#mentors">Менторы</a>
+                        <a class="nav-link" href="{{ route('uz.index') }}#mentors">Mentorlar</a>
                     </li>
 
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.news') }}">Новости</a>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.about_us') }}">О компании</a>
+                        <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                     </li>
                     <li class="nav-item">
-                        <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
+                        <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Telegramga bepul qo'shing</a>
                     </li>
                     <li class="nav-item">
-                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Лутшие курсы</a>
+                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Eng yaxshi kurslar</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -163,27 +163,27 @@
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.index') }}#location">Локатции</a>
+                            <a class="nav-link" href="{{ route('uz.index') }}#location">Manzil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.gallery') }}">Фото</a>
+                            <a class="nav-link" href="{{ route('uz.gallery') }}">Foto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.job') }}">Карьера</a>
+                            <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.courses') }}">Курсы</a>
+                            <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.news') }}">Новости</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.about_us') }}">О компании</a>
+                            <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p>СВЯЗАТЬСИЯ</p>
+                    <p>ALOQA</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
