@@ -163,7 +163,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-xxl-3 col-md-6">
+                <div class="col-xl-4 col-xxl-3 col-md-12 col-sm-12">
                     <div class="card hvr-float" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -172,11 +172,11 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.fullstack') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
+                <div class="col-xl-4 col-xxl-3 col-md-12 col-sm-12">
                     <div class="card hvr-float" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -185,11 +185,11 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
+                <div class="col-xl-4 col-xxl-4 col-md-12 col-sm-12">
                     <div class="card hvr-float" style="width: 18rem;">
                         <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -198,20 +198,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <p class="fs-5">12 месяцув / 450 часов</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="images/DSC_6366.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a href="#" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
                         </div>
                     </div>
                 </div>

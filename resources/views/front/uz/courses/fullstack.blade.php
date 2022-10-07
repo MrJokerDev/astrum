@@ -1,0 +1,684 @@
+@extends('front.uz.main')
+
+@section('style')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<style>
+    .btn-toggle[aria-expanded="true"]::before {
+        transform: rotate(90deg);
+    }
+
+    .btn-toggle::before {
+        margin-right: 15px;
+        width: 1.25em;
+        line-height: 0;
+        content: url(images/chevron-right.svg);
+        transition: transform .35s ease;
+        transform-origin: 0.5em 50%;
+    }
+    .btn:hover, .btn:active{
+        background-color: #F5F4FF;
+        border: 1px solid #F5F4FF;
+    }
+
+    .btn-toggle-nav{
+        background-color: #F5F4FF;
+    }
+
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+        background-color: #F5F4FF;
+        color: #333;
+    }
+    #navbar-bg{
+        width: 100%;
+        background-color: #F5F4FF;
+    }
+    #navbar-bg > .nav-link{
+        color: #333;
+    }
+    .nav-item > .nav-link{
+        color: #333;
+    }
+    #lang_btn, #btn{
+        border: 2px solid #333!important;
+        color: #333;
+        font-weight: 700;
+        background-color: #fff;
+    }
+    .carousel-inner{
+        max-width: 100%;
+    }
+    .carousel{
+        padding: 0;
+        min-height: 55vh;
+    }
+    .most-inner {
+        margin-top: 2vh;
+        left: 0;
+    }
+
+    .tabcontent{
+        background-color: #F5F4FF;
+    }
+    .nav-item a.border-white{
+        border-color: #333!important;
+        color: #333!important;
+    }
+    .dropdown button.border-white{
+        border-color: #333!important;
+    }
+
+</style>
+@endsection
+@section('content')
+    <section>
+        <div class="container">
+            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.fullstack') }}" class="text-success text-decoration-none">FULL STACK DEVELOPER</a></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Full Stack Developer</h1>
+                    <p>12 OY</p>
+                    <hr class="w-25" style="border: 2px solid #62BC9E;">
+
+                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quibusdam voluptatem consequuntur repellendus quisquam quia cumque ratione labore eaque, ducimus earum non ullam enim, laudantium iste, corrupti blanditiis cupiditate.</p>
+                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
+                </div>
+                <div class="col-md-6">
+                    <img class="rounded w-100" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                        <ul class ="nav navbar-nav w-100">
+                            <li>
+                                Full stack developer
+                            </li>
+                            <hr>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#about"> Kurs haqida </a>
+                            </li>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#lessons"> O'quv dasturlari </a>
+                            </li>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#mentors"> Mentorlar </a>
+                            </li>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#developers"> Dasturlash tillari </a>
+                            </li>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#kurs_room"> Sinif xonalari </a>
+                            </li>
+                            {{-- <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#"> Выпускники </a>
+                            </li> --}}
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#kurs_total"> Dars jadvali </a>
+                            </li>
+                            <li class ="nav-item">
+                                <a class ="nav-link fw-bold" href="#quetions"> Savollar </a>
+                            </li>
+                            <br>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <p id="about" class="fw-bold text-success">Kurs haqida</p>
+                        <h1>Dasturlash ko'nikmalaringizni qaytadan kashf qiling</h1>
+                        <p>Bizning Full Stack kursimiz o'zida 8 oydan 12 oygacha bo'lgan vaqtni qamrab oladi. Siz bu vaqt mobaynida o'zingizga o'xshagan talabalar bilan dasturlash sirlarini o'rganasiz. Undan tashqari mashg'ulotlar vaqtida funksiomal web saytlar va dasturlash yaratishni o'zlashtirasiz. Ushbu bilimlar esa ish topish jarayonida kerak bo'ladigan eng muhim narsalardir.</p>
+
+                        <video class="w-100 rounded" playsinline="playsinline" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
+                            <source src="{{ asset('images/video_gif.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
+                    {{-- <div class="mt-5 pt-5">
+                        <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">КУРСЫ И ОБРАЗОВАНИЕ</p>
+                        <h1 class="fw-bold mb-5">Почему многие выберают <br> обучение с Astrum ?</h1>
+                    </div>
+
+                    <div class="row mb-5">
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4 col-xxl-4">
+                            <p class="border-start border-dark border-4 ps-3">100%</p>
+                            <p class="text-muted fw-bolder">ПОКАЗАТЕЛЬ ЗАВЕРШЕННОСТИ</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                        </div>
+                    </div> --}}
+                    <hr class="fw-bold">
+                    <div class="row mt-5">
+                        <p id="lessons" class="fw-bold text-success">O'QUV PROGRAMMASI</p>
+                        <h1 class="fw-bold mb-5">Full Stack dasturchi kursida siz quyidagilarni o'rganasiz:</h1>
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold">Bilim va ko'nikma </span> <br> Mashhur dasturlash tillarini o'rganasiz va ularni amalda qo'llab ko'rasiz </p>
+                        </div>
+                        <hr class="fw-bold border-1">
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold">Zamonaviy dasturlash tillari</span><br> Html, Css, Javascript,
+                                ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
+                        </div>
+                        <hr class="fw-bold border-1">
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold">Analitika</span><br> Algoritmlarni bilish va dasturlarni qanday ishlashini analiz qila olish qobiliyati</p>
+                        </div>
+                        <hr class="fw-bold border-1">
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold"> Ishlab chiqish</span><br> Web-interfeyslar va ilovalarni ishlab chiqish, to'plamlar va ma'lumotlar bazalarini boshqarish, dasturlarni sinovdan o'tkazish va masshtablash.</p>
+                        </div>
+                        <hr class="fw-bold border-1">
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold">Tashkil qilish </span><br> Sayt yoki dastur xavfsizligi tizimini tashkil qilish </p>
+                        </div>
+                        <hr class="fw-bold border-1">
+
+                        <div class="d-flex">
+                            <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
+                            <p class="ms-3"><span class="fw-bold">Taqdimot ko'nikmalar</span><br> Soft skills'ga ega bo'lish va ingliz tilidagi suhbatga tayyor bo'lish o'zingizni va mahsulotingizni taqdim eta olish qobiliyati.</p>
+                        </div>
+                        <hr class="fw-bold border-1">
+                    </div>
+                    <div class="row">
+                        <p style="color: #62BC9E;" class="fw-bold mt-5">FULL STACK DEVELOPER</p>
+                        <h1 class="fw-bold">Amaliyot orqali dasturlashni o'rganing</h1>
+                        <p class="mb-5">Bizning IT Akademiyamiz sizni 100% bajarib o'rganadigan amaliy o'quv dasturi orqali dasturlashni bosqichma-bosqich o'tkazish uchun mo'ljallangan.</p>
+                        <h1 class="fw-bold">Har hafta dasturlash mahoratingizni oshirib boring </h1>
+                        <p class="mb-5">Har hafta Full stack dasturchi bo'yicha o'quv kursimiz davomida sizdan turli dasturlash tillari bilan ishlash, veb-saytlar, mobil ilovalar va dasturlar yaratish bo'yicha yangi ko'nikmalarni o'rganishingiz mumkin.</p>
+                        <span class="fw-bold mb-3">8-12 oylik kurs rejasi </span>  <br>
+                        <p>Bizning  ta'lim kursimiz 8 oydan 12 oygacha davom etuvchi qiziqarli darslardan iborat. Siz o'zingiz xohlagan paytingiz Astrumga kelasiz va xohlagancha dars qila olasiz bu sizga dasturlash tillarini yaxshiroq tushunish va o'rganish imkonini beradi.</p>
+                    </div>
+
+                    {{-- <div class="row ms-5 mt-5">
+                        <ul class="list-unstyled ps-0">
+                            <li class="mb-4 border shadow-sm rounded-1">
+                              <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                    Подготовка к началу курса
+                              </button>
+                                <div class="collapse" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                              <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Клиентские технологии JavaScript / FrontEnd
+                              </button>
+                                <div class="collapse" id="dashboard-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                              <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Серверные технологии Java EE / BackEnd
+                              </button>
+                                <div class="collapse" id="orders-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                                <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses" aria-expanded="false">
+                                    Алгоритмы и структура данных
+                                </button>
+                                <div class="collapse" id="orders-collapses">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                                <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses1" aria-expanded="false">
+                                    Мастер-классы
+                                </button>
+                                <div class="collapse" id="orders-collapses1">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                                <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses12" aria-expanded="false">
+                                    Soft skills, тех. английский, подготовка к собеседованию
+                                </button>
+                                <div class="collapse" id="orders-collapses12">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-4 border shadow-sm rounded-1">
+                                <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapses123" aria-expanded="false">
+                                    Финальный проект
+                                </button>
+                                <div class="collapse" id="orders-collapses123">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore, neque eius eaque perferendis nemo ex
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> --}}
+
+                    <hr class="mt-5 mb-5">
+                    <div class="row">
+                        <p id="mentors" style="color: #62BC9E;" class="fw-bold mt-5">MENTORLAR JAMOASI</p>
+                        <h1 class="fw-bold">Dasturlashni ekspertlardan o'rganing </h1>
+                        <p>Bizning dasturlash bo'yicha professional o'qituvchilarimiz sizga zamonaviy dasturlash tillarida yaxshi kod yozish uchun eng yaxshi amaliyot va ko'nikmalarni o'rgatadi. O'qituvchilarning hammasi katta tajriba va kuchli bilimga ega.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="">
+                                <h1>Jasur Shukurov</h1>
+                                <p>Full Stack Developer</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                <p class="">"Salom, mening ismim Jasur, men Full stack developer yo'nalishi bo'yicha mentorman. Men NAPA kompaniyasining o'qituvchilaridan biri bo'lganman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
+                            </div>
+                        </div>
+                        <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p>
+                        <div class="row">
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/aziza.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azizova Aziza</span> <br><span>Full Stack</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Shomurodov Sarvar</span> <br><span>Full Stack</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/baxtibek.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Anvarov Bahtibek </span> <br><span>Full Stack</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mt-5 mb-5">
+
+                        <p id="developers" style="color: #62BC9E;" class="fw-bold mt-5">Dasturchilarning ish qurollari</p>
+                        <h1 class="fw-bold">Noldan professionalgacha</h1>
+                        <p>Bizning o'quv kurslarimiz eng so'nggi dasturlash vositalariga asoslangan bo'lib, o'tgan o'n yilliklar davomida o'quvchilarga o'rgatilgan kurs o'tish usullaridan farqli o'laroq, biz dasturchi o'z karyerasini qurishi va chuqur bilim olishi uchun eng so'nggi texnologiyalar va kuchli o'qitish tizimi muhim deb hisoblaymiz.</p>
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                            </div>
+                        </div>
+
+                        <hr class="mt-5 mb-5">
+
+                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">Zamonaviy sinfxonalari</p>
+                        <h1 class="fw-bold">Bilim olish uchun qulay va kishini hayratga soluvchi zamonaviy sinfxonalar</h1>
+                        <p>Biz dasturlashni o'rgatishda har bir o'quvchiga individual yondashuv muhim deb hisoblaymiz va shuning uchun ham har bir o'quvchi mentorlardan savol so'rashi va yordam olishi mumkin. Aynan 20 kishiga mo'ljallangan sinfxonalari esa o'quvchini ko'proq narsalarni tushunishga va boshqalardan tortinmagan holda muhokamalarda qatnashishiga va fikr almashishiga yordam beradi</p>
+
+                    </div>
+                    <div class="container-fluid" style="width: 110%">
+                        <div class="carousel">
+                            <div class="carusel-top">
+                                <div class="carousel-inner">
+                                    <div class="most-inner">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
+                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- <hr class="mt-5 mb-5"> --}}
+
+                    {{-- <p style="color: #62BC9E;" class="fw-bold mt-5">современные классы</p>
+                    <h1 class="fw-bold">Классы которые удивляют и помагаютв обучении</h1>
+                    <p>Мы считаем, что индивидуальный подход к обучению крайне важен, и мы намеренно ограничиваем размер класса примерно 20 дизайнерами. Небольшой размер классов гарантирует, что мы сможем охватить больше за то время, которое у нас есть, и вы будете учиться непосредственно у других программистов. Кроме того, это удобное место для обучения, когда весь класс участвует в обсуждениях и делится отзывами.</p>
+
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
+                            <p class="fw-bold m-0">Азиза</p>
+                            <p>Full Stack Developer</p>
+                            <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
+                            <p class="fw-bold m-0">Азиза</p>
+                            <p>Full Stack Developer</p>
+                            <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
+                            <p class="fw-bold m-0">Азиза</p>
+                            <p>Full Stack Developer</p>
+                            <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100" src="{{ asset('images/DSC_6383.jpg') }}" alt="img">
+                            <p class="fw-bold m-0">Азиза</p>
+                            <p>Full Stack Developer</p>
+                            <hr class="w-25 m-0" style="border: 2px solid #62BC9E;">
+                        </div>
+                    </div> --}}
+
+                    {{-- <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Asirum укрепил то, что я знал как програмист, и позволил мне бросить вызов моим собственным предположениям, чтобы стать хорошим программистом, обучая новейшим современным инструментам с практическим подходом к решению проблем, творческому мышлению и программированию."</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Мой опыт учебы в Asirum был только положительным - продолжительность курсов очень подходит и соответствует моему графику, а также не слишком длинная или короткая. В то же время мне нужно было освежить знания по Java EE, чтобы обновить свои навыки и был заинтригован содержанием курса, так что я могу быть более уверенным в себе как Full stack developer.”</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Asirum укрепил то, что я знал как програмист, и позволил мне бросить вызов моим собственным предположениям, чтобы стать хорошим программистом, обучая новейшим современным инструментам с практическим подходом к решению проблем, творческому мышлению и программированию."</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Мой опыт учебы в Asirum был только положительным - продолжительность курсов очень подходит и соответствует моему графику, а также не слишком длинная или короткая. В то же время мне нужно было освежить знания по Java EE, чтобы обновить свои навыки и был заинтригован содержанием курса, так что я могу быть более уверенным в себе как Full stack developer.”</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Asirum укрепил то, что я знал как програмист, и позволил мне бросить вызов моим собственным предположениям, чтобы стать хорошим программистом, обучая новейшим современным инструментам с практическим подходом к решению проблем, творческому мышлению и программированию."</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning" src="images/python.png" style="width: 15%;" alt="image">
+                                <p class="ms-3 m-auto"><span class="fw-bold">Азиза</span> <br> Full Stack Developer</p>
+                            </div>
+                            <p>“Мой опыт учебы в Asirum был только положительным - продолжительность курсов очень подходит и соответствует моему графику, а также не слишком длинная или короткая. В то же время мне нужно было освежить знания по Java EE, чтобы обновить свои навыки и был заинтригован содержанием курса, так что я могу быть более уверенным в себе как Full stack developer.”</p>
+                        </div>
+                    </div> --}}
+
+                    {{-- <hr class="mt-5 mb-5">
+
+                    <p style="color: #62BC9E;" class="fw-bold mt-5">Цена</p>
+                    <h1 class="fw-bold">Простые, прозрачные и гибкие планы платежей</h1> --}}
+                    {{-- <p>В отличие от других курсов, которые скрывают свои цены, мы полностью прозрачны в отношении цен на курсы и гордимся тем, что они доступны и доступны.</p> --}}
+                    {{-- <div class="row">
+                        <div class="col-md-8">
+                            <div class="tab">
+                                <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'London')" id="defaultOpen"><span class="fw-bold">Оплата сегодня</span></button>
+                                <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'Paris')"><span class="fw-bold">Оплата по месячно</span> </button>
+                            </div>
+
+                            <div id="London" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
+                                <p class="text-muted">Оплата сегодня</p>
+                                <p><span class="fw-bold">Оплата сегодня</span> - Скидка 6 000 UZS</p>
+                                <p><span class="fw-bold"><span class="text-decoration-line-through">5 000 UZS</span> - 4 500 UZS</span> / в месяц</p>
+                                <p>Курс Full stack developer </p>
+                                <hr>
+                                <p class="bg-warning p-2 w-25 text-center rounded-1" style="font-size: 10px;"><span>&#129395;</span> Сохрани сегодня</p>
+                                <hr>
+                                <p>Всего</p>
+                                <button class="btn btn-dark bg-dark w-100 mb-5 p-4">Зарегистрируйтесь сейчас</button>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Присоединяйтесь к компактному классу в 20 учеников программистов</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Интересные и интерактивные занятия по программированию </p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Присоединяйтесь к группе профи в Telegram</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Полный список литературы по программированию</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Освойте рабочий процесс Java EE</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Осваивайте дополнительные компоненты</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Выполняйте еженедельные задания</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Получите сертификат от Asirum</p>
+                            </div>
+
+                            <div id="Paris" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
+                                <p class="text-muted">План оплата</p>
+                                <p class="fw-bold">5 ежемесячных платежей</p>
+                                <p><span class="fw-bold">5 000 UZS</span> / в месяц</p>
+                                <p>5х ежемесячных платежей</p>
+                                <hr>
+                                <p>Всего</p>
+                                <button class="btn btn-dark bg-dark w-100 mb-5 p-4">Зарегистрируйтесь сейчас</button>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Присоединяйтесь к компактному классу в 20 учеников программистов</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Интересные и интерактивные занятия по программированию </p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Присоединяйтесь к группе профи в Telegram</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Полный список литературы по программированию</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Освойте рабочий процесс Java EE</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Осваивайте дополнительные компоненты</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Выполняйте еженедельные задания</p>
+                                <p class="w-75 d-flex"><i class="bi bi-check-lg me-2 mt-1"></i> Получите сертификат от Asirum</p>
+                            </div>
+                        </div>
+                    </div> --}}
+
+                    <hr class="mt-5 mb-5">
+
+                        <p id="kurs_total" style="color: #62BC9E;" class="fw-bold mt-5">Kurs jadvali</p>
+                        <h1 class="fw-bold">Qabul jarayonining tezligi</h1>
+                        <p>Bizning o'quv kurslarimizda joylar  juda tez to'ldib qoladi, shuning uchun biz qabulni oldinroq e'lon qilamiz.</p>
+
+                        {{-- <div class="tab">
+                            <button class="tablinks btn btn-info text-dark active" onclick="openCity(event, 'moon_1')" id="active"><span class="fw-bold">Fevral</span></button>
+                            <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_2')"><span class="fw-bold">May</span> </button>
+                            <button class="tablinks btn btn-info text-dark" onclick="openCity(event, 'moon_3')"><span class="fw-bold">Avgust</span> </button>
+                        </div> --}}
+
+                        <p class="fw-bold mt-5">30 августа 2022 - 03 ноября 2023 </p>
+
+                        <div id="moon_1" class="tabcontent p-5 ps-3 pe-3 rounded">
+                            <p class="fw-bold">Full stack developer</p>
+                            <p>1/9 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
+                            <p>Pre-season uchun darslar</p>
+                            <hr class="w-25" style="border: 2px solid #62BC9E;">
+                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
+                                <div class="d-block w-100">
+                                <p class="w-100"><span class="fw-bold">Shukurov Jasur</span><br> Full Stack Developer - Mentori</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                </div>
+                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                            </div>
+                        </div>
+
+                        <div id="moon_2" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
+                            <p class="fw-bold">Full stack developer</p>
+                            <p>2/10 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
+                            <p>Pre-season uchun darslar</p>
+                            <hr class="w-25" style="border: 2px solid #62BC9E;">
+                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
+                                <div class="d-block w-100">
+                                <p class="w-100"><span class="fw-bold">Azizova Aziza</span><br> Full Stack Developer - Mentori</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                </div>
+                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                            </div>
+                        </div>
+
+                        <div id="moon_3" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
+                            <p class="fw-bold">Full stack developer</p>
+                            <p>2/8 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
+                            <p>Pre-season uchun darslar</p>
+                            <hr class="w-25" style="border: 2px solid #62BC9E;">
+                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
+                                <div class="d-block w-100">
+                                <p class="w-100"><span class="fw-bold">Shomurodov Sarvar</span><br> Full Stack Developer - Mentori</p>
+                                <hr class="w-25" style="border: 2px solid #62BC9E;">
+                                </div>
+                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                            </div>
+                        </div>
+
+
+                    <hr class="mt-5 mb-5">
+
+                    <p id="quetions" style="color: #62BC9E;" class="fw-bold mt-5">Savollar</p>
+
+                    <h1>Full Stack developer kursi bo'yicha savollaringiz bormi? </h1>
+                    <p>Katta ehtimol bilan, siz bir nechta savollar tug'ilgan bo'lishi mumkin. Bizni kuzatayotganlarga savollarni to'g'ridan-to'g'ri berishlarini so'raymiz va siz istalgan vaqtda biz bilan tezkor qo'ng'iroq orqali bog'lanishingiz mumkin.</p>
+
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-4 border shadow-sm rounded-1">
+                            <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                Guruhda nechta o'quvchi bo'ladi?
+                            </button>
+                            <div class="collapse" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
+                                    Astrumda guruhlar yo'q. Siz xohlagan paytingiz Astrumga kelishingiz, xohlagancha o'z ustingizda ishlashingiz va xohlagan paytingiz ketishingiz mumkin.
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-4 border shadow-sm rounded-1">
+                            <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Dasturlashni o'rganish uchun menda boshlang'ich bilim bo'lishi kerakmi?
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
+                                    Yo'q, sizda hech qanday boshlang'ich bo'lishi talab qilinmaydi. Astrum IT Akademiyasida tashkil qilingan kurslar noldan boshlab professional darajagacha o'rgatiladi.
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-4 border shadow-sm rounded-1">
+                            <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Nimaga Astrum boshqalardan yaxshiroq?
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
+                                    Chunki bizda Sun'iy intellekt asosida ishlovchi zamonaviy o'qitish tizimi yo'lga qo'yilgan va kurslarni bitirganingizdan so'ng sizga Amerikaning Silikon vodiysida ishlash imkonini beruvchi Xalqaro QWASAR sertifikati topshiriladi. Undan tashqari bizda zamonaviy sinfxonalari, Mac Valley, 24/7 ishlovchi kampus sport maydonchalari, Astrocoin ichki valyutasi va tun-u kun qo'riqlash tizimi bor.
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <p style="font-size: 30px;">+99 (878) 150-40-02</p>
+                    <p class="fw-bold">Bizga yozishingiz mumkin</p>
+                    <div class="d-flex w-25"><a href="#" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-instagram " style="font-size: 45px;"></i> </a></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
+                        <img class="card-img-top shadow" src="{{ asset('images/web-developer.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            <h4 class="card-title fw-bold">Full stack Developer</h4>
+                            <p class="fs-5">12 oy</p>
+                            <hr class="w-25 border border-success border-2">
+                            <a id="btn" href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
+                        <img class="card-img-top shadow" src="{{ asset('images/soft.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            <h4 class="card-title fw-bold">Software Engineering</h4>
+                            <p class="fs-5">12 oy</p>
+                            <hr class="w-25 border border-success border-2">
+                            <a id="btn" href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
+                        <img class="card-img-top shadow" src="{{ asset('images/data.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            <h4 class="card-title fw-bold">Data Science</h4>
+                            <p class="fs-5">12 oy</p>
+                            <hr class="w-25 border border-success border-2">
+                            <a id="btn" href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@endsection

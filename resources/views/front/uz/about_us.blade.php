@@ -120,6 +120,14 @@
         }
     }
 
+    .nav-item a.border-white{
+        border-color: #333!important;
+        color: #333!important;
+    }
+    .dropdown button.border-white{
+        border-color: #333!important;
+    }
+
 
 </style>
 @endsection
@@ -127,28 +135,28 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('uz.index') }}">Главная</a></span> | <a class="text-success text-decoration-none" href="{{ route('uz.about_us') }}">о компании</a></p>
-            <h1 class="about_h1 fw-bold text-center">Наша цель - помочь и передать <br> Вам наши навыки и умения!</h1>
-            <p class="about_p text-center">Мы передаем свои навыки нашим студентам и так же повышаем свои навыки на крупных проектах, что помогает постоянно вносить новые елементы современных технологий в наши курсы!</p>
+            <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('uz.index') }}">Bosh sahifa</a></span> | <a class="text-success text-decoration-none" href="{{ route('uz.about_us') }}">Kompaniya haqida</a></p>
+            <h1 class="about_h1 fw-bold text-center">Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</h1>
+            <p class="about_p text-center">Biz o'z mahoratimizni talabalarimizga o'tkazamiz, shuningdek, kurslarimizga zamonaviy texnologiyalarning yangi elementlarini doimiy ravishda joriy etishga yordam beradigan yirik loyihalar bo'yicha malakamizni oshiramiz!</p>
         </div>
     </section>
 
     <div class="glide">
         <div id="scrolling">
             <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=1" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=2" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=3" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=4" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=5" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=6" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=7" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=8" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=9" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=10" alt=""></li>
-            <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=11" alt=""></li>
-            </ul>
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=1" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=2" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=3" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=4" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=5" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=6" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=7" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=8" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=9" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=10" alt=""></li>
+                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=11" alt=""></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -160,159 +168,135 @@
                     <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75" style="font-size: 10px;">
                         <ul class ="nav navbar-nav w-100">
                             <li>
-                                Full stack developer
+                                Kompaniya haqida
                             </li>
                             <hr>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Обзор </a>
+                                <a class ="nav-link fw-bold" href="#about_us"> Ko‘rib chiqish </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Учебная программа </a>
+                                <a class ="nav-link fw-bold" href="#courses"> O'quv dasturi </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Ментор </a>
+                                <a class ="nav-link fw-bold" href="#mentors"> Mentor </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Инструменты разработки </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Класы для курсов </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Выпускники </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Цены </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Расписание курсов </a>
-                            </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Вопросы </a>
+                                <a class ="nav-link fw-bold" href="#courses_room"> Astrum jamoasi </a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-2 text-white" style="font-size: 10px;">Зарегистрируйтесь сейчас</a>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-2 text-white" style="font-size: 10px;">Hozir roʻyxatdan oʻting</a>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-8">
-                    <div>
-                        <h1 class="fw-bold">Что бы стать хорошим специалистом не нужно платить 150 000 UZS+ за изучение программированию в престижных институтах и тратить на это >5 лет.</h1>
-                        <p>В течение последнего десятилетия программным продуктам обучали в  престижных институтах тратив на это более 5 лет своей жизни. Студенты платили и платят огромную сумму (мы говорим о 150 000 UZS +) за изучение навыков программированию с помощью не совсем компетентных програм в классе из 40 студентов. Учебный план и инструменты остаются неизменными в течение многих лет, и курсы, как правило, преподают неопытными программистами, которые оказались доступны.</p>
+                    <div id="about_us">
+                        <div>
+                            <h1 class="fw-bold">Astrum haqida qisqacha</h1> <br>
+                            <p>Astrum IT Akademiyasi — nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va yagona bo'lgan IT Akademiyasi bo'lib, kompaniya dasturlash sohasida kadrlar tayyorlash va ularni o'qitish bo'yicha yetakchi hisoblanadi.
+
+                                Astrum IT Akademiyasi Toshkent viloyati O'rta Chirchiq tumanida joylashgan.
+
+                                Hozirda kompaniyada AAA dan ortiq xodim faoliyat olib boradi. BBB ga yaqin o'quvchilar dasturlash kurslaridan tahsil olishmoqda.
+
+                                Astrum IT Akademiyasi o'quv binosi o'quvchilar uchun 24/7 ochiq va Akademiya hududi tun-u kun qo'riqlanadi.</p>
+                        </div>
+                        <img src="{{ asset('images/DSC_6366.jpg') }}" class="w-100 rounded mt-4 shadow" alt="image">
                     </div>
-                    <img src="{{ asset('images/DSC_6366.jpg') }}" class="w-100 rounded mt-4 shadow" alt="image">
 
-                    <h1 class="fw-bold mt-5">Наше решение — сделать обучение доступным</h1>
-                    <p class="mt-5">Мы обмениваем классы в дорогих институтах на современные классы, с современной техникой, что позволяет учиться в наиболее комфортных условиях. Мы ограничиваем размер классов до пятнадцати, чтобы каждый ученик получил действительно личный опыт обучения. Мы устанавливаем доступные цены на наши учебные курсы в соответствии с тем, каким должно быть образование. Мы применяем наш многолетний опыт проектирования продуктов для обучения, гарантируя, что студентов обучают активные программисты, увлеченные обучением. Мы постоянно обновляем нашу учебную программу с помощью новейших рабочих процессов и инструментов, помогая учащимся приобретать достойные привычки и изучать то, что актуально в отрасли сегодня.</p>
+                    <div id="courses">
+                        <h1 class="fw-bold mt-5">Наше решение — сделать обучение доступным</h1>
+                        <p class="mt-5">Мы обмениваем классы в дорогих институтах на современные классы, с современной техникой, что позволяет учиться в наиболее комфортных условиях. Мы ограничиваем размер классов до пятнадцати, чтобы каждый ученик получил действительно личный опыт обучения. Мы устанавливаем доступные цены на наши учебные курсы в соответствии с тем, каким должно быть образование. Мы применяем наш многолетний опыт проектирования продуктов для обучения, гарантируя, что студентов обучают активные программисты, увлеченные обучением. Мы постоянно обновляем нашу учебную программу с помощью новейших рабочих процессов и инструментов, помогая учащимся приобретать достойные привычки и изучать то, что актуально в отрасли сегодня.</p>
+                    </div>
 
-                    {{-- <div class="image-gallery">
-                        <div class="column">
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/VWcPlbHglYc" alt="" />
-                            </div>
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/e6FMMambeO4" alt="" />
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/O0N9MF--hK4" alt="" />
-                            </div>
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/FV3GConVSss" alt="" />
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/O0N9MF--hK4" alt="" />
-                            </div>
-                            <div class="image-item">
-                                <img src="https://source.unsplash.com/FV3GConVSss" alt="" />
-                            </div>
-                        </div>
+                    {{-- <div id="">
+                        <h1 class="fw-bold mt-5">Курсы Astrum рассчитаны на удобство. В первую очередь на удобство удаленной работы</h1>
+                        <p class="mt-3">В последние годы удаленная работа стала “кругом” спасения для многих людей. В особенности в выиграше оказались IT спецыалисты. В данную категорию относят, как продуктовых менеджеров, дизайнеров и разработчиков. Обучась в Astrum Вы, так же сможете работать как удаленно так и в офиссе Вашей будующей компании. Учась на наших курсах Вы сможете частично испытать привелегии удаленной работы выполняя некоторые задания наших менторов из дома. Проходя наш любой курс, мы стараемся вовлеч студента как можно больше в рабочую среду, что бы при окончании Вы смогли слегкостью влится в коллектив Вашей будующей компании.</p>
+                        <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
+                    </div>
+
+                    <div id="">
+                        <h1 class="fw-bold mt-5">Учебные курсы по разным направлениям с микроклассов помамагает получить максимум</h1>
+                        <p class="mt-3">Поскольку наши курсы не содержат презентаций, мы используем подход «обучение на практике», когда студенты совместно работают в режиме реального времени с использованием новейших инструментов проектирования в реальном времени. На сегодняшний день это было удивительное путешествие в качестве основателя-одиночки. В отличие от других, Astrum работает для наших студентов, на 100% самозагружено и призвано помочь новым и опытным студентам эффективно работать как удаленно в качестве удаленных рабочих, так и непосредственно в офиссе.</p>
+                        <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
                     </div> --}}
 
-                    <h1 class="fw-bold mt-5">Курсы Astrum рассчитаны на удобство. В первую очередь на удобство удаленной работы</h1>
-                    <p class="mt-3">В последние годы удаленная работа стала “кругом” спасения для многих людей. В особенности в выиграше оказались IT спецыалисты. В данную категорию относят, как продуктовых менеджеров, дизайнеров и разработчиков. Обучась в Asirum Вы, так же сможете работать как удаленно так и в офиссе Вашей будующей компании. Учась на наших курсах Вы сможете частично испытать привелегии удаленной работы выполняя некоторые задания наших менторов из дома. Проходя наш любой курс, мы стараемся вовлеч студента как можно больше в рабочую среду, что бы при окончании Вы смогли слегкостью влится в коллектив Вашей будующей компании.</p>
-                    <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
+                    <div id="mentors">
+                        <h1 class="fw-bold mt-5">Bizning yaxshi energiya jamoamiz bilan tanishing!</h1>
+                        <p class="mt-3"> So'nggi yillar ichida biz yaxshi energiya jamoasini o'stirdik. Yaxshi jamoa sifatida biz o'z jamoamizni rivojlantirmoqdamiz va o'qitishning miqdori va sifatini oshirmoqdamiz.</p>
 
-                    <h1 class="fw-bold mt-5">Учебные курсы по разным направлениям с микроклассов помамагает получить максимум</h1>
-                    <p class="mt-3">Поскольку наши курсы не содержат презентаций, мы используем подход «обучение на практике», когда студенты совместно работают в режиме реального времени с использованием новейших инструментов проектирования в реальном времени. На сегодняшний день это было удивительное путешествие в качестве основателя-одиночки. В отличие от других, Asirum работает для наших студентов, на 100% самозагружено и призвано помочь новым и опытным студентам эффективно работать как удаленно в качестве удаленных рабочих, так и непосредственно в офиссе.</p>
-                    <img src="{{ asset('images/DSC_6393.jpg') }}" class="w-100 rounded shadow" alt="">
-
-                    <h1 class="fw-bold mt-5">Познакомьтесь с нашей хорошей энергетической командой!</h1>
-                    <p class="mt-3">За последние пару лет мы вырастили хорошую энергетическую команду. Как хорошая команда, мы равиваем наш коллектив и умнажаем наше количество  и повышая качество преподавания.</p>
-
-                    <div class="row">
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                        <div class="row">
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/bogdan.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Qwasar platforma admini</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azimjanov Bogdan</span> <br><span>O'quv bo'limi bo'shligi</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/sarvar.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Ozodov Saravar</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Shomurodov Sarvar</span> <br><span>Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/komil.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Xamidjanov Komiljon</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/aziza.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azizova Aziza</span> <br><span>Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/nodira.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonova Nodira</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/asal.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Alimbayeva Asal</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/berdiyor.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonov Berdiyor</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="position-relative">
-                                <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
-                                <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Name Names</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                            <div class="col-md-4 mt-4">
+                                <div class="position-relative">
+                                    <img src="{{ asset('images/mentors/aziz.jpg') }}" class="rounded w-100" alt="image">
+                                    <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Abdulaziz Orifjonov</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <h1 class="fw-bold mt-5">Мы устойчиво растем как полностью уверенная в себе компания!</h1>
-                    <p>Мы продолжают вдохновлять каждый день, нашими действиями и выполнениями обещаний и обязательст перед нашими студентами. Гордимся нашими студентами которе работают над разработкой программых продуктов, будущего и приглашаем коллег и друзей учиться в Asirum!
-                        Итак, вот она, история о том, как Asirum развивалась и развивается. Если Вы принимаете нашу историю и согласны с нашими ценностями, мы призываем Вас учиться вместе с нами или присоединиться к нашей команде!</p>
-                    <img src="{{ asset('images/AST04894.jpg') }}" class="w-100 rounded shadow mb-5" alt="">
+                    <div id="courses_room">
+                        <h1 class="fw-bold mt-5">Biz to'liq ishonchli kompaniya sifatida barqaror rivojlanmoqdamiz!</h1>
+                        <p>Biz har kuni o'z harakatlarimiz va talabalarimizga bergan va'dalarimiz va majburiyatlarimiz bajarilishi bilan ilhomlantirmoqdamiz. Biz kelajakdagi mahsulot dasturlarini ishlab chiqish ustida ishlayotgan talabalarimiz bilan faxrlanamiz va hamkasblarimiz va do'stlarimizni Astrumda o'qishga taklif qilamiz!
+                            Shunday qilib, Astrum qanday rivojlangani va rivojlanayotgani haqida hikoya. Agar siz bizning hikoyamizni qabul qilsangiz va qadriyatlarimizga rozi bo'lsangiz, sizni biz bilan o'rganishni yoki jamoamizga qo'shilishni taklif qilamiz!</p>
+                        <img src="{{ asset('images/astrum_staff.jpg') }}" class="w-100 rounded shadow mb-5" alt="">
+                    </div>
                 </div>
             </div>
         </div>

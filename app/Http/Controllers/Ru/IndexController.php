@@ -20,8 +20,16 @@ class IndexController extends Controller
         return view('front.ru.courses');
     }
 
-    public function courses_in(){
-        return view('front.ru.courses_in');
+    public function fullstack(){
+        return view('front.ru.courses.fullstack');
+    }
+
+    public function data_science(){
+        return view('front.ru.courses.data');
+    }
+
+    public function software_engineering(){
+        return view('front.ru.courses.software');
     }
 
     public function gallery(){

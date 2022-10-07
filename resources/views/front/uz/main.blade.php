@@ -14,20 +14,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   	@yield('style')
 </head>
-
 <body>
 
     <div id="top-header" class="top-header top-header_1">
         <div class="text-center">
-            <p class="p-3 mb-0 text-white"><span>&#129395;</span> Full stack разработчик с Javascript! <a id="arrow" href="#">Присоединится к
-                    группе <i id="arrow_1" class="bi bi-arrow-right"></i></a></p>
+            <p class="p-3 mb-0 text-white"><span>&#129395;</span> Full stack programmisti! <a id="arrow" href="#">Guruhga qo'shiling <i id="arrow_1" class="bi bi-arrow-right"></i></a></p>
         </div>
     </div>
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="d-flex flex-grow-1">
-                <a class="navbar-brand text-right" href="{{ route('uz.index') }}">Logo</a>
+                <a class="navbar-brand text-right" href="{{ route('uz.index') }}"><img src="{{ asset('images/logo.png') }}" width="100" alt=""></a>
                 <div class="w-100 text-end">
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar7">
                         <span class="navbar-toggler-icon"></span>
@@ -51,22 +49,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.index') }}#mentors">Mentorlar</a>
                     </li>
-
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.news') }}">Новости</a>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                     </li>
                     <li class="nav-item">
-                        <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Telegramga bepul qo'shing</a>
+                        <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telegram"></i> Telegramga qo'shing</a>
                     </li>
                     <li class="nav-item">
-                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Eng yaxshi kurslar</a>
+                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light border border-3" type="button" href="#">Eng yaxshi kurslar</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white border border-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             UZ
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -85,17 +79,16 @@
     <footer>
         <div class="container ">
             <div class="row text back">
-                <div class="col-md-7"></div>
-                <div class="col-md-5 align-self-center">
-                    <h1 class="text-white">Готовы стать <br> наши студентом?</h1>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati dicta recusandae ex molestias beatae nostrum sapiente ab! Perspiciatis, commodi tenetur nostrum molestias veritatis excepturi assumenda libero? Fuga, deserunt accusantium!</p>
-                    <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 mt-5 rounded">Выбратть курс</a>
+                <div class="col-sm-8 col-md-8 col-xl-5 offset-xl-6 offset-md-6 offset-sm-6 align-self-center">
+                    <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
+                    <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajaging tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yozil va dasturlashni o'rganishni boshlang.</p>
+                    <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Kursni tanlash</a>
                 </div>
             </div>
 
             <div class="row pt-5">
-                <div class="col-md-3">
-                    <p>КУРСЫ И ОБРАЗОВАНИЕ</p>
+                <div class="col-md-4">
+                    <p>KURSLAR VA TA'LIM</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -103,7 +96,7 @@
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Full Stack developer <br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
@@ -113,7 +106,7 @@
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Software engineer<br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
@@ -123,42 +116,14 @@
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
                                     <p>Data science engineer <br>
-                                        12 moon
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
-                                    <p>3D max specialist <br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <p>МЕРОПРИЯТИЯ И ТРЕНИНГИ</p>
-                    <hr>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">День открытых дверей</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Футбольный кубок Astrum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Презентация курса Full Stack developer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ярмарка курсов разных специальностей</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p>ASTRUM</p>
                     <hr>
                     <ul class="nav flex-column">
@@ -174,15 +139,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.news') }}">Новости</a>
-                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p>ALOQA</p>
                     <hr>
                     <ul class="nav flex-column">
@@ -207,7 +169,7 @@
                     <img src="{{ asset('images/logo_1.png') }}" width="100" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet molestiae facere nihil, optio eos quia nulla facilis id libero placeat possimus ipsum quis quasi magnam enim, saepe beatae adipisci?</p>
+                    <p>Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</p>
                 </div>
                 <div class="col-md-4 text-end">
                     <p>Astrum IT academy Ltd 2022 <br> <span class="fw-bold">Terms & Privacy</span></p>
