@@ -81,7 +81,7 @@
 
                     <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quibusdam voluptatem consequuntur repellendus quisquam quia cumque ratione labore eaque, ducimus earum non ullam enim, laudantium iste, corrupti blanditiis cupiditate.</p>
+                    <p>Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
                 </div>
                 <div class="col-md-6">
@@ -606,7 +606,7 @@
                             </div>
                         </li>
                     </ul>
-                    <p style="font-size: 30px;">+99 (878) 150-40-02</p>
+                    <p style="font-size: 30px;">+99 (71) 202 42 22</p>
                     <p class="fw-bold">Bizga yozishingiz mumkin</p>
                     <div class="d-flex w-25"><a href="#" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-instagram " style="font-size: 45px;"></i> </a></div>
                 </div>

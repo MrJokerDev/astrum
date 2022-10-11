@@ -112,7 +112,7 @@
         <div class="container p-5 align-items-center">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Ta'lim va kurslar</p>
             <h1 id="courses_rek" class="text-white">IT sohasini Astrum IT Akademiyasida o'rganing va o'z hayotingizni yaxshi tomonga o'zgartiring</h1>
-            <p id="courses_rek_p" class="text-white pt-4 fs-5">Akademiyamizda dasturlash kurslari sun'iy intellekt yordami shunday tizimlashtirilganki, o'qishni tugatishingiz bilan siz yetarlicha bilim va yaxshigina portfolioga ega bo'lasiz. <br> современном оборудовании.</p>
+            <p id="courses_rek_p" class="text-white pt-4 fs-5">Akademiyamizda dasturlash kurslari sun'iy intellekt yordami shunday tizimlashtirilganki, o'qishni tugatishingiz bilan siz yetarlicha bilim va yaxshigina portfolioga ega bo'lasiz.</p>
         </div>
     </section>
 
@@ -125,7 +125,7 @@
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
                             <p class="fs-5">12 oy</p>
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
@@ -138,7 +138,7 @@
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
                             <p class="fs-5">12 oy</p>
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
@@ -151,10 +151,10 @@
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
                             <p class="fs-5">12 oy</p>
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
+                            <a href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
                     </div>
                 </div>
@@ -318,33 +318,25 @@
 
     <section>
         <div class="container">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">НАШИ ЦЕННОСТИ</p>
-            <h1 class="fw-bold">Что отличает Astrum от других</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo quisquam adipisci ea laboriosam dolores dolorum aliquid, iure accusantium doloremque, nihil dolore obcaecati expedita mollitia repellendus amet eos architecto eligendi!</p>
+            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Bizning qadriyatlar</p>
+            <h1 class="fw-bold">Astrum IT Akademiyasi boshqa o'quv markazlardan nimasi bilan farq qiladi?</h1>
+            <p>Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</p>
             <div class="row pt-5">
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'quvchilarni tinglaymiz </p>
+                    <p>Biz har doim o'quvchilarnimg e'tirozlarini va shikoyatlarini tinglaymiz va ularga birgalikda yechim topamiz. </p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'qish va sport uyg'unlikda </p>
+                    <p>Akademiyamizda tashkil qilingan sport maydonchalari orqali o'quvchilarimiz o'qish va sportni birgalikda olib boradilar. </p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Tezlik va zamonaviylik </p>
+                    <p>Bugungi kundagi IT sohasining yuqori sur'atlarda rivojlanib borayotganini hisobga olgan holda, biz eng zamonaviy va tezkor o'qitish tizimidan foydalanish tarafdorimiz. </p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Всегда честны</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem voluptas, nemo tenetur consectetur, eum esse est laborum expedita repellendus modi! Exercitationem rem officia adipisci repudiandae ullam provident? Voluptas, amet.</p>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Ta'lim va tajriba</p>
+                    <p>Zamonaviy o'qitish tizimi va ta'lim olish mobaynida real loyihalarda qatnashish imkoniyati faqatgina Astrumda mavjud. Biz nafaqat bilim, balki tajriba ham ulashamiz.</p>
                 </div>
             </div>
         </div>

@@ -80,7 +80,7 @@
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
                     <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quibusdam voluptatem consequuntur repellendus quisquam quia cumque ratione labore eaque, ducimus earum non ullam enim, laudantium iste, corrupti blanditiis cupiditate.</p>
+                    <p>Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
                 </div>
                 <div class="col-md-6">
@@ -635,7 +635,7 @@
                             </div>
                         </li>
                     </ul>
-                    <p style="font-size: 30px;">+99 (878) 150-40-02</p>
+                    <p style="font-size: 30px;">+998 (71) 202 42 22</p>
                     <p class="fw-bold">Bizga yozishingiz mumkin</p>
                     <div class="d-flex w-25"><a href="#" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-instagram " style="font-size: 45px;"></i> </a></div>
                 </div>

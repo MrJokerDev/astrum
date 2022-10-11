@@ -104,7 +104,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/soft.jpg') }}" alt="">
                                     <p>Software engineer<br>
                                         12 oy
                                     </p>
@@ -114,7 +114,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/data.jpg') }}" alt="">
                                     <p>Data science engineer <br>
                                         12 oy
                                     </p>
