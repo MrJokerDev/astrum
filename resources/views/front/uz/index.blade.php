@@ -2,10 +2,7 @@
 
 @section('style')
 <style>
-  .navbar{
-     position: absolute;
-    z-index: 9999;
-  }
+  
   #btn {
     font-weight: 700;
     }
@@ -20,7 +17,7 @@
     <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
-            <source src="{{ asset('images/video_gif.mp4') }}" type="video/mp4">
+            <source src="{{ asset('images/video/video_1.MP4') }}" type="video/mp4">
         </video>
 
         <div class="container">
@@ -49,10 +46,10 @@
                     <h1 class="about_us">About us</h1>
                     <div class="img">
                         <div class="img_1">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="images/DSC_6349_1.jpg" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/layout/9.jpg') }}" alt="images">
                         </div>
                         <div class="img_2">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="images/DSC_6383.jpg" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/DSC_6383.jpg')}}" alt="images">
                         </div>
                     </div>
                     <div class="w-100 text-end">
@@ -85,7 +82,7 @@
 
     <section class="container-fluid">
         <div class="astrum_img">
-            <img src="images/astrum_foto.png" alt="">
+            <img src="{{ asset('images/astrum_foto.png')}}" alt="">
         </div>
     </section>
 
@@ -93,16 +90,16 @@
         <div class="carusel-top">
             <div class="carousel-inner">
                     <div class="most-inner">
-                        <img src="images/DSC_6349.jpg">
-                        <img src="images/DSC_6383.jpg">
-                        <img src="images/auditoriya.jpg">
-                        <img src="images/active.jpg">
-                        <img src="images/lanshaft.jpg">
-                        <img src="images/DSC_6349.jpg">
-                        <img src="images/DSC_6383.jpg">
-                        <img src="images/auditoriya.jpg">
-                        <img src="images/active.jpg">
-                        <img src="images/lanshaft.jpg">
+                        <img src="{{ asset('images/DSC_6349.jpg')}}">
+                        <img src="{{ asset('images/DSC_6383.jpg')}}">
+                        <img src="{{ asset('images/auditoriya.jpg')}}">
+                        <img src="{{ asset('images/active.jpg')}}">
+                        <img src="{{ asset('images/lanshaft.jpg')}}">
+                        <img src="{{ asset('images/DSC_6349.jpg')}}">
+                        <img src="{{ asset('images/DSC_6383.jpg')}}">
+                        <img src="{{ asset('images/auditoriya.jpg')}}">
+                        <img src="{{ asset('images/active.jpg')}}">
+                        <img src="{{ asset('images/lanshaft.jpg')}}">
                     </div>
             </div>
         </div>
@@ -121,7 +118,7 @@
             <div class="row">
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="card hvr-float m-auto m-5">
-                        <img class="card-img-top shadow" src="images/web-developer.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/web-developer.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
@@ -134,7 +131,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="card hvr-float m-auto">
-                        <img class="card-img-top shadow" src="images/soft.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/soft.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Data Science</h4>
@@ -147,7 +144,7 @@
                 </div>
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="card hvr-float m-auto">
-                        <img class="card-img-top shadow" src="images/data.jpg" alt="Card image cap">
+                        <img class="card-img-top shadow" src="{{ asset('images/data.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <p>Kursning boshlanishi - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Software Engineering</h4>
@@ -205,7 +202,7 @@
 
     <section>
         <div class="container">
-            <img src="images/astrum_staff.jpg" class="w-100 rounded shadow" alt="image">
+            <img src="{{ asset('images/astrum_staff.jpg')}}" class="w-100 rounded shadow" alt="image">
         </div>
     </section>
 

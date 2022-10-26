@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset("css/animate.css")}}">
     <link rel="stylesheet" href="{{ asset("css/carousel.css")}}">
@@ -16,13 +17,9 @@
 </head>
 <body>
 
-    <div id="top-header" class="top-header top-header_1">
-        <div class="text-center">
-            <p class="p-3 mb-0 text-white"><span>&#129395;</span> Full stack programmisti! <a id="arrow" href="#">Guruhga qo'shiling <i id="arrow_1" class="bi bi-arrow-right"></i></a></p>
-        </div>
-    </div>
+    
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <div class="d-flex flex-grow-1">
                 <a class="navbar-brand text-right" href="{{ route('uz.index') }}"><img src="{{ asset('images/logo.png') }}" width="100" alt=""></a>
@@ -181,6 +178,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
     @yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
 </body>

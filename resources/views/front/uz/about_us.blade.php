@@ -145,17 +145,16 @@
         <div id="scrolling">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=1" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=2" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=3" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=4" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=5" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=6" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=7" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=8" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=9" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=10" alt=""></li>
-                    <li class="glide__slide"><img src="https://placem.at/places?w=300&h=400&random=11" alt=""></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/1.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/2.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/3.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/4.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/5.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/6.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/7.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/8.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/9.jpg') }}" alt="image"></li>
+                    <li class="glide__slide"><img src="{{ asset('images/about/10.jpg') }}" alt="image"></li>
                 </ul>
             </div>
         </div>

@@ -53,7 +53,19 @@
       h1.text-center .text-white{
         font-size: 60px;
       }
-
+      .ratio img{
+        border-radius: 0rem;
+        transform: translateY(0px)!important;
+      }
+      .ratio{
+        background-color: transparent!important;
+      }
+      .carousel-control-prev {
+            left: -120px;
+        }
+    .carousel-control-next {
+        right: -120px;
+        }
     </style>
 @endsection
 
@@ -73,7 +85,7 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
-                    <a href="{{ asset('images/DSC03614.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC03614.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC03614.JPG') }}"
@@ -88,7 +100,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/DSC_6393.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6393.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6393.jpg') }}"
@@ -105,7 +117,7 @@
 
             <div class="row pb-5">
                 <div class="col-md-6 mt-4">
-                    <a href="images/DSC_6375.jpg" style="text-decoration: none;">
+                    <a href="images/DSC_6375.jpg" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6375.jpg') }}"
@@ -120,7 +132,7 @@
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <a href="{{ asset('images/DSC_6541.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6541.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6541.jpg') }}"
@@ -137,7 +149,7 @@
 
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/lanshaft.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/lanshaft.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/lanshaft.jpg') }}"
@@ -152,7 +164,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/sport.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/sport.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/sport.jpg') }}"
@@ -167,7 +179,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/active.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/active.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/active.jpg') }}"
@@ -191,7 +203,7 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
-                    <a href="{{ asset('images/AST03626.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST03626.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST03626.JPG') }}"
@@ -206,7 +218,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/auditoriya.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/auditoriya.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/auditoriya.jpg') }}"
@@ -223,7 +235,7 @@
 
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/AST03599.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST03599.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST03599.JPG') }}"
@@ -238,7 +250,7 @@
                 </div>
 
                 <div class="col-md-8 mt-4">
-                    <a href="{{ asset('images/AST03609.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST03609.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST03609.JPG') }}"
@@ -262,7 +274,7 @@
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/AST03588.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST03588.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST03588.JPG') }}"
@@ -277,7 +289,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/AST03596.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST03596.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST03596.JPG') }}"
@@ -292,7 +304,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/DSC_6391.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6391.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6391.jpg') }}"
@@ -309,7 +321,7 @@
 
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/DSC_6349_1.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6349_1.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6349_1.jpg') }}"
@@ -324,7 +336,7 @@
                 </div>
 
                 <div class="col-md-8 mt-4">
-                    <a href="{{ asset('images/DSC_6356.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6356.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6356.jpg') }}"
@@ -341,7 +353,7 @@
 
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/AST04894.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/AST04894.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/AST04894.jpg') }}"
@@ -356,7 +368,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/DSC03614.JPG') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC03614.JPG') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC03614.JPG') }}"
@@ -371,7 +383,7 @@
                 </div>
 
                 <div class="col-md-4 mt-4">
-                    <a href="{{ asset('images/DSC_6393.jpg') }}" style="text-decoration: none;">
+                    <a href="{{ asset('images/DSC_6393.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery"style="text-decoration: none;">
                         <div id="container" class="hvr-float">
                             <img
                                 src="{{ asset('images/DSC_6393.jpg') }}"
