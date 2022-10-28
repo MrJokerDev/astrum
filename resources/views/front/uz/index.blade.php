@@ -46,10 +46,10 @@
                     <h1 class="about_us">About us</h1>
                     <div class="img">
                         <div class="img_1">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/layout/9.jpg') }}" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/layout/1.jpg') }}" alt="images">
                         </div>
                         <div class="img_2">
-                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/DSC_6383.jpg')}}" alt="images">
+                            <img class="w-100 h-100 shadow bg-white rounded" src="{{ asset('images/layout/2.jpg')}}" alt="images">
                         </div>
                     </div>
                     <div class="w-100 text-end">

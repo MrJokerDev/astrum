@@ -66,7 +66,10 @@
     .dropdown button.border-white{
         border-color: #333!important;
     }
-
+    .sticky-top{
+        top: 75px;
+        z-index: -1;
+    }
 </style>
 @endsection
 @section('content')

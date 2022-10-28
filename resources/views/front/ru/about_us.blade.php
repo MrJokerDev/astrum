@@ -325,7 +325,7 @@
 	<script>
         var glide = new Glide('.glide', {
             type: 'carousel',
-            perView: 4
+            perView: 5
         })
 
         glide.mount()

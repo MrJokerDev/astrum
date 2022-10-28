@@ -127,14 +127,18 @@
     .dropdown button.border-white{
         border-color: #333!important;
     }
+    .sticky-top{
+        top: 75px;
+        z-index: -1;
+    }
 
 
 </style>
 @endsection
 
 @section('content')
-    <section>
-        <div class="container">
+    <section class="mt-5 pt-5">
+        <div class="container mt-5 pt-5">
             <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('uz.index') }}">Bosh sahifa</a></span> | <a class="text-success text-decoration-none" href="{{ route('uz.about_us') }}">Kompaniya haqida</a></p>
             <h1 class="about_h1 fw-bold text-center">Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</h1>
             <p class="about_p text-center">Biz o'z mahoratimizni talabalarimizga o'tkazamiz, shuningdek, kurslarimizga zamonaviy texnologiyalarning yangi elementlarini doimiy ravishda joriy etishga yordam beradigan yirik loyihalar bo'yicha malakamizni oshiramiz!</p>
@@ -308,7 +312,7 @@
 	<script>
         var glide = new Glide('.glide', {
             type: 'carousel',
-            perView: 4
+            perView: 5
         })
 
         glide.mount()

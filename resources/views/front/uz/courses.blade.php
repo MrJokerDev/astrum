@@ -1,11 +1,11 @@
 @extends('front.uz.main')
 @section('style')
-<style>
+{{-- <style>
     .navbar{
         position: absolute;
         z-index: 9999;
     }
-</style>
+</style> --}}
 @endsection
 @section('content')
 

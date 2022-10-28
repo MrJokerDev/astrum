@@ -46,10 +46,10 @@
         #container:hover .overlay {
             opacity: 1;
         }
-      .navbar{
+      /* .navbar{
       	position: absolute;
         z-index: 9999;
-      }
+      } */
       h1.text-center .text-white{
         font-size: 60px;
       }
