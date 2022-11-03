@@ -381,3 +381,13 @@ section {
     color: green;
     font-weight: 700;
 }
+
+.map {
+    max-width: 1600px;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}

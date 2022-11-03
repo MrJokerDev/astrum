@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrum</title>
+    <title>Astrum IT Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
@@ -14,9 +14,114 @@
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   	@yield('style')
-</head>
-<body>
+    <style>
+        #loader{
+        width: 100%;
+        height: 100%;
+        animation: rotate 1.5s ease-in-out infinite;
+        position: relative;
+        }
 
+        .set1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        .set2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .ball{
+        width: 50px;
+        height: 50px;
+        background: dodgerblue;
+        border-radius: 50%;
+        }
+
+        .set1  .ball:nth-child(2){
+        background: orangered;
+        animation: scale 1.5s ease-in-out infinite forwards;
+        }
+
+        .set1  .ball:nth-child(1){
+        background: green;
+        animation: scale 1.5s ease-in-out infinite forwards;
+        }
+
+        .set2 .ball:nth-child(1){
+        background: dodgerblue;
+        animation: scale2 1.5s ease-in-out infinite forwards;
+        }
+
+        .set2 .ball:nth-child(2){
+        background: yellow;
+        animation: scale2 1.5s ease-in-out infinite forwards;
+        }
+
+        @keyframes scale2 {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+        }
+
+
+        @keyframes scale {
+        0%{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+        }
+
+        @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        }
+
+        #myDiv {
+            display: none;
+        }
+    </style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+        <div class="set1">  
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <div class="set2">
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+    </div>
+    <div id="myDiv">
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <div class="d-flex flex-grow-1">
@@ -73,12 +178,17 @@
 
     <footer>
         <div class="container ">
+            
             <div class="row text back">
                 <div class="col-sm-8 col-md-8 col-xl-5 offset-xl-6 offset-md-6 offset-sm-6 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
                     <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajaging tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yozil va dasturlashni o'rganishni boshlang.</p>
                     <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Kursni tanlash</a>
                 </div>
+            </div>
+
+            <div class="map mt-5 mb-5 shadow">
+                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Aa5fc6b59f0b521a61e6064a820c7118f80c70630fcb56c5d8a279fca0f74fda8&amp;source=constructor" width="1280" height="630" frameborder="0"></iframe>
             </div>
 
             <div class="row pt-5">
@@ -89,7 +199,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/1.png') }}" alt="">
                                     <p>Full Stack developer <br>
                                         12 oy
                                     </p>
@@ -99,7 +209,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/soft.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/2.png') }}" alt="">
                                     <p>Software engineer<br>
                                         12 oy
                                     </p>
@@ -109,7 +219,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/data.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/3.png') }}" alt="">
                                     <p>Data science engineer <br>
                                         12 oy
                                     </p>
@@ -173,11 +283,23 @@
         </div>
     </footer>
 
-    
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
     @yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
 </body>

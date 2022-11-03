@@ -79,7 +79,6 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="fw-bold">Software Engineering</h1>
-                    <p>12 OY</p>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
                     <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Data scientist:
@@ -88,7 +87,7 @@
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
                 </div>
                 <div class="col-md-6">
-                    <img class="rounded w-100" src="{{ asset('images/data.jpg') }}" alt="">
+                    <img class="rounded w-100" src="{{ asset('images/courses/3.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -584,7 +583,7 @@
                             </button>
                             <div class="collapse" id="home-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
-                                    Astrumda guruhlar yo'q. Siz xohlagan paytingiz Astrumga kelishingiz, xohlagancha o'z ustingizda ishlashingiz va xohlagan paytingiz ketishingiz mumkin.
+                                    Astrum IT Akademiyasi yuqori texnologiyali sun'iy intellekt algoritmlari yordamida ishlovchi ta'lim tizimi bilan jihozlangan bo'lib bu yerda ma'lum bir guruhlar yo'q. Siz xohlagan paytingiz Astrumga kelishingiz, xohlagancha o'z ustingizda ishlashingiz va xohlagan paytingiz ketishingiz mumkin.
                                 </ul>
                             </div>
                         </li>
@@ -594,7 +593,7 @@
                             </button>
                             <div class="collapse" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
-                                    Yo'q, sizda hech qanday boshlang'ich bo'lishi talab qilinmaydi. Astrum IT Akademiyasida tashkil qilingan kurslar noldan boshlab professional darajagacha o'rgatiladi.
+                                    Astrum IT Akademiyasida ta'lim tizimi shunday yo'lgan qo'yilganki, siz bu yerdagi kurslardan birida qatnashishingiz uchun hech qanday boshlang'ich bilim talab qilinmaydi. Akademiyamizda tashkil qilingan Pre-season kurslari orqali siz dastlabki bilimlarni olasiz va imtihon topshirgan holda Main Season kurslariga o'tasiz. 
                                 </ul>
                             </div>
                         </li>

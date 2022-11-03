@@ -140,8 +140,8 @@
     <section class="mt-5 pt-5">
         <div class="container mt-5 pt-5">
             <p class="text-success text-center"><span><a class="text-success text-decoration-none fw-bold" href="{{ route('uz.index') }}">Bosh sahifa</a></span> | <a class="text-success text-decoration-none" href="{{ route('uz.about_us') }}">Kompaniya haqida</a></p>
-            <h1 class="about_h1 fw-bold text-center">Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</h1>
-            <p class="about_p text-center">Biz o'z mahoratimizni talabalarimizga o'tkazamiz, shuningdek, kurslarimizga zamonaviy texnologiyalarning yangi elementlarini doimiy ravishda joriy etishga yordam beradigan yirik loyihalar bo'yicha malakamizni oshiramiz!</p>
+            <h1 class="about_h1 fw-bold text-center">Bizning asosiy maqsadimiz yoshlarga IT sohasi bo'yicha chuqur bilim berish va shu orqali O'zbekiston rivojlanishiga o'z hissamizni qo'shishdan iborat.</h1>
+            <p class="about_p text-center">Astrum IT Akademiyasiga kelgan har bir o'quvchi 24/7 rejimida ishlovchi texnologik kampus, innovatsion ta'lim tizimi va qulayliklarga ega bo'ladi. Kursni muvaffaqiyatli bitirganlarga esa Amerika Silikon vodiysida ishlash imkonini beruvchi QWASAR sertifikati topshiriladi.</p>
         </div>
     </section>
 
