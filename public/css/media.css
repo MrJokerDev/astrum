@@ -123,10 +123,16 @@
 }
 @media only screen and (min-width: 992px) {
     .astrum_img {
-        top: 125rem;
+        top: 115rem;
     }
     .back {
-        height: 50%;
+        height: 70%;
+    }
+    .section-fon{
+        height: 60%;
+    }
+    .carousel-caption h1{
+        width: 75%;
     }
 }
 
@@ -137,5 +143,8 @@
     }
     h1.font_size {
         font-size: 2.7rem;
+    }
+    .carousel-caption h1{
+        width: 75%;
     }
 }

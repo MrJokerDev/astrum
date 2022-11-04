@@ -2,7 +2,7 @@
 
 @section('style')
 <style>
-  
+
 #btn {
     font-weight: 700;
 }
@@ -17,7 +17,7 @@
     max-height: 100%;
     border-radius: 0px;
     transition: transform 0s;
-    
+
 }
 
 .carousel-inner .carousel-item img:hover{
@@ -37,7 +37,7 @@
 @endsection
 
 @section('content')
- 
+
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,15 +99,15 @@
 
     <section id="location">
         <div class="container pt-4">
-            <div class="row">
+            {{-- <div class="row">
                 <div class="text-center">
                     <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Akademiya joylashuvi</p>
                     <h1 class="fw-bold">Buyuk g'oyalar eng yaxshi joylarda tug'iladi</h1>
                     <p class="fw-semibold">Biz esa sizga eng qulay lokatsiyani taqdim etamiz</p>
                 </div>
-            </div>
+            </div> --}}
             <div class="row justify-content-end">
-                <div class="col-sm-12 col-md-9 col-xl-5">
+                <div class="col-sm-12 col-md-9 col-xl-7">
                     <div class="border shadow bg-white rounded p-4 fw-semibold fs-5">
                         Astrum IT Akademiyasi tabiat qo'ynida joylashgan bo'lib, bu yerdagi toza ob-havo va shovqinsiz muhit, ortiqcha chalg'ishlarsiz IT sohasini mukammal o'rganishingizga yordam beradi. Akademiya hududi tun-u kun qo'riqlanadi va o'quv kampusi 24/7 rejimida faoliyat yuritadi. Siz o'zingizga qulay vaqtda kelishingiz va kurslarni davom ettirishingiz mumkin.
                     </div>
@@ -159,7 +159,7 @@
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
                             <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
-                            
+
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
@@ -171,7 +171,7 @@
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
                             <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, <br> biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
-                            
+
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
@@ -183,7 +183,7 @@
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
                             <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
-                            
+
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
@@ -240,7 +240,7 @@
             <h1 id="courses_rek" class="text-center fw-bold">Astrumda IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
             <p id="courses_rek_p" class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
             <div class="row">
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/aziza.jpg') }}" alt="Team Image"/>
@@ -252,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/sarvar.jpg') }}" alt="Team Image"/>
@@ -264,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/asal.jpg') }}" alt="Team Image"/>
@@ -276,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/komil.jpg') }}" alt="Team Image"/>
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                {{-- <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" alt="Team Image"/>
@@ -300,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/nodira.jpg') }}" alt="Team Image"/>
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/berdiyor.jpg') }}" alt="Team Image"/>
@@ -324,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-3 col-lg-4 col-md-6 mt-5">
+                <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
                         <div class="profile-img">
                             <img src="{{ asset('images/mentors/baxtibek.jpg') }}" alt="Team Image"/>

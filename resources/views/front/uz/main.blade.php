@@ -18,12 +18,12 @@
         .navbar {
             width: 100%;
             background-color: #3a3a9257;
-            z-index: 9999;
+            /* z-index: 9999; */
         }
-        
+
     </style>
     {{-- <style>
-        
+
         #loader{
             width: 100%;
             height: 100%;
@@ -120,9 +120,9 @@
     </style> --}}
 </head>
 {{-- onload="myFunction()" style="margin:0;" --}}
-<body>  
-    <div id="loader">
-        <div class="set1">  
+<body>
+    {{-- <div id="loader">
+        <div class="set1">
             <div class="ball"></div>
             <div class="ball"></div>
         </div>
@@ -130,7 +130,7 @@
             <div class="ball"></div>
             <div class="ball"></div>
         </div>
-    </div>
+    </div> --}}
     <div id="myDiv">
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
@@ -163,11 +163,11 @@
                         <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                     </li>
                     <li class="nav-item">
-                        <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telegram"></i> Telegramga qo'shing</a>
+                        <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telephone"></i> +998 (71) 202 42 22</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light border border-3" type="button" href="#">Eng yaxshi kurslar</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <div class="dropdown">
                             <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white border border-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -188,12 +188,20 @@
 
     <footer>
         <div class="container ">
-            
+
             <div class="row text back">
-                <div class="col-sm-8 col-md-8 col-xl-5 offset-xl-6 offset-md-6 offset-sm-6 align-self-center">
+                <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
                     <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajaging tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yozil va dasturlashni o'rganishni boshlang.</p>
                     <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Kursni tanlash</a>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5">
+                <div class="text-center">
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Akademiya joylashuvi</p>
+                    <h1 class="fw-bold">Buyuk g'oyalar eng yaxshi joylarda tug'iladi</h1>
+                    <p class="fw-semibold">Biz esa sizga eng qulay lokatsiyani taqdim etamiz</p>
                 </div>
             </div>
 
@@ -284,7 +292,7 @@
                     <img src="{{ asset('images/logo_1.png') }}" width="100" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p>Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</p>
+                    {{-- <p>Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</p> --}}
                 </div>
                 <div class="col-md-4 text-end">
                     <p>Astrum IT academy Ltd 2022 <br> <span class="fw-bold">Terms & Privacy</span></p>
