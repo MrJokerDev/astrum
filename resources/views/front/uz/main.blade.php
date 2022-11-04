@@ -16,7 +16,7 @@
   	@yield('style')
     <style>
         
-        /* #loader{
+        #loader{
             width: 100%;
             height: 100%;
             animation: rotate 1.5s ease-in-out infinite;
@@ -104,7 +104,7 @@
             100%{
                 transform: rotate(360deg);
             }
-        } */
+        }
 
         #myDiv {
             display: none;
