@@ -164,7 +164,6 @@ header .overlay {
 .navbar {
     /* position: absolute; */
     z-index: 9999;
-    background-color: #3a3a9257;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -189,6 +188,7 @@ header .overlay {
 
 .navbar {
     width: 100%;
+    background-color: #3a3a9257;
 }
 
 section {
