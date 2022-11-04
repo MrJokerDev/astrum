@@ -161,11 +161,6 @@ header .overlay {
     z-index: -100;
 }
 
-.navbar {
-    /* position: absolute; */
-    z-index: 9999;
-}
-
 @media (pointer: coarse) and (hover: none) {
     header {
         background: url("https://source.unsplash.com/XT5OInaElMw/1600x900")
@@ -189,6 +184,7 @@ header .overlay {
 .navbar {
     width: 100%;
     background-color: #3a3a9257;
+    z-index: 9999;
 }
 
 section {

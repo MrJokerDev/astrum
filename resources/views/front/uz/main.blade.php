@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   	@yield('style')
     <style>
+        .navbar {
+            width: 100%;
+            background-color: #3a3a9257;
+            z-index: 9999;
+        }
+    </style>
+    {{-- <style>
         
         #loader{
             width: 100%;
@@ -109,9 +116,10 @@
         #myDiv {
             display: none;
         }
-    </style>
+    </style> --}}
 </head>
-<body onload="myFunction()" style="margin:0;">
+{{-- onload="myFunction()" style="margin:0;" --}}
+<body>  
     <div id="loader">
         <div class="set1">  
             <div class="ball"></div>
@@ -289,7 +297,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
-    <script>
+    {{-- <script>
         var myVar;
 
         function myFunction() {
@@ -300,7 +308,7 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("myDiv").style.display = "block";
         }
-    </script>
+    </script> --}}
     @yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
 </body>
