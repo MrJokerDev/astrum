@@ -7,7 +7,7 @@
     font-weight: 700;
 }
 .nav-item a:hover{
-    color: #333;
+    color: rgba(40, 156, 40, 0.521);
     font-weight: 700;
 }
 .carousel-inner .carousel-item img{

@@ -374,24 +374,16 @@
                             <div class="carusel-top">
                                 <div class="carousel-inner">
                                     <div class="most-inner">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/layout/gallery/1.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/2.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/5.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/4.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/3.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/6.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/7.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/8.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/9.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/10.jpg')}}">
                                     </div>
                                 </div>
                             </div>
@@ -639,39 +631,27 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/1.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/2.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
-                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="fs-5">12 oy</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
                     </div>
                 </div>

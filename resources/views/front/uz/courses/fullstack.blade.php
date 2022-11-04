@@ -315,14 +315,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="{{ asset('images/DSC_6349.jpg') }}" class="rounded w-100" alt="image">
+                            <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" class="rounded w-100" alt="image">
                         </div>
                         <div class="col-md-7">
                             <div class="">
-                                <h1>Jasur Shukurov</h1>
+                                <h1>Shomurodov Sarvar</h1>
                                 <p>Full Stack Developer</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Salom, mening ismim Jasur, men Full stack developer yo'nalishi bo'yicha mentorman. Men NAPA kompaniyasining o'qituvchilaridan biri bo'lganman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
+                                <p class="">"Salom, mening ismim Sarvar, men Full stack developer yo'nalishi bo'yicha mentorman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
                             </div>
                         </div>
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p>
@@ -334,13 +334,13 @@
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azizova Aziza</span> <br><span>Full Stack</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-4">
+                            {{-- <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Shomurodov Sarvar</span> <br><span>Full Stack</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/baxtibek.jpg') }}" class="rounded w-100" alt="image">
@@ -379,24 +379,16 @@
                             <div class="carusel-top">
                                 <div class="carousel-inner">
                                     <div class="most-inner">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/layout/gallery/1.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/2.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/5.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/4.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/3.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/6.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/7.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/8.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/9.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/10.jpg')}}">
                                     </div>
                                 </div>
                             </div>
@@ -644,37 +636,25 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/web-developer.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/2.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="fs-5">12 oy</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
-                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/soft.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/data.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/3.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>

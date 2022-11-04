@@ -45,8 +45,8 @@
                         <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
-                    </li>
+                        {{-- <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
                     </li>

@@ -15,95 +15,96 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   	@yield('style')
     <style>
-        #loader{
-        width: 100%;
-        height: 100%;
-        animation: rotate 1.5s ease-in-out infinite;
-        position: relative;
+        
+        /* #loader{
+            width: 100%;
+            height: 100%;
+            animation: rotate 1.5s ease-in-out infinite;
+            position: relative;
         }
 
         .set1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 75px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         .set2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 75px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .ball{
-        width: 50px;
-        height: 50px;
-        background: dodgerblue;
-        border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background: dodgerblue;
+            border-radius: 50%;
         }
 
         .set1  .ball:nth-child(2){
-        background: orangered;
-        animation: scale 1.5s ease-in-out infinite forwards;
+            background: orangered;
+            animation: scale 1.5s ease-in-out infinite forwards;
         }
 
         .set1  .ball:nth-child(1){
-        background: green;
-        animation: scale 1.5s ease-in-out infinite forwards;
+            background: green;
+            animation: scale 1.5s ease-in-out infinite forwards;
         }
 
         .set2 .ball:nth-child(1){
-        background: dodgerblue;
-        animation: scale2 1.5s ease-in-out infinite forwards;
+            background: dodgerblue;
+            animation: scale2 1.5s ease-in-out infinite forwards;
         }
 
         .set2 .ball:nth-child(2){
-        background: yellow;
-        animation: scale2 1.5s ease-in-out infinite forwards;
+            background: yellow;
+            animation: scale2 1.5s ease-in-out infinite forwards;
         }
 
         @keyframes scale2 {
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(0);
-        }
-        100%{
-            transform: scale(1);
-        }
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
         }
 
 
         @keyframes scale {
-        0%{
-            transform: scale(0);
-        }
-        50%{
-            transform: scale(1);
-        }
-        100%{
-            transform: scale(0);
-        }
+            0%{
+                transform: scale(0);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0);
+            }
         }
 
         @keyframes rotate{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-        }
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } */
 
         #myDiv {
             display: none;
@@ -140,15 +141,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.gallery') }}">Foto</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.index') }}#mentors">Mentorlar</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
                     </li>
