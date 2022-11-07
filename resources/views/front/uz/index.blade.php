@@ -342,9 +342,9 @@
 
     <section>
         <div class="container">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Bizning qadriyatlar</p>
-            <h1 class="fw-bold">Astrum IT Akademiyasi boshqa o'quv markazlardan nimasi bilan farq qiladi?</h1>
-            <p>Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</p>
+            {{-- <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Bizning qadriyatlar</p> --}}
+            <h1 class="fw-bold">Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</h1>
+            {{-- <p>Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</p> --}}
             <div class="row pt-5">
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
                     <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'quvchilarni tinglaymiz </p>
@@ -361,6 +361,14 @@
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
                     <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Ta'lim va tajriba</p>
                     <p>Zamonaviy o'qitish tizimi va ta'lim olish mobaynida real loyihalarda qatnashish imkoniyati faqatgina Astrumda mavjud. Biz nafaqat bilim, balki tajriba ham ulashamiz.</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Bizning mentorlar</p>
+                    <p>Astrum IT Akademiyasida yosh va shu bilan birgalikda kuchli bilimga ega mentorlar faoliyat olib borishadi. O'quvchi darslarni innovatsion ta'lim platformasi orqali o'tganidan so'ng, tushunmagan joylarini yoki qo'shimcha savollarini mentorlardan so'rab olishi mumkin. Bizning mentorlar har bir o'quvchiga yordam berishga doimo tayyor. </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">AstroCoin tizimi</p>
+                    <p>Astrum IT Akademiyasida o'quvchilarni rag'batlantirish, ularni o'qishga bo'lgan qiziqishini yana-da oshirish maqsadida AstroCoin tizimi yo'lga qo'yilgan. Bunda o'quvchilar Astrum It Akademiyasining ijtimoiy hayotida, ta'lim jarayonlarida va turli xildagi tadbirlarda o'zlarini ko'rsatgan holda maxsus AstroCoinlarga ega bo'lishlari va ushbu Coinlar orqali marketdan turli xildagi qimmatbaho sovg'alarni xarid qilishlari mumkin.</p>
                 </div>
             </div>
         </div>

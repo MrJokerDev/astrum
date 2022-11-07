@@ -145,23 +145,26 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('uz.index') }}">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('uz.about_us') }}">Biz xaqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.index') }}#location">Manzil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.gallery') }}">Foto</a>
+                        <a class="nav-link" href="{{ route('uz.gallery') }}">Foto suratlar</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
                     </li> --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
-                    </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('uz.index') }}#mentors">Mentorlar</a>
                     </li> --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
-                    </li>
                     <li class="nav-item">
                         <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telephone"></i> +998 (71) 202 42 22</a>
                     </li>
@@ -193,7 +196,7 @@
                 <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
                     <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajaging tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yozil va dasturlashni o'rganishni boshlang.</p>
-                    <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Kursni tanlash</a>
+                    <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Ro'yxatdan o'tish</a>
                 </div>
             </div>
 
@@ -251,20 +254,25 @@
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.index') }}#location">Manzil</a>
+                            <a class="nav-link" href="{{ route('uz.index') }}">Bosh sahifa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.gallery') }}">Foto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
+                            <a class="nav-link" href="{{ route('uz.about_us') }}">Biz xaqimizda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.about_us') }}">Kompaniya xaqida</a>
+                            <a class="nav-link" href="{{ route('uz.index') }}#location">Manzil</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('uz.gallery') }}">Rasmlar</a>
+                        </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
+                        </li> --}}
+                        
+                        
                     </ul>
                 </div>
                 <div class="col-md-4">
