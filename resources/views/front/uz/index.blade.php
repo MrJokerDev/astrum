@@ -114,7 +114,6 @@
                 </div>
             </div>
         </div>
-        {{-- <h1 class="location_h1">Locations</h1> --}}
     </section>
 
     <section class="container-fluid">
