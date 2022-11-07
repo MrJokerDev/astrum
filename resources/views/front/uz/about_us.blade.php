@@ -132,7 +132,7 @@
         z-index: -1;
     }
 
-    span.position-absolute .bottom-0 .start-0 .p-3 .text-white span.fw-bold, span{
+    span.position-absolute span.fw-bold, span#ob{
         text-shadow: -2px 2px 9px black;
     }
 
@@ -233,63 +233,63 @@
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/bogdan.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">O'quv bo'imi boshlig'i</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azimjanov Bogdan</span> <br><span>O'quv bo'limi bo'shligi</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azimjanov Bogdan</span> <br><span id="ob">O'quv bo'limi bo'shligi</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/sarvar.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Yetakchi mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-2 border border-dark rounded bg-dark text-white"><span class="fw-bold">Ozodov Saravar</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Ozodov Saravar</span> <br><span id="ob">Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/komil.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Bosh mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Xamidjanov Komiljon</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Xamidjanov Komiljon</span> <br><span id="ob">Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/sarvar_sh.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Shomurodov Sarvar</span> <br><span>Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Shomurodov Sarvar</span> <br><span id="ob">Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/aziza.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azizova Aziza</span> <br><span>Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Azizova Aziza</span> <br><span id="ob">Full Stack Deleloper</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/nodira.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonova Nodira</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonova Nodira</span> <br><span id="ob">Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/asal.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Alimbayeva Asal</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Alimbayeva Asal</span> <br><span id="ob">Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/berdiyor.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonov Berdiyor</span> <br><span>Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonov Berdiyor</span> <br><span id="ob">Software Engineer</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/aziz.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Abdulaziz Orifjonov</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Abdulaziz Orifjonov</span> <br><span id="ob">Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                         </div>
