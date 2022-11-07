@@ -97,8 +97,8 @@
         </div>
     </section>
 
-    <section id="location">
-        <div class="container pt-4">
+    <section id="location" class="pt-5 mt-5">
+        <div class="container pt-5 mt-5">
             {{-- <div class="row">
                 <div class="text-center">
                     <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Akademiya joylashuvi</p>
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <h1 class="location_h1">Locations</h1>
+        {{-- <h1 class="location_h1">Locations</h1> --}}
     </section>
 
     <section class="container-fluid">
