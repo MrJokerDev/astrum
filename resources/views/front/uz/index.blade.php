@@ -213,7 +213,7 @@
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
                     <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">24/7 qo'riqlash tizimi</p>
-                    <p>Astrumda IT Akademiyasida to'laqonli xavfsizlik choralari ko'rilgan bo'lib, o'quv kampusi tun-u kun qo'riqlanadi. Bu esa o'quvchilarimizga o'zlari xohlagan payt Astrumga tashrif buyurish va darslarni davom ettirish imkoniyatini beradi.</p>
+                    <p>Astrum IT Akademiyasida to'laqonli xavfsizlik choralari ko'rilgan bo'lib, o'quv kampusi tun-u kun qo'riqlanadi. Bu esa o'quvchilarimizga o'zlari xohlagan payt Astrumga tashrif buyurish va darslarni davom ettirish imkoniyatini beradi.</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
                     <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Yaratilgan qulay sharoitlar</p>
@@ -236,7 +236,7 @@
     <section id="mentors" class="pt-5">
         <div class="container">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Bizning mentorlar </p>
-            <h1 id="courses_rek" class="text-center fw-bold">Astrumda IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
+            <h1 id="courses_rek" class="text-center fw-bold">Astrum IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
             <p id="courses_rek_p" class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
             <div class="row">
                 <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
@@ -348,7 +348,7 @@
             <div class="row pt-5">
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
                     <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'quvchilarni tinglaymiz </p>
-                    <p>Biz har doim o'quvchilarnimg e'tirozlarini va shikoyatlarini tinglaymiz va ularga birgalikda yechim topamiz. </p>
+                    <p>Biz har doim o'quvchilarning e'tirozlarini va shikoyatlarini tinglaymiz va ularga birgalikda yechim topamiz. </p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
                     <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'qish va sport uyg'unlikda </p>

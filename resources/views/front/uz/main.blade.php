@@ -195,7 +195,7 @@
             <div class="row text back">
                 <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
-                    <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajaging tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yozil va dasturlashni o'rganishni boshlang.</p>
+                    <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajagingiz tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yoziling va dasturlashni o'rganishni boshlang.</p>
                     <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Ro'yxatdan o'tish</a>
                 </div>
             </div>
@@ -257,7 +257,7 @@
                             <a class="nav-link" href="{{ route('uz.index') }}">Bosh sahifa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.about_us') }}">Biz xaqimizda</a>
+                            <a class="nav-link" href="{{ route('uz.about_us') }}">Biz haqimizda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.courses') }}">Kurslar</a>

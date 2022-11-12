@@ -596,7 +596,7 @@
                     <p id="quetions" style="color: #62BC9E;" class="fw-bold mt-5">Savollar</p>
 
                     <h1>Full Stack developer kursi bo'yicha savollaringiz bormi? </h1>
-                    <p>Katta ehtimol bilan, siz bir nechta savollar tug'ilgan bo'lishi mumkin. Bizni kuzatayotganlarga savollarni to'g'ridan-to'g'ri berishlarini so'raymiz va siz istalgan vaqtda biz bilan tezkor qo'ng'iroq orqali bog'lanishingiz mumkin.</p>
+                    <p>Katta ehtimol bilan, sizda bir nechta savollar tug'ilgan bo'lishi mumkin. Bizni kuzatayotganlarga savollarni to'g'ridan-to'g'ri berishlarini so'raymiz va siz istalgan vaqtda biz bilan tezkor qo'ng'iroq orqali bog'lanishingiz mumkin.</p>
 
                     <ul class="list-unstyled ps-0">
                         <li class="mb-4 border shadow-sm rounded-1">
