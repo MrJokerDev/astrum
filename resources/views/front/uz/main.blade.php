@@ -280,19 +280,19 @@
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="http://instagram.com/astrumuz"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a class="nav-link" target="_blank" href="http://instagram.com/astrumuz"><i class="bi bi-instagram"></i> Instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/Astrumuzb"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a class="nav-link" target="_blank" href="https://www.facebook.com/Astrumuzb"><i class="bi bi-facebook"></i> Facebook</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://t.me/astrumuz"><i class="bi bi-telegram"></i> Telegram</a>
+                            <a class="nav-link" target="_blank" href="https://t.me/astrumuz"><i class="bi bi-telegram"></i> Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="info@astrumacademy.org"><i class="bi bi-envelope"></i> Email</a>
+                            <a class="nav-link" target="_blank" href="info@astrumacademy.org"><i class="bi bi-envelope"></i> Email</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://tiktok.com/@astrumuz"><i class="bi bi-tiktok"></i> Tik Tok</a>
+                            <a class="nav-link" target="_blank" href="https://tiktok.com/@astrumuz"><i class="bi bi-tiktok"></i> Tik Tok</a>
                         </li>
                     </ul>
                 </div>
