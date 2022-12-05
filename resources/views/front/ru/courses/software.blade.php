@@ -1,4 +1,4 @@
-@extends('front.uz.main')
+@extends('front.ru.main')
 
 @section('style')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -66,26 +66,28 @@
     .dropdown button.border-white{
         border-color: #333!important;
     }
-
+    .sticky-top{
+        top: 75px;
+        z-index: -1;
+    }
 </style>
 @endsection
 @section('content')
     <section>
         <div class="container">
-            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.fullstack') }}" class="text-success text-decoration-none">Software Engineering</a></p>
+            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('ru.index') }}" class="text-success text-decoration-none">ГЛАВНАЯ</a> </span> | <a href="{{ route('ru.courses') }}" class="text-success text-decoration-none">КУРСЫ И ОБРАЗОВАНИЕ</a> | <a href="{{ route('ru.fullstack') }}" class="text-success text-decoration-none">Software Engineering</a></p>
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="fw-bold">Software Engineering</h1>
-                    <p>12 OY</p>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
                     <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quibusdam voluptatem consequuntur repellendus quisquam quia cumque ratione labore eaque, ducimus earum non ullam enim, laudantium iste, corrupti blanditiis cupiditate.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
+                    <p>Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
+                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
                 </div>
                 <div class="col-md-6">
-                    <img class="rounded w-100" src="{{ asset('images/data.jpg') }}" alt="">
+                    <img class="rounded w-100" src="{{ asset('images/courses/3.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -102,39 +104,39 @@
                             </li>
                             <hr>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#about"> Kurs haqida </a>
+                                <a class ="nav-link fw-bold" href="#about">О курсе</a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#lessons"> O'quv dasturlari </a>
+                                <a class ="nav-link fw-bold" href="#lessons">Учебные программы</a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#mentors"> Mentorlar </a>
+                                <a class ="nav-link fw-bold" href="#mentors">Менторы</a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#developers"> Dasturlash tillari </a>
+                                <a class ="nav-link fw-bold" href="#developers">Языки программирования</a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#kurs_room"> Sinif xonalari </a>
+                                <a class ="nav-link fw-bold" href="#kurs_room">Классные комнаты</a>
                             </li>
                             {{-- <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#"> Выпускники </a>
                             </li> --}}
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#kurs_total"> Dars jadvali </a>
+                                <a class ="nav-link fw-bold" href="#kurs_total">Расписание занятий</a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#quetions"> Savollar </a>
+                                <a class ="nav-link fw-bold" href="#quetions">Вопросы</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
+                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-8">
                     <div>
-                        <p id="about" class="fw-bold text-success">Kurs haqida</p>
-                        <h1>Dasturlash ko'nikmalaringizni qaytadan kashf qiling</h1>
-                        <p>Bizning Software Engineering kursimiz o'zida 8 oydan 12 oygacha bo'lgan vaqtni qamrab oladi. Siz bu vaqt mobaynida o'zingizga o'xshagan talabalar bilan dasturlash sirlarini o'rganasiz. Undan tashqari mashg'ulotlar vaqtida funksiomal web saytlar va dasturlash yaratishni o'zlashtirasiz. Ushbu bilimlar esa ish topish jarayonida kerak bo'ladigan eng muhim narsalardir.</p>
+                        <p id="about" class="fw-bold text-success">О курсе</p>
+                        <h1>Заново раскройте свои навыки программирования</h1>
+                        <p>Наш курс Software Engineering проходит от 8 до 12 месяцев. За это время, со студентами похожими на вас вы узнаете секреты программирования. Кроме того, во время занятий вы освоите создание функциональных веб-сайтов и программ . И эти знания станут самыми важными факторами в процессе поиска работы.</p>
 
                         <video class="w-100 rounded" playsinline="playsinline" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
                             <source src="{{ asset('images/video_gif.mp4') }}" type="video/mp4">
@@ -179,55 +181,53 @@
                     </div> --}}
                     <hr class="fw-bold">
                     <div class="row mt-5">
-                        <p id="lessons" class="fw-bold text-success">O'QUV PROGRAMMASI</p>
-                        <h1 class="fw-bold mb-5">Software Engineering kursida siz quyidagilarni o'rganasiz:</h1>
+                        <p id="lessons" class="fw-bold text-success">УЧЕБНАЯ ПРОГРАММА</p>
+                        <h1 class="fw-bold mb-5">В курсе Software Engineering вы освоите:</h1>
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Bilim va ko'nikma </span> <br> Mashhur dasturlash tillarini o'rganasiz va ularni amalda qo'llab ko'rasiz </p>
+                            <p class="ms-3"><span class="fw-bold">Знания и навыки </span> <br> Вы изучите популярные языки программирования и примените их на практике </p>
                         </div>
                         <hr class="fw-bold border-1">
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Zamonaviy dasturlash tillari</span><br> Data scientist:
-                                Python, Web Scraping, SQL, API with Flask,Numpy, Pandas, Data Cleaning, Data manipulation, EDA, Data Visualization, Presentation skills,
-                                Machine Learning skills: Regression, Classification, Reinforcement Learning</p>
+                            <p class="ms-3"><span class="fw-bold">Современные языки программирования</span><br> Data scientist: Python, Web Scraping, SQL, API with Flask,Numpy, Pandas, Data Cleaning, Data manipulation, EDA, Data Visualization, Presentation skills, Machine Learning skills: Regression, Classification, Reinforcement Learning</p>
                         </div>
                         <hr class="fw-bold border-1">
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Analitika</span><br> Algoritmlarni bilish va dasturlarni qanday ishlashini analiz qila olish qobiliyati</p>
+                            <p class="ms-3"><span class="fw-bold">Аналитика</span><br> Знание алгоритмов и способность анализировать процесс работ программ</p>
                         </div>
                         <hr class="fw-bold border-1">
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold"> Ishlab chiqish</span><br> Web-interfeyslar va ilovalarni ishlab chiqish, to'plamlar va ma'lumotlar bazalarini boshqarish, dasturlarni sinovdan o'tkazish va masshtablash.</p>
+                            <p class="ms-3"><span class="fw-bold">Разработка</span><br> Веб-интерфейсов и приложений, управление сборниками и базами данных, тестирование и масштабирование приложений.</p>
                         </div>
                         <hr class="fw-bold border-1">
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Tashkil qilish </span><br> Sayt yoki dastur xavfsizligi tizimini tashkil qilish </p>
+                            <p class="ms-3"><span class="fw-bold">Организование</span><br> Организование системы безопасности сайта или приложения</p>
                         </div>
                         <hr class="fw-bold border-1">
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Taqdimot ko'nikmalar</span><br> Soft skills'ga ega bo'lish va ingliz tilidagi suhbatga tayyor bo'lish o'zingizni va mahsulotingizni taqdim eta olish qobiliyati.</p>
+                            <p class="ms-3"><span class="fw-bold">Презентация навыков</span><br> Обладеть с Soft skills и быть готовым к беседе на английском языке, а также способность представить себя и свой продукт.</p>
                         </div>
                         <hr class="fw-bold border-1">
                     </div>
                     <div class="row">
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Software Engineering</p>
-                        <h1 class="fw-bold">Amaliyot orqali dasturlashni o'rganing</h1>
-                        <p class="mb-5">Bizning IT Akademiyamiz sizni 100% bajarib o'rganadigan amaliy o'quv dasturi orqali dasturlashni bosqichma-bosqich o'tkazish uchun mo'ljallangan.</p>
-                        <h1 class="fw-bold">Har hafta dasturlash mahoratingizni oshirib boring </h1>
-                        <p class="mb-5">Har hafta Software Engineering dasturchi bo'yicha o'quv kursimiz davomida sizdan turli dasturlash tillari bilan ishlash, veb-saytlar, mobil ilovalar va dasturlar yaratish bo'yicha yangi ko'nikmalarni o'rganishingiz mumkin.</p>
-                        <span class="fw-bold mb-3">8-12 oylik kurs rejasi </span>  <br>
-                        <p>Bizning  ta'lim kursimiz 8 oydan 12 oygacha davom etuvchi qiziqarli darslardan iborat. Siz o'zingiz xohlagan paytingiz Astrumga kelasiz va xohlagancha dars qila olasiz bu sizga dasturlash tillarini yaxshiroq tushunish va o'rganish imkonini beradi.</p>
+                        <h1 class="fw-bold">Учитесь программировать с помощью практики</h1>
+                        <p class="mb-5">Наша IT-Академия предназначена для поэтапного обучения программированию с помощью практической программы обучения, которая научит вас на 100%.</p>
+                        <h1 class="fw-bold">Развивайте свои навыки программирования каждую неделю</h1>
+                        <p class="mb-5">Каждую неделю во время нашего учебного курса для разработчиков Software Engineering вы можете освоить новые навыки работы с различными языками программирования, создания веб-сайтов, мобильных приложений и программ.</p>
+                        <span class="fw-bold mb-3">План курса на 8-12 месяцев</span>  <br>
+                        <p>Наш образовательный курс состоит из увлекательных занятий продолжительностью от 8 до 12 месяцев. Вы можете в любое время прийти в Astrum и учиться столько, сколько захотите, так как это позволит вам лучше понимать и изучать языки программирования.</p>
                     </div>
 
                     {{-- <div class="row ms-5 mt-5">
@@ -307,10 +307,9 @@
 
                     <hr class="mt-5 mb-5">
                     <div class="row">
-                        <p id="mentors" style="color: #62BC9E;" class="fw-bold mt-5">MENTORLAR JAMOASI</p>
-                        <h1 class="fw-bold">Dasturlashni ekspertlardan o'rganing </h1>
-                        <p>Bizning dasturlash bo'yicha professional o'qituvchilarimiz sizga zamonaviy dasturlash tillarida yaxshi kod yozish uchun eng yaxshi amaliyot va ko'nikmalarni o'rgatadi. O'qituvchilarning hammasi katta tajriba va kuchli bilimga ega.
-                        </p>
+                        <p id="mentors" style="color: #62BC9E;" class="fw-bold mt-5">КОМАНДА МЕНТОРОВ</p>
+                        <h1 class="fw-bold">Изучайте программирование у экспертов</h1>
+                        <p>Наши профессиональные учителя по программированию научат вас хорошим практикам и навыкам написания хорошего кода на современных языках программирования. Все учителя имеют большой опыт и сильные знания.</p>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
@@ -321,25 +320,25 @@
                                 <h1>Ozodov Sarvar</h1>
                                 <p>Software Engineering</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Salom, mening ismim Sarvar, men Software Engineering yo'nalishi bo'yicha mentorman. Men NAPA kompaniyasining o'qituvchilaridan biri bo'lganman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
+                                <p class="">"Привет, меня зовут Сарвар, я ментор по направлению Software Engineering. Я очень строгий учитель и не люблю неработающие коды."</p>
                             </div>
                         </div>
-                        <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p>
+                        {{-- <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p> --}}
                         <div class="row">
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/berdiyor.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonov Berdiyor</span> <br><span>Software Engineering</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Holmatov Berdiyor</span> <br><span>Software Engineering</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                         </div>
 
                         <hr class="mt-5 mb-5">
 
-                        <p id="developers" style="color: #62BC9E;" class="fw-bold mt-5">Dasturchilarning ish qurollari</p>
-                        <h1 class="fw-bold">Noldan professionalgacha</h1>
-                        <p>Bizning o'quv kurslarimiz eng so'nggi dasturlash vositalariga asoslangan bo'lib, o'tgan o'n yilliklar davomida o'quvchilarga o'rgatilgan kurs o'tish usullaridan farqli o'laroq, biz dasturchi o'z karyerasini qurishi va chuqur bilim olishi uchun eng so'nggi texnologiyalar va kuchli o'qitish tizimi muhim deb hisoblaymiz.</p>
+                        <p id="developers" style="color: #62BC9E;" class="fw-bold mt-5">Рабочие инструменты программистов</p>
+                        <h1 class="fw-bold">От нуля до профессионала</h1>
+                        <p>Наши учебные курсы основаны на новейших средствах программирования, и в отличие от методов прохождения курсов которым обучали студентов на протяжении последних десятилетий, мы считаем, что новейшие технологии и сильная система обучения важны для программиста, чтобы построить свою карьеру и получить глубокие знания.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
                                 <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
@@ -364,24 +363,16 @@
                             <div class="carusel-top">
                                 <div class="carousel-inner">
                                     <div class="most-inner">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6349.jpg') }}">
-                                        <img src="{{ asset('images/DSC_6383.jpg') }}">
+                                        <img src="{{ asset('images/layout/gallery/1.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/2.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/5.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/4.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/3.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/6.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/7.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/8.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/9.jpg')}}">
+                                        <img src="{{ asset('images/layout/gallery/10.jpg')}}">
                                     </div>
                                 </div>
                             </div>
@@ -542,7 +533,7 @@
                             <div class="d-flex">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
-                                <p class="w-100"><span class="fw-bold">Xamidjonov komiljon</span><br> Software Engineering - Mentori</p>
+                                <p class="w-100"><span class="fw-bold">Ozodov Sarvar</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
                                 <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
@@ -559,24 +550,7 @@
                             <div class="d-flex">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
-                                <p class="w-100"><span class="fw-bold">Arslonova Nodira</span><br> Software Engineering - Mentori</p>
-                                <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
-                            </div>
-                        </div>
-
-                        <div id="moon_3" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
-                            <p class="fw-bold">Software Engineering</p>
-                            <p>2/8 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
-                            <p>Pre-season uchun darslar</p>
-                            <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
-                            <hr>
-                            <div class="d-flex">
-                                <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
-                                <div class="d-block w-100">
-                                <p class="w-100"><span class="fw-bold">Alimbayeva Asal</span><br> Software Engineering - Mentori</p>
+                                <p class="w-100"><span class="fw-bold">Arslonov Berdiyor</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
                                 <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
@@ -586,82 +560,76 @@
 
                     <hr class="mt-5 mb-5">
 
-                    <p id="quetions" style="color: #62BC9E;" class="fw-bold mt-5">Savollar</p>
+                    <p id="quetions" style="color: #62BC9E;" class="fw-bold mt-5">Вопросы</p>
 
-                    <h1>Software Engineering kursi bo'yicha savollaringiz bormi? </h1>
-                    <p>Katta ehtimol bilan, siz bir nechta savollar tug'ilgan bo'lishi mumkin. Bizni kuzatayotganlarga savollarni to'g'ridan-to'g'ri berishlarini so'raymiz va siz istalgan vaqtda biz bilan tezkor qo'ng'iroq orqali bog'lanishingiz mumkin.</p>
+                    <h1>Есть вопросы по курсу Full Stack Developer?</h1>
+                    <p>Скорее всего, у вас могли возникнуть пару вопросов. Мы просим тех, кто следит за нами, задавать вопросы напрямую, а также вы можете связаться с нами по горячей линии в любое время.</p>
 
                     <ul class="list-unstyled ps-0">
                         <li class="mb-4 border shadow-sm rounded-1">
                             <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                                Guruhda nechta o'quvchi bo'ladi?
+                                Сколько учеников будут в группе?
                             </button>
                             <div class="collapse" id="home-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
-                                    Astrumda guruhlar yo'q. Siz xohlagan paytingiz Astrumga kelishingiz, xohlagancha o'z ustingizda ishlashingiz va xohlagan paytingiz ketishingiz mumkin.
+                                    Академия Astrum IT оснащена образовательной системой, работающей с использованием высокотехнологичных алгоритмов искусственного интеллекта. Вы можете приходить в Astrum в любое время когда захотите работать над собой и уходить, когда захотите.
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-4 border shadow-sm rounded-1">
                             <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                Dasturlashni o'rganish uchun menda boshlang'ich bilim bo'lishi kerakmi?
+                                Должен ли я иметь начальные знания для изучения программирования?
                             </button>
                             <div class="collapse" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal small p-5">
-                                    Yo'q, sizda hech qanday boshlang'ich bo'lishi talab qilinmaydi. Astrum IT Akademiyasida tashkil qilingan kurslar noldan boshlab professional darajagacha o'rgatiladi.
+                                    Система обучения в Академии Astrum IT устроена таким образом, что для прохождения одного из курсов вам не потребуется никаких начальных знаний. Через организованные в нашей академии Pre-season курсы, вы получите начальные знания, и сдав экзамен, перейдете на курсы Main Season.
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-4 border shadow-sm rounded-1">
                             <button class="btn btn-toggle w-100 d-flex justify-content-start fw-bold p-3" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                                Nimaga Astrum boshqalardan yaxshiroq?
+                                Почему Astrum лучше других?
                             </button>
                             <div class="collapse" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal p-5 small">
-                                    Chunki bizda Sun'iy intellekt asosida ishlovchi zamonaviy o'qitish tizimi yo'lga qo'yilgan va kurslarni bitirganingizdan so'ng sizga Amerikaning Silikon vodiysida ishlash imkonini beruvchi Xalqaro QWASAR sertifikati topshiriladi. Undan tashqari bizda zamonaviy sinfxonalari, Mac Valley, 24/7 ishlovchi kampus sport maydonchalari, Astrocoin ichki valyutasi va tun-u kun qo'riqlash tizimi bor.
+                                    Потому что у нас установлена современная система обучения, основанная на Искусственном интеллекте и по окончании курсов вам будет вручен международный сертификат QWASAR, который позволит вам работать в Силиконовой долине Америки. Кроме того, у нас имеются современные классы, Mac Valley, спортивные площадки кампуса работающие 24/7, внутренняя валюта Astrocoin и система круглосуточной охраны.
                                 </ul>
                             </div>
                         </li>
                     </ul>
-                    <p style="font-size: 30px;">+99 (878) 150-40-02</p>
-                    <p class="fw-bold">Bizga yozishingiz mumkin</p>
-                    <div class="d-flex w-25"><a href="#" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-instagram " style="font-size: 45px;"></i> </a></div>
+                    <p style="font-size: 30px;">+99 (71) 202 42 22</p>
+                    <p class="fw-bold">Вы можете написать нам</p>
+                    <div class="d-flex w-25">
+                        <a href="https://t.me/astrumuz" target="_blank" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> 
+                        <a href="https://www.facebook.com/Astrumuzb" class="text-dark" target="_blank"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a>
+                        <a href="http://instagram.com/astrumuz" class="text-dark" target="_blank"><i class="bi bi-instagram me-3" style="font-size: 45px;"></i> </a> 
+                        <a href="https://tiktok.com/@astrumuz" class="text-dark" target="_blank"><i class="bi bi-tiktok me-3" style="font-size: 45px;"></i> </a>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/1.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a id="btn" href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">Более</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
+                
+                <div class="col-xxl-6 col-xl-6 col-sm-6 col-md-6">
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('images/courses/3.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="fs-5">12 oy</p>
+                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
+                            <h4 class="card-title fw-bold">Data Science</h4>
+                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-sm-6 col-md-4">
-                    <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Kurs boshlanish voxti - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="fs-5">12 oy</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('uz.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a id="btn" href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">Более</a>
                         </div>
                     </div>
                 </div>

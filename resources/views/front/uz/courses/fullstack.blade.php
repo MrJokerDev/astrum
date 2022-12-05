@@ -52,7 +52,6 @@
         min-height: 55vh;
     }
     .most-inner {
-        margin-top: 2vh;
         left: 0;
     }
 
@@ -70,7 +69,11 @@
         top: 75px;
         z-index: -1;
     }
-
+    @media only screen and (max-width: 768px){
+        .carousel {
+            background-color: #fff;
+        }
+    }
 </style>
 @endsection
 @section('content')
@@ -82,7 +85,7 @@
                     <h1 class="fw-bold">Full Stack Developer</h1>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
-                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
+                    <p id="skill" class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
                 </div>
@@ -97,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Full stack developer
@@ -357,13 +360,13 @@
                         <p>Bizning o'quv kurslarimiz eng so'nggi dasturlash vositalariga asoslangan bo'lib, o'tgan o'n yilliklar davomida o'quvchilarga o'rgatilgan kurs o'tish usullaridan farqli o'laroq, biz dasturchi o'z karyerasini qurishi va chuqur bilim olishi uchun eng so'nggi texnologiyalar va kuchli o'qitish tizimi muhim deb hisoblaymiz.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
@@ -544,15 +547,15 @@
                             <p>1/9 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Pre-season uchun darslar</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Shukurov Jasur</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
                             </div>
                         </div>
 
@@ -561,15 +564,15 @@
                             <p>2/10 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Pre-season uchun darslar</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Azizova Aziza</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
                             </div>
                         </div>
 
@@ -578,15 +581,15 @@
                             <p>2/8 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Pre-season uchun darslar</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Shomurodov Sarvar</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
                             </div>
                         </div>
 
@@ -632,7 +635,12 @@
                     </ul>
                     <p style="font-size: 30px;">+998 (71) 202 42 22</p>
                     <p class="fw-bold">Bizga yozishingiz mumkin</p>
-                    <div class="d-flex w-25"><a href="#" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a> <a href="#" class="text-dark"><i class="bi bi-instagram " style="font-size: 45px;"></i> </a></div>
+                    <div class="d-flex w-25">
+                        <a href="https://t.me/astrumuz" target="_blank" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> 
+                        <a href="https://www.facebook.com/Astrumuzb" class="text-dark" target="_blank"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a>
+                        <a href="http://instagram.com/astrumuz" class="text-dark" target="_blank"><i class="bi bi-instagram me-3" style="font-size: 45px;"></i> </a> 
+                        <a href="https://tiktok.com/@astrumuz" class="text-dark" target="_blank"><i class="bi bi-tiktok me-3" style="font-size: 45px;"></i> </a>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">

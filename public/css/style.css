@@ -387,3 +387,18 @@ iframe {
     width: 100%;
     height: 400px;
 }
+.card_table {
+    display: flex;
+}
+p.bg-warning {
+    width: 25%;
+}
+p#skill {
+    width: 50%;
+}
+nav#navbar-bg {
+    width: 75%;
+}
+/* .text-dark {
+    margin: 5px;
+} */

@@ -9,14 +9,19 @@
         font-size: 10px !important;
     }
     .carousel {
-        min-height: 65vh;
+        background-color: #eeeeee;
+        min-height: 55vh;
+        padding: 0;
+    }
+    .staff {
+        display: none;
     }
     .carousel-inner {
         min-height: 40vh;
     }
     .carousel img {
         max-width: 45vw;
-        height: 60vw;
+        height: 75vw;
     }
 
     .most-inner {
@@ -28,17 +33,30 @@
     .font_size {
         font-size: 2rem;
     }
+    .about_us {
+        font-size: 55px !important;
+    }
     .astrum_img {
+        display: none;
         top: 160rem;
     }
     .section-fon {
+        display: none;
         background-size: 100% 340px;
     }
     .back p.text-white {
         font-size: 10px;
     }
     .back {
-        height: 30%;
+        height: 25%;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .back div {
+        text-align: end;
     }
     .back a {
         margin-top: 0px !important;
@@ -61,6 +79,21 @@
     }
     h1.text-center .text-white {
         font-size: 40px;
+    }
+    .card_table {
+        display: block;
+    }
+    .card_table img {
+        display: none;
+    }
+    p#skill {
+        width: 100%;
+    }
+    nav#navbar-bg {
+        width: 100%;
+    }
+    p.bg-warning {
+        width: 100%;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -100,22 +133,27 @@
 }
 @media only screen and (max-width: 1200px) {
     .nav-item a {
-        font-size: 11px;
+        font-size: 15px;
     }
     .nav-item .dropdown button {
         font-size: 11px;
     }
-    h1#courses_rek {
-        font-size: 35px;
+    h1 {
+        font-size: 20px !important;
+    }
+    p {
+        font-size: 16px !important;
     }
     h1.font_size {
         font-size: 3rem;
     }
     .back h1.text-white {
+        display: none;
         font-size: 18px;
         width: 80%;
     }
     .back p.text-white {
+        display: none;
         font-size: 10px !important;
         width: 70%;
         padding: 0px !important;

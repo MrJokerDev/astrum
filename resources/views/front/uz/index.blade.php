@@ -75,8 +75,8 @@
                 <div class="col-md-12 col-lg-5">
                     <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Biz haqimizda</p>
                     <h1 class="fw-bold">Sun'iy intellekt yordamida boshqariladigan ta'lim tizimi va zamonaviy atmosfera sizning muvaffaqiyatingiz garovidir.</h1> <br>
-                    <p class="fw-semibold fs-5">Astrum IT Akademiyasi nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va eng katta IT Akademiya bo'lib, bu yerda sun'iy intellekt yordamida ta'lim berishning innovatsion usuli yo'lga qo'yilgan.</p>
-                    <p class="fw-semibold fs-5"> Zamonaviy texnologiyalar, 24/7 ishlaydigan o'quv kampusi, mingga yaqing iMac'lar va qulay sharoitlar sizga haqiqiy dasturchi bo'lib yetishish imkonini beradi. </p>
+                    <p class="fw-semibold">Astrum IT Akademiyasi nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va eng katta IT Akademiya bo'lib, bu yerda sun'iy intellekt yordamida ta'lim berishning innovatsion usuli yo'lga qo'yilgan.</p>
+                    <p class="fw-semibold"> Zamonaviy texnologiyalar, 24/7 ishlaydigan o'quv kampusi, mingga yaqing iMac'lar va qulay sharoitlar sizga haqiqiy dasturchi bo'lib yetishish imkonini beradi. </p>
                     <a id="btn" href="{{ route('uz.about_us') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                 </div>
                 <div class="col-md-12 col-lg-7">
@@ -108,8 +108,8 @@
             </div> --}}
             <div class="row justify-content-end">
                 <div class="col-sm-12 col-md-9 col-xl-7">
-                    <div class="border shadow bg-white rounded p-4 fw-semibold fs-5">
-                        Astrum IT Akademiyasi tabiat qo'ynida joylashgan bo'lib, bu yerdagi toza ob-havo va shovqinsiz muhit, ortiqcha chalg'ishlarsiz IT sohasini mukammal o'rganishingizga yordam beradi. Akademiya hududi tun-u kun qo'riqlanadi va o'quv kampusi 24/7 rejimida faoliyat yuritadi. Siz o'zingizga qulay vaqtda kelishingiz va kurslarni davom ettirishingiz mumkin.
+                    <div class="border shadow bg-white rounded p-4 fw-semibold">
+                       <p>Astrum IT Akademiyasi tabiat qo'ynida joylashgan bo'lib, bu yerdagi toza ob-havo va shovqinsiz muhit, ortiqcha chalg'ishlarsiz IT sohasini mukammal o'rganishingizga yordam beradi. Akademiya hududi tun-u kun qo'riqlanadi va o'quv kampusi 24/7 rejimida faoliyat yuritadi. Siz o'zingizga qulay vaqtda kelishingiz va kurslarni davom ettirishingiz mumkin.</p> 
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
     </section>
 
     <section class="section-fon">
-        <div class="container p-5 align-items-center">
+        <div class="container align-items-center">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Ta'lim va kurslar</p>
             <h1 id="courses_rek" class="text-white">IT sohasini Astrum IT Akademiyasida o'rganing va o'z hayotingizni yaxshi tomonga o'zgartiring</h1>
             <p id="courses_rek_p" class="text-white pt-4 fs-5">Akademiyamizda dasturlash kurslari sun'iy intellekt yordami shunday tizimlashtirilganki, o'qishni tugatishingiz bilan siz yetarlicha bilim va yaxshigina portfolioga ega bo'lasiz.</p>
@@ -227,7 +227,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="staff">
         <div class="container">
             <img src="{{ asset('images/astrum_staff.jpg')}}" class="w-100 rounded shadow" alt="image">
         </div>

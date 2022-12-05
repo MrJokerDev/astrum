@@ -1,146 +1,60 @@
 @extends('front.eng.main')
 @section('style')
-<style>
+{{-- <style>
     .navbar{
         position: absolute;
         z-index: 9999;
     }
-</style>
+</style> --}}
 @endsection
 @section('content')
 
-    <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
-            <source src="{{ asset('images/video/video_1.MP4') }}" type="video/mp4">
-        </video>
 
-        <div class="container">
-            <div class="row h-100">
-                <div class="col-md-7 align-self-end mb-5">
-                    <div class="text-white">
-                        <p class="text-success"><span class="fw-bold"><a href="{{ route('eng.index') }}" class="text-decoration-none text-success">ГЛАВНАЯ</a></span> | <a href="{{ route('eng.courses') }}" class="text-decoration-none text-success">КУРСЫ И ОБРАЗОВАНИЕ</a></p>
-                        <h1 class="font_size">Измените свою жизнь, повысь свой уровень знаний</h1>
-                        <p>Наши курсы разработаты, чтобы помочь Вам учитсия на практике в <br> современных классах и на современном оборудовании. </p>
-                    </div>
-                </div>
-                <div class="col-md-5"></div>
-            </div>
+    <div class="img-fon position-relative">
+        <img id="img-fon" class="img-fluid" src="{{ asset('images/AST04894.jpg') }}" alt="image">
+        <div class="container position-absolute top-50 start-50 translate-middle">
+            <p class="text-white"><span class="fw-bold"><a href="{{ route('eng.index') }}" class="text-decoration-none text-white">BOSH SAHIFA</a></span> | <a href="{{ route('eng.courses') }}" class="text-decoration-none text-white">KURSLAR VA TA'LIM</a></p>
+            <h1 class="font_size text-white">O'zingizni bilim darajangizni oshiring va hayotingizni o'zgartiring</h1>
+            <p class="text-white">Bizning kurslarimiz sizga IT sohasini tajriba orqali o'rganishingizda yordam beradi.</p>
         </div>
-    </header>
+    </div>
 
     <section>
         <div class="container">
-            {{-- <button type="button" class="btn btn-outline-success p-3 border-danger rounded" style="color: #333;">Все направления</button>
-            <br><br>
-            <button type="button" class="btn btn-outline-success p-3 me-2 border-danger rounded" style="color: #333;">Full Stack</button>
-            <button type="button" class="btn btn-outline-success p-3 me-2 border-danger rounded" style="color: #333;">Data Science</button>
-            <button type="button" class="btn btn-outline-success p-3 me-2 border-danger rounded" style="color: #333;">Software Engineering</button> --}}
-            <div class="row pt-5">
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+            <div class="row">
+                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="card hvr-float m-auto m-5">
+                        <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
+                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
+                            
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="card hvr-float m-auto">
+                        <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
+                            <h4 class="card-title fw-bold">Data Science</h4>
+                            <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, <br> biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
+                            
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
+                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="card hvr-float m-auto">
+                        <img class="card-img-top" src="{{ asset('images/courses/3.png')}}" alt="Card image cap">
                         <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
+                            <h4 class="card-title fw-bold">Software Engineering</h4>
+                            <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
+                            
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-5 pb-5">
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-md-6">
-                    <div class="card hvr-float" style="width: 18rem;">
-                        <img class="card-img-top shadow" src="{{ asset('images/DSC_6366.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Начала курсв - 03/03/2022</p>
-                            <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="fs-5">12 месяцув / 450 часов</p>
-                            <hr class="w-25 border border-success border-2">
-                            <a id="btn_1" href="{{ route('uz.courses_in') }}" class="btn btn-outline-success p-3 rounded">Узнать больше</a>
+                            <a href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
                         </div>
                     </div>
                 </div>

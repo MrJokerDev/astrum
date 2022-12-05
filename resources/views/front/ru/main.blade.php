@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrum</title>
+    <title>Astrum IT Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset("css/animate.css")}}">
     <link rel="stylesheet" href="{{ asset("css/carousel.css")}}">
@@ -13,23 +14,128 @@
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   	@yield('style')
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #3a3a9257;
+            /* z-index: 9999; */
+        }
+
+    </style>
+    {{-- <style>
+
+        #loader{
+            width: 100%;
+            height: 100%;
+            animation: rotate 1.5s ease-in-out infinite;
+            position: relative;
+        }
+
+        .set1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .set2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            background: dodgerblue;
+            border-radius: 50%;
+        }
+
+        .set1  .ball:nth-child(2){
+            background: orangered;
+            animation: scale 1.5s ease-in-out infinite forwards;
+        }
+
+        .set1  .ball:nth-child(1){
+            background: green;
+            animation: scale 1.5s ease-in-out infinite forwards;
+        }
+
+        .set2 .ball:nth-child(1){
+            background: dodgerblue;
+            animation: scale2 1.5s ease-in-out infinite forwards;
+        }
+
+        .set2 .ball:nth-child(2){
+            background: yellow;
+            animation: scale2 1.5s ease-in-out infinite forwards;
+        }
+
+        @keyframes scale2 {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+
+        @keyframes scale {
+            0%{
+                transform: scale(0);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0);
+            }
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        #myDiv {
+            display: none;
+        }
+    </style> --}}
 </head>
-
-
-
+{{-- onload="myFunction()" style="margin:0;" --}}
 <body>
-
-    <div id="top-header" class="top-header top-header_1">
-        <div class="text-center">
-            <p class="p-3 mb-0 text-white"><span>&#129395;</span> Full stack разработчик с Javascript! <a id="arrow" href="#">Присоединится к
-                    группе <i id="arrow_1" class="bi bi-arrow-right"></i></a></p>
+    {{-- <div id="loader">
+        <div class="set1">
+            <div class="ball"></div>
+            <div class="ball"></div>
         </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg">
+        <div class="set2">
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+    </div> --}}
+    <div id="myDiv">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <div class="d-flex flex-grow-1">
-                <a class="navbar-brand text-right" href="{{ route('ru.index') }}">Logo</a>
+                <a class="navbar-brand text-right" href="{{ route('ru.index') }}"><img src="{{ asset('images/logo.png') }}" width="100" alt=""></a>
                 <div class="w-100 text-end">
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar7">
                         <span class="navbar-toggler-icon"></span>
@@ -39,40 +145,39 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.index') }}#location">Локатции</a>
+                        <a class="nav-link" href="{{ route('ru.index') }}">Bosh sahifa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
+                        <a class="nav-link" href="{{ route('ru.about_us') }}">Biz xaqimizda</a>
                     </li>
                     <li class="nav-item">
-                        {{-- <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
-                    </li> --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
+                        <a class="nav-link" href="{{ route('ru.courses') }}">Kurslar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.index') }}#mentors">Менторы</a>
+                        <a class="nav-link" href="{{ route('ru.index') }}#location">Manzil</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.gallery') }}">Foto suratlar</a>
+                    </li>
                     {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.news') }}">Новости</a>
+                        <a class="nav-link" href="{{ route('ru.job') }}">Bosh ish o'rinlari</a>
+                    </li> --}}
+                    {{-- <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ru.index') }}#mentors">Mentorlar</a>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.about_us') }}">О компании</a>
+                        <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telephone"></i> +998 (71) 202 42 22</a>
                     </li>
-                    <li class="nav-item">
-                        <a id="btn" class="btn btn-outline-light border-white" href="#"><i class="bi bi-telegram"></i> Добавляйся Free в Telegram</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light" type="button" href="#">Лутшие курсы</a>
-                    </li>
+                    {{-- <li class="nav-item">
+                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light border border-3" type="button" href="#">Eng yaxshi kurslar</a>
+                    </li> --}}
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ru
+                            <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white border border-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            UZ
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
+                                <a class="dropdown-item" href="{{ route('ru.index') }}">RU</a>
                                 <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
                             </div>
                         </div>
@@ -86,26 +191,38 @@
 
     <footer>
         <div class="container ">
+
             <div class="row text back">
-                <div class="col-md-7"></div>
-                <div class="col-md-5 align-self-center">
-                    <h1 class="text-white">Готовы стать <br> наши студентом?</h1>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati dicta recusandae ex molestias beatae nostrum sapiente ab! Perspiciatis, commodi tenetur nostrum molestias veritatis excepturi assumenda libero? Fuga, deserunt accusantium!</p>
-                    <a href="{{ route('ru.courses') }}" class="btn btn-light p-3 mt-5 rounded">Выбратть курс</a>
+                <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
+                    <h1 class="text-white">Готовы стать учеником Astrum?</h1>
+                    <p class="text-white">Хотите стать учеником самой большой современной IT Академии в Средней Азии и сделать первые шаги к своему светлому будущему? Не упустите возможность записаться на курсы Astrum и начать изучать программирование.</p>
+                    <a href="{{ route('ru.courses') }}" class="btn btn-light p-3 rounded">Зарегистрируйтесь сейчас</a>
                 </div>
             </div>
 
+            <div class="row mt-5 pt-5">
+                <div class="text-center">
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Расположение Академии</p>
+                    <h1 class="fw-bold">Великие идеи рождаются в лучших местах</h1>
+                    <p class="fw-semibold">А мы представляем вам самую удобную локацию</p>
+                </div>
+            </div>
+
+            <div class="map mt-5 mb-5 shadow">
+                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Aa5fc6b59f0b521a61e6064a820c7118f80c70630fcb56c5d8a279fca0f74fda8&amp;source=constructor" width="1280" height="630" frameborder="0"></iframe>
+            </div>
+
             <div class="row pt-5">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p>КУРСЫ И ОБРАЗОВАНИЕ</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/1.png') }}" alt="">
                                     <p>Full Stack developer <br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
@@ -113,9 +230,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/2.png') }}" alt="">
                                     <p>Software engineer<br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
@@ -123,82 +240,59 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
+                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/3.png') }}" alt="">
                                     <p>Data science engineer <br>
-                                        12 moon
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <div class="d-flex">
-                                    <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/web-developer.jpg') }}" alt="">
-                                    <p>3D max specialist <br>
-                                        12 moon
+                                        12 oy
                                     </p>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <p>МЕРОПРИЯТИЯ И ТРЕНИНГИ</p>
-                    <hr>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">День открытых дверей</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Футбольный кубок Astrum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Презентация курса Full Stack developer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ярмарка курсов разных специальностей</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p>ASTRUM</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.index') }}#location">Локатции</a>
+                            <a class="nav-link" href="{{ route('ru.index') }}">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.gallery') }}">Фото</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.job') }}">Карьера</a>
+                            <a class="nav-link" href="{{ route('ru.about_us') }}">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.news') }}">Новости</a>
+                            <a class="nav-link" href="{{ route('ru.index') }}#location">Адрес</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.about_us') }}">О компании</a>
+                            <a class="nav-link" href="{{ route('ru.gallery') }}">Картинки</a>
                         </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ru.job') }}">Bosh ish o'rinlari</a>
+                        </li> --}}
+                        
+                        
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <p>СВЯЗАТЬСИЯ</p>
+                <div class="col-md-4">
+                    <p>ALOQA</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a class="nav-link" target="_blank" href="http://instagram.com/astrumuz"><i class="bi bi-instagram"></i> Instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a class="nav-link" target="_blank" href="https://www.facebook.com/Astrumuzb"><i class="bi bi-facebook"></i> Facebook</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-telegram"></i> Telegram</a>
+                            <a class="nav-link" target="_blank" href="https://t.me/astrumuz"><i class="bi bi-telegram"></i> Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Email</a>
+                            <a class="nav-link" target="_blank" href="info@astrumacademy.org"><i class="bi bi-envelope"></i> Email</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://tiktok.com/@astrumuz"><i class="bi bi-tiktok"></i> Tik Tok</a>
                         </li>
                     </ul>
                 </div>
@@ -209,7 +303,7 @@
                     <img src="{{ asset('images/logo_1.png') }}" width="100" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet molestiae facere nihil, optio eos quia nulla facilis id libero placeat possimus ipsum quis quasi magnam enim, saepe beatae adipisci?</p>
+                    {{-- <p>Bizning maqsadimiz yordam berish va etkazishdir Siz bizning mahoratimiz va qobiliyatlarimizsiz!</p> --}}
                 </div>
                 <div class="col-md-4 text-end">
                     <p>Astrum IT academy Ltd 2022 <br> <span class="fw-bold">Terms & Privacy</span></p>
@@ -218,9 +312,23 @@
         </div>
     </footer>
 
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culruyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+    {{-- <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script> --}}
     @yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
 </body>

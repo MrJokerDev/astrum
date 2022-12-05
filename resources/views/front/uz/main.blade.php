@@ -190,8 +190,7 @@
     @yield('content')
 
     <footer>
-        <div class="container ">
-
+        <div class="container">
             <div class="row text back">
                 <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
@@ -268,11 +267,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('uz.gallery') }}">Rasmlar</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('uz.job') }}">Bosh ish o'rinlari</a>
-                        </li> --}}
-                        
-                        
                     </ul>
                 </div>
                 <div class="col-md-4">
