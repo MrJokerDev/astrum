@@ -157,7 +157,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
+                            <p class="card-text">Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, как со стороны Front-end, так и со стороны Back-end.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
@@ -169,7 +169,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, <br> biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
+                            <p class="card-text">Специалист по информации создает модели основанные на данных, которые помогают принимать повседневные или бизнес решения.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
@@ -181,7 +181,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/3.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
+                            <p class="card-text">Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('ru.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>

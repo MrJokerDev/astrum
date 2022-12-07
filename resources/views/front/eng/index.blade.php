@@ -157,7 +157,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
+                            <p class="card-text">This is a specialist who must understand the entire set of technologies and components used in the project, both Front-end and Back-end.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('eng.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
@@ -169,7 +169,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, <br> biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
+                            <p class="card-text">Our Data Science course takes 8 to 12 months to complete. During this time, you will learn the secrets of programming with students just like you. You will also learn how to build functional websites and programs in these classes. And this knowledge will become the most important factor in the job search process.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
@@ -181,7 +181,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/3.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
+                            <p class="card-text">Software Engineer works on creating programs and applications and running them. Its main function is to create optimized applications that can be updated and extended.</p>
 
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
