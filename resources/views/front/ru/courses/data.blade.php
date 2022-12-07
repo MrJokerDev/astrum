@@ -314,7 +314,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="{{ asset('images/Менторs/komil.jpg') }}" class="rounded w-100" alt="image">
+                            <img src="{{ asset('images/mentors/komil.jpg') }}" class="rounded w-100" alt="image">
                         </div>
                         <div class="col-md-7">
                             <div class="">
@@ -328,14 +328,14 @@
                         <div class="row">
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="{{ asset('images/Менторs/nodira.jpg') }}" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/mentors/nodira.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Ментор</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Арсланова Нодира</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="position-relative">
-                                    <img src="{{ asset('images/Менторs/asal.jpg') }}" class="rounded w-100" alt="image">
+                                    <img src="{{ asset('images/mentors/asal.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Ментор</span>
                                     <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Алимбаева Асал</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
