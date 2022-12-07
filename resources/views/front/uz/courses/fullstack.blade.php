@@ -135,13 +135,13 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 pt-5">
                     <div>
                         <p id="about" class="fw-bold text-success">Kurs haqida</p>
                         <h1>Dasturlash ko'nikmalaringizni qaytadan kashf qiling</h1>
                         <p>Bizning Full Stack kursimiz o'zida 8 oydan 12 oygacha bo'lgan vaqtni qamrab oladi. Siz bu vaqt mobaynida o'zingizga o'xshagan talabalar bilan dasturlash sirlarini o'rganasiz. Undan tashqari mashg'ulotlar vaqtida funksiomal web saytlar va dasturlash yaratishni o'zlashtirasiz. Ushbu bilimlar esa ish topish jarayonida kerak bo'ladigan eng muhim narsalardir.</p>
 
-                        <video class="w-100 rounded" playsinline="playsinline" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
+                        <video class="w-100 rounded" playsinline="playsinline" autoplay="autoplay" controls="controls" preload="auto" onclick="this.play()"  muted="muted" loop="loop"> <!-- autoplay="autoplay" -->
                             <source src="{{ asset('images/video_gif.mp4') }}" type="video/mp4">
                         </video>
                     </div>
@@ -377,7 +377,7 @@
                         <p>Biz dasturlashni o'rgatishda har bir o'quvchiga individual yondashuv muhim deb hisoblaymiz va shuning uchun ham har bir o'quvchi mentorlardan savol so'rashi va yordam olishi mumkin. Aynan 20 kishiga mo'ljallangan sinfxonalari esa o'quvchini ko'proq narsalarni tushunishga va boshqalardan tortinmagan holda muhokamalarda qatnashishiga va fikr almashishiga yordam beradi</p>
 
                     </div>
-                    <div class="container-fluid" style="width: 110%">
+                    <div class="container-fluid" style="width: 100%">
                         <div class="carousel">
                             <div class="carusel-top">
                                 <div class="carousel-inner">

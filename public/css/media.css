@@ -44,6 +44,9 @@
         display: none;
         background-size: 100% 340px;
     }
+    .img-fon {
+        display: none;
+    }
     .back p.text-white {
         font-size: 10px;
     }
@@ -167,7 +170,7 @@
         height: 65%;
     }
     .section-fon {
-        height: 60%;
+        height: 45%;
     }
     .carousel-caption h1 {
         width: 75%;

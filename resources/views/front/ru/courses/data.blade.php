@@ -366,7 +366,7 @@
                         <p>Biz dasturlashni o'rgatishda har bir o'quvchiga individual yondashuv muhim deb hisoblaymiz va shuning uchun ham har bir o'quvchi Менторlardan savol so'rashi va yordam olishi mumkin. Aynan 20 kishiga mo'ljallangan sinfxonalari esa o'quvchini ko'proq narsalarni tushunishga va boshqalardan tortinmagan holda muhokamalarda qatnashishiga va fikr almashishiga yordam beradi</p>
 
                     </div>
-                    <div class="container-fluid" style="width: 110%">
+                    <div class="container-fluid" style="width: 100%">
                         <div class="carousel">
                             <div class="carusel-top">
                                 <div class="carousel-inner">
