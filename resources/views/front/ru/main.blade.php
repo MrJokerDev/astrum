@@ -145,19 +145,19 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.index') }}">Bosh sahifa</a>
+                        <a class="nav-link" href="{{ route('ru.index') }}">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.about_us') }}">Biz xaqimizda</a>
+                        <a class="nav-link" href="{{ route('ru.about_us') }}">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.courses') }}">Kurslar</a>
+                        <a class="nav-link" href="{{ route('ru.courses') }}">Курсы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.index') }}#location">Manzil</a>
+                        <a class="nav-link" href="{{ route('ru.index') }}#location">Адрес</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.gallery') }}">Foto suratlar</a>
+                        <a class="nav-link" href="{{ route('ru.gallery') }}">Картинки</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('ru.job') }}">Bosh ish o'rinlari</a>

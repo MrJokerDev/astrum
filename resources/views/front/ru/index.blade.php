@@ -235,7 +235,7 @@
 
     <section id="mentors" class="pt-5">
         <div class="container">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Bizning mentorlar </p>
+            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Наши менторы</p>
             <h1 id="courses_rek" class="text-center fw-bold">Astrum IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
             <p id="courses_rek_p" class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
             <div class="row">
