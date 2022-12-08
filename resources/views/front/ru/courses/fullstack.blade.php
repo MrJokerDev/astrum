@@ -52,7 +52,6 @@
         min-height: 55vh;
     }
     .most-inner {
-        margin-top: 2vh;
         left: 0;
     }
 
@@ -70,7 +69,12 @@
         top: 75px;
         z-index: -1;
     }
-    div.position-relative, span{
+    @media only screen and (max-width: 768px){
+        .carousel {
+            background-color: #fff;
+        }
+    }
+    div.position-relative span{
         color: black;
         text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
     }
@@ -86,7 +90,7 @@
                     <h1 class="fw-bold">Full Stack Developer</h1>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
-                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
+                    <p class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, как со стороны Front-end, так и со стороны Back-end.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
                 </div>
@@ -101,7 +105,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Full stack developer
@@ -196,11 +200,13 @@
 
                         <div class="d-flex">
                             <i class="bi bi-check-lg me-1 mb-1 mt-1" style="font-size: 40px;"></i>
-                            <p class="ms-3"><span class="fw-bold">Современные языки программирования: </span><br> 
-Html, Css, Javascript, ExpressJs Ruby,
-RubyonRails, SQLITE, Node.JS, ReactJs, 
-Bootstrap, Aws Amazon
-</p>
+                            <p class="ms-3">
+                            <span class="fw-bold">Современные языки программирования: </span>
+                            <br> 
+                            Html, Css, Javascript, ExpressJs Ruby,
+                            RubyonRails, SQLITE, Node.JS, ReactJs, 
+                            Bootstrap, Aws Amazon
+                            </p>
                         </div>
                         <hr class="fw-bold border-1">
 
@@ -364,13 +370,13 @@ Bootstrap, Aws Amazon
                         <p>Наши учебные курсы основаны на новейших средствах программирования, и в отличие от методов прохождения курсов которым обучали студентов на протяжении последних десятилетий, мы считаем, что новейшие технологии и сильная система обучения важны для программиста, чтобы построить свою карьеру и получить глубокие знания.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
@@ -551,15 +557,15 @@ Bootstrap, Aws Amazon
                             <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9.</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Шукуров Жасур</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
                         </div>
 
@@ -568,15 +574,15 @@ Bootstrap, Aws Amazon
                             <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 2/10</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Азизова Азиза</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
                         </div>
 
@@ -585,15 +591,15 @@ Bootstrap, Aws Amazon
                             <p>В дни недели: <span class="fw-bold">Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 2/8.</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Шомуродов Сарвар</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
                         </div>
 

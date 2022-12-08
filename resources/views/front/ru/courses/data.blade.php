@@ -52,7 +52,6 @@
         min-height: 55vh;
     }
     .most-inner {
-        margin-top: 2vh;
         left: 0;
     }
 
@@ -70,7 +69,12 @@
         top: 75px;
         z-index: -1;
     }
-    div.position-relative, span{
+    @media only screen and (max-width: 768px){
+        .carousel {
+            background-color: #fff;
+        }
+    }
+    div.position-relative span{
         color: black;
         text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
     }
@@ -86,7 +90,7 @@
                     <h1 class="fw-bold">Data Science</h1>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
-                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Data scientist:
+                    <p class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>Специалист по информации создает модели основанные на данных, которые помогают принимать повседневные или бизнес решения.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
@@ -102,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Data Science
@@ -137,7 +141,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 pt-5">
                     <div>
                         <p id="about" class="fw-bold text-success">О курсе</p>
                         <h1>Заново раскройте для себя свои навыки программирования</h1>
@@ -341,7 +345,7 @@
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/asal.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Ментор</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Алимбаева Асал</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span id="name_mentor" class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Алимбаева Асал</span> <br><span>Data Science</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                         </div>
@@ -353,13 +357,13 @@
                         <p>Наши учебные курсы основаны на новейших средствах программирования, и в отличие от методов прохождения курсов которым обучали студентов на протяжении последних десятилетий, мы считаем, что новейшие технологии и сильная система обучения важны для программиста, чтобы построить свою карьеру и получить глубокие знания.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
@@ -540,9 +544,9 @@
                             <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Xamidjonov komiljon</span><br> Data Science - Менторi</p>
@@ -557,9 +561,9 @@
                             <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Arslonova Nodira</span><br> Data Science - Менторi</p>
@@ -574,9 +578,9 @@
                             <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9</span></p>
                             <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 свободных мест</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Alimbayeva Asal</span><br> Data Science - Менторi</p>

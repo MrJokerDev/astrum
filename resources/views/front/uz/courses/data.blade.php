@@ -75,7 +75,7 @@
             background-color: #fff;
         }
     }
-    div.position-relative, span{
+    div.position-relative span{
         color: black;
         text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
     }
@@ -85,7 +85,7 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.fullstack') }}" class="text-success text-decoration-none">DATA SCIENCE</a></p>
+            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.data_science') }}" class="text-success text-decoration-none">DATA SCIENCE</a></p>
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="fw-bold">Data Science</h1>
@@ -128,9 +128,6 @@
                             <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#kurs_room"> Sinif xonalari </a>
                             </li>
-                            {{-- <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#"> Выпускники </a>
-                            </li> --}}
                             <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#kurs_total"> Dars jadvali </a>
                             </li>
@@ -142,7 +139,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 pt-5">
                     <div>
                         <p id="about" class="fw-bold text-success">Kurs haqida</p>
                         <h1>Dasturlash ko'nikmalaringizni qaytadan kashf qiling</h1>

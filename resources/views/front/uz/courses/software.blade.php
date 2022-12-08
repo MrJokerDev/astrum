@@ -83,7 +83,7 @@
 @section('content')
     <section>
         <div class="container">
-            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.fullstack') }}" class="text-success text-decoration-none">Software Engineering</a></p>
+            <p class="text-center p-5 text-success"><span class="fw-bold"><a href="{{ route('uz.index') }}" class="text-success text-decoration-none">BOSH SAHIFA</a> </span> | <a href="{{ route('uz.courses') }}" class="text-success text-decoration-none">KURSLAR VA TA'LIM</a> | <a href="{{ route('uz.software_engineering') }}" class="text-success text-decoration-none">Software Engineering</a></p>
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="fw-bold">Software Engineering</h1>

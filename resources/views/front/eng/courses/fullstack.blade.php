@@ -52,7 +52,6 @@
         min-height: 55vh;
     }
     .most-inner {
-        margin-top: 2vh;
         left: 0;
     }
 
@@ -70,8 +69,12 @@
         top: 75px;
         z-index: -1;
     }
-
-        div.position-relative, span{
+    @media only screen and (max-width: 768px){
+        .carousel {
+            background-color: #fff;
+        }
+    }
+        div.position-relative span{
             color: black;
             text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
         }
@@ -87,7 +90,7 @@
                     <h1 class="fw-bold">Full Stack Developer</h1>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
-                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
+                    <p class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>This is a specialist who must understand the entire set of technologies and components used in the project, both Front-end and Back-end.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Register now</button>
                 </div>
@@ -102,7 +105,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Full stack developer
@@ -137,7 +140,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 pt-5">
                     <div>
                         <p id="about" class="fw-bold text-success">About course</p>
                         <h1>Rediscover your programming skills</h1>
@@ -361,13 +364,13 @@
                         <p>Our training courses are based on the latest programming tools, and unlike the way courses have been taught for the past decades, we believe that the latest technology and a strong training system are important for programmers to build their careers and gain in-depth knowledge.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
@@ -378,7 +381,7 @@
                         <p>We believe that an individual approach to each student is important when teaching programming, so each student can ask questions of mentors and get help. And classes of exactly 20 people will help the student understand better and participate in discussions and exchange ideas without shying away from others</p>
 
                     </div>
-                    <div class="container-fluid" style="width: 110%">
+                    <div class="container-fluid" style="width: 100%">
                         <div class="carousel">
                             <div class="carusel-top">
                                 <div class="carousel-inner">
@@ -548,15 +551,15 @@
                             <p>Days of the week: <span class="fw-bold">  Monday, Tuesday and Thursday, 09:00-10:30 and 11:00-12:30, in class 1/9.</span></p>
                             <p>Lessons for Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 spaces available</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 spaces available</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Shukurov Jasur</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Register now</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
                             </div>
                         </div>
 
@@ -565,15 +568,15 @@
                             <p>Days of the week: <span class="fw-bold"> Monday, Tuesday and Thursday, 09:00-10:30 and 11:00-12:30, in class 2/10.</span></p>
                             <p>Lessons for Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 spaces available</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 spaces available</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Azizova Aziza</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Register now</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
                             </div>
                         </div>
 
@@ -582,15 +585,15 @@
                             <p>2/8 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Lessons for Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 spaces available</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 spaces available</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Shomurodov Sarvar</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Register now</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
                             </div>
                         </div>
 
@@ -653,7 +656,7 @@
                             <h4 class="card-title fw-bold">Software Engineering</h4>
                             {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a id="btn" href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -665,7 +668,7 @@
                             <h4 class="card-title fw-bold">Data Science</h4>
                             {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
-                            <a id="btn" href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a id="btn" href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>

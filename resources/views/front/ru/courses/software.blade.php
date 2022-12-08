@@ -52,7 +52,6 @@
         min-height: 55vh;
     }
     .most-inner {
-        margin-top: 2vh;
         left: 0;
     }
 
@@ -70,7 +69,12 @@
         top: 75px;
         z-index: -1;
     }
-    div.position-relative, span{
+    @media only screen and (max-width: 768px){
+        .carousel {
+            background-color: #fff;
+        }
+    }
+    div.position-relative span{
         color: black;
         text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
     }
@@ -85,7 +89,7 @@
                     <h1 class="fw-bold">Software Engineering</h1>
                     <hr class="w-25" style="border: 2px solid #62BC9E;">
 
-                    <p class="border border-2 rounded-2 border-dark w-50 ps-4 p-1">Data scientist:
+                    <p class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
                     <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
@@ -101,7 +105,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4 w-75">
+                    <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
                         <ul class ="nav navbar-nav w-100">
                             <li>
                                 Software Engineering
@@ -345,13 +349,13 @@
                         <p>Наши учебные курсы основаны на новейших средствах программирования, и в отличие от методов прохождения курсов которым обучали студентов на протяжении последних десятилетий, мы считаем, что новейшие технологии и сильная система обучения важны для программиста, чтобы построить свою карьеру и получить глубокие знания.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-75 h-100 m-auto" alt="image">
+                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
@@ -532,15 +536,15 @@
                             <p>1/9 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Pre-season uchun darslar</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Ozodov Sarvar</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
                             </div>
                         </div>
 
@@ -549,15 +553,15 @@
                             <p>2/10 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
                             <p>Pre-season uchun darslar</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 w-25 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
                             <hr>
-                            <div class="d-flex">
+                            <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
                                 <div class="d-block w-100">
                                 <p class="w-100"><span class="fw-bold">Arslonov Berdiyor</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
                             </div>
                         </div>
 
