@@ -70,6 +70,11 @@
         top: 75px;
         z-index: -1;
     }
+
+        div.position-relative, span{
+            color: black;
+            text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
+        }
 </style>
 @endsection
 @section('content')
