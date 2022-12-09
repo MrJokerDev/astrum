@@ -218,31 +218,31 @@
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('eng.fullstack') }}">
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/1.png') }}" alt="">
                                     <p>Full Stack developer <br>
-                                        12 oy
+                                        14 Moon
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('eng.software_engineering') }}">
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/2.png') }}" alt="">
                                     <p>Software engineer<br>
-                                        12 oy
+                                        12 Moon
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('eng.data_science') }}">
                                 <div class="d-flex">
                                     <img class="me-3 rounded" width="50" height="50" src="{{ asset('images/courses/3.png') }}" alt="">
                                     <p>Data science engineer <br>
-                                        12 oy
+                                        12 Moon
                                     </p>
                                 </div>
                             </a>
@@ -276,7 +276,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <p>ALOQA</p>
+                    <p>Communication</p>
                     <hr>
                     <ul class="nav flex-column">
                         <li class="nav-item">

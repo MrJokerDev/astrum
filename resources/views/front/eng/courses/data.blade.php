@@ -625,7 +625,7 @@
                         </li>
                     </ul>
                     <p style="font-size: 30px;">+998 (71) 202 42 22</p>
-                    <p class="fw-bold">Bizga yozishingiz mumkin</p>
+                    <p class="fw-bold">You can write to us</p>
                     <div class="d-flex w-25">
                         <a href="https://t.me/astrumuz" target="_blank" class="text-dark"><i class="bi bi-telegram me-3" style="font-size: 45px;"></i></a> 
                         <a href="https://www.facebook.com/Astrumuzb" class="text-dark" target="_blank"><i class="bi bi-facebook me-3" style="font-size: 45px;"></i></a>

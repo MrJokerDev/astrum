@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div class="w-100 text-end">
-                        <a href="{{ route('eng.gallery') }}" class="href_arrow">Фото <i class="bi bi-arrow-right"></i></a>
+                        <a href="{{ route('eng.gallery') }}" class="href_arrow">Foto <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

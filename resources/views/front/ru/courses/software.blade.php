@@ -361,9 +361,9 @@
 
                         <hr class="mt-5 mb-5">
 
-                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">Zamonaviy sinfxonalari</p>
-                        <h1 class="fw-bold">Bilim olish uchun qulay va kishini hayratga soluvchi zamonaviy sinfxonalar</h1>
-                        <p>Biz dasturlashni o'rgatishda har bir o'quvchiga individual yondashuv muhim deb hisoblaymiz va shuning uchun ham har bir o'quvchi mentorlardan savol so'rashi va yordam olishi mumkin. Aynan 20 kishiga mo'ljallangan sinfxonalari esa o'quvchini ko'proq narsalarni tushunishga va boshqalardan tortinmagan holda muhokamalarda qatnashishiga va fikr almashishiga yordam beradi</p>
+                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">Современные учебные классы</p>
+                        <h1 class="fw-bold">Удобные для обучения современные и изумительные учебные комнаты</h1>
+                        <p>Мы считаем, что при обучении программированию важен индивидуальный подход к каждому ученику и поэтому каждый ученик может задавать вопросы менторам и получать помощь. А классы, рассчитанные ровно на 20 человек, помогут учащемуся понимать лучше и участвовать в обсуждениях и обмениваться идеями, не стесняясь других.</p>
 
                     </div>
                     <div class="container-fluid" style="width: 100%">
@@ -533,10 +533,10 @@
 
                         <div id="moon_1" class="tabcontent p-5 ps-3 pe-3 rounded">
                             <p class="fw-bold">Software Engineering</p>
-                            <p>1/9 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
-                            <p>Pre-season uchun darslar</p>
+                            <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9.</span></p>
+                            <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
                             <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
@@ -544,16 +544,16 @@
                                 <p class="w-100"><span class="fw-bold">Ozodov Sarvar</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
                         </div>
 
                         <div id="moon_2" class="tabcontent mt-5 p-5 ps-3 pe-3 rounded">
                             <p class="fw-bold">Software Engineeringr</p>
-                            <p>2/10 sinfxonasida <span class="fw-bold"> Haftaning dushanba seshanba va payshanba kunlari, soat 09:00-10:30 va 11:00-12:30 da,</span></p>
-                            <p>Pre-season uchun darslar</p>
+                            <p>В дни недели:<span class="fw-bold"> Понедельник, вторник и четверг, 09:00-10:30 и 11:00-12:30, в классе 1/9.</span></p>
+                            <p>Уроки для Pre-season</p>
                             <hr class="w-25" style="border: 2px solid #62BC9E;">
-                            <p class="bg-warning rounded-1 text-center p-2">14 bosh joylar</p>
+                            <p class="bg-warning rounded-1 text-center p-2">14 свободных мест</p>
                             <hr>
                             <div class="card_table">
                                 <img class="rounded-circle h-25 border border-warning me-3" src="{{ asset('images/python.png') }}" style="width: 6%;" alt="image">
@@ -561,7 +561,7 @@
                                 <p class="w-100"><span class="fw-bold">Arslonov Berdiyor</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
                             </div>
                         </div>
 

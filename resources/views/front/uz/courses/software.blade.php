@@ -74,7 +74,7 @@
             background-color: #fff;
         }
     }
-    div.position-relative, span{
+    div.position-relative span{
         color: black;
         text-shadow: 0 0px 8px #fff, 0 0 5px #000118;
     }
