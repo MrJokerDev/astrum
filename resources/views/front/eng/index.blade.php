@@ -48,14 +48,14 @@
                 <div class="carousel-item active">
                     <img src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
+                        <h1>The first IT Academy in Uzbekistan with an innovative learning system</h1>
                         {{-- <p>Some representative placeholder content for the first slide.</p> --}}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ asset('images/layout/Glavniy_2.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
+                        <h1>The first IT Academy in Uzbekistan with an innovative learning system</h1>
                         {{-- <p>Some representative placeholder content for the second slide.</p> --}}
                     </div>
                 </div>
@@ -73,11 +73,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-5">
-                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">About company</p>
-                    <h1 class="fw-bold">Astrum IT Academy is the first and only IT Academy not only in Uzbekistan, but also in Central Asia, the company is a leader in training and education in the field of programming.</h1> <br>
-                    <p class="fw-semibold">Astrum IT Academy is located in Central Chirchik district of Tashkent region, and the presence of fresh air and wonderful atmosphere further promotes getting high quality education.</p>
-                    <p class="fw-semibold">At the moment the company has about 100 employees. About 1000 students take courses in programming, cyber security and 3DMax.</p>
-                    <a id="btn" href="{{ route('eng.about_us') }}" class="btn btn-outline-success p-3 rounded">More...</a>
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">About Us</p>
+                    <h1 class="fw-bold">Learning system controlled by Artificial Intelligence and a modern atmosphere are the keys to your success.</h1> <br>
+                    <p class="fw-semibold">Astrum IT Academy — is the first and largest IT Academy not only in Uzbekistan, but also in Central Asia, where the innovative method of training using artificial intelligence is implemented.</p>
+                    <p class="fw-semibold">Modern technologies, 24/7 training campus, around one thousand iMacs and comfortable conditions allow you to grow into a real programmer.</p>
+                    <a id="btn" href="{{ route('eng.about_us') }}" class="btn btn-outline-success p-3 rounded">More</a>
                 </div>
                 <div class="col-md-12 col-lg-7">
                     <h1 class="about_us">About us</h1>
@@ -141,8 +141,8 @@
         </div>
     </section>
 
-    <section class="">
-        <div class="container section-fon align-items-center">
+    <section class="section-fon">
+        <div class="container align-items-center">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Education and courses</p>
             <h1 id="courses_rek" class="text-white">Study IT-sphere at Astrum IT Academy and change your life for the better</h1>
             <p id="courses_rek_p" class="text-white pt-4 fs-5">With the help of artificial intelligence programming courses in our academy are systematized in such a way that by the time you graduate you will have enough knowledge and a good portfolio.</p>
@@ -157,10 +157,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">This is a specialist who must understand the entire set of technologies and components used in the project, both Front-end and Back-end.</p>
+                            <p class="card-text">This is a specialist who must <br> understand the entire <br> set of technologies and <br> components used in the project, <br> both Front-end and Back-end.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('eng.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('eng.fullstack') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -169,10 +169,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Our Data Science course takes 8 to 12 months to complete. During this time, you will learn the secrets of programming with students just like you. You will also learn how to build functional websites and programs in these classes. And this knowledge will become the most important factor in the job search process.</p>
+                            <p class="card-text">Our Data Science course takes 8 to 12 months to complete. During this time, you will learn the secrets of programming with students just like you. You will also learn how to build functional websites and programs in these classes.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('eng.data_science') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -181,10 +181,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/3.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="card-text">Software Engineer works on creating programs and applications and running them. Its main function is to create optimized applications that can be updated and extended.</p>
+                            <p class="card-text">Software Engineer works on creating programs and applications and running them. Its main function is to create optimized <br> applications that can be updated <br> and extended.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('eng.software_engineering') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -195,33 +195,33 @@
     <section>
         <div class="container">
             <div>
-                <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">KURSLAR VA TA'LIM</p>
-                <h1 class="fw-bold mb-5">Nimaga ko'pchilik Astrum IT Akademiyasini tanlaydi? </h1>
+                <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">COURSES AND EDUCATION</p>
+                <h1 class="fw-bold mb-5">Why do most people choose Astrum IT Academy?</h1>
             </div>
             <div class="row mb-5">
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Yuqori atmosfera</p>
-                    <p>Astrum o'quv binosida Mac Valley joylashgan bo'lib, bu yerda mingdan ortiq iMac'lar mavjud. Siz xohlagan paytingiz ulardan foydalana olasiz. </p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">High atmosphere</p>
+                    <p>Astrum academic building houses Mac Valley, with over a thousand iMacs presented. You can use them whenever you want.</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Innovatsion ta'lim tizimi</p>
-                    <p>Astrumda o'qituvchilar yo'q. Darslar sun'iy intellekt yordamida olib boriladi. Siz platformadagi darslarda qatnashishingiz va uyga vazifalarni yuklab borishingiz lozim. Savollarga esa professional mentorlarimiz javob berishadi</p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Innovative education system</p>
+                    <p>There are no teachers at Astrum. Classes are taught by means of artificial intelligence. You have to attend classes on the platform and upload your homework. And questions are answered by our professional mentors</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">QWASAR sertifikati</p>
-                    <p>O'qishni tugatganingizdan so'ng sizga Amerikaning Silikon vodiysida ishlash imkonini beruvchi QWASAR sertifikati topshiriladi. Bu sertifikat orqali Yevropa va Amerikaning nufuzli kompaniyalarida faoliyat olib borishingiz mumkin.</p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">QWASAR Certificate</p>
+                    <p>At the end of your studies, you will receive a QWASAR certificate, which allows you to work in America's Silicon Valley. This certificate allows you to work in prestigious companies in Europe and America.</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">24/7 qo'riqlash tizimi</p>
-                    <p>Astrum IT Akademiyasida to'laqonli xavfsizlik choralari ko'rilgan bo'lib, o'quv kampusi tun-u kun qo'riqlanadi. Bu esa o'quvchilarimizga o'zlari xohlagan payt Astrumga tashrif buyurish va darslarni davom ettirish imkoniyatini beradi.</p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">24/7 security system</p>
+                    <p>Astrum IT Academy has full security measures in place and the campus is guarded 24/7. This gives our students the opportunity to attend Astrum and continue their studies at any time.</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Yaratilgan qulay sharoitlar</p>
-                    <p>Bu yerda dam olishingiz uchun sport maydonchalari, dam olish xonalari, qulay sharoitlarga ega xonalar, chill zone va katta hovli mavjud.</p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Comfortable conditions created</p>
+                    <p>There are athletic fields, recreation rooms, rooms with all amenities, a chill zone, and a large courtyard where you can relax.</p>
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-4 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Darslarni tezroq yakunlash imkoniyati</p>
-                    <p>Darslar sun'iy intellekt yordamida o'tilishi hisobiga, siz darslarni tezroq ko'rishingiz va o'quv dasturini tezroq tugatib TOP dasturchilar safiga qo'shilishingiz mumkin.</p>
+                    <p class="border-start border-dark border-4 ps-3 text-muted fw-bolder">Opportunity to complete classes more quickly</p>
+                    <p>Because the lessons will be taught by artificial intelligence, you will be able to review the lessons faster and complete the curriculum faster, joining the ranks of TOP programmers.</p>
                 </div>
             </div>
         </div>
@@ -235,9 +235,9 @@
 
     <section id="mentors" class="pt-5">
         <div class="container">
-            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Bizning mentorlar </p>
-            <h1 id="courses_rek" class="text-center fw-bold">Astrum IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
-            <p id="courses_rek_p" class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
+            <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Our mentors</p>
+            <h1 id="courses_rek" class="text-center fw-bold">At Astrum IT Academy, the strongest mentors with extensive experience will help you get a quality education and master the field</h1>
+            <p id="courses_rek_p" class="text-center mb-5">Mentor — the person who answers your questions.</p>
             <div class="row">
                 <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
@@ -336,39 +336,37 @@
                     </div>
                 </div> --}}
             </div>
-            <a href="{{ route('eng.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Barcha jamoa</a>
+            <a href="{{ route('eng.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Our team</a>
         </div>
     </section>
 
     <section>
         <div class="container">
-            {{-- <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Bizning qadriyatlar</p> --}}
-            <h1 class="fw-bold">Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</h1>
-            {{-- <p>Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</p> --}}
+            <h1 class="fw-bold">Astrum IT Academy's own values and goals give us an advantage in quality, not quantity of students.</h1>
             <div class="row pt-5">
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'quvchilarni tinglaymiz </p>
-                    <p>Biz har doim o'quvchilarning e'tirozlarini va shikoyatlarini tinglaymiz va ularga birgalikda yechim topamiz. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Listening to students</p>
+                    <p>We always listen to objections and complaints from students and find solutions together.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'qish va sport uyg'unlikda </p>
-                    <p>Akademiyamizda tashkil qilingan sport maydonchalari orqali o'quvchilarimiz o'qish va sportni birgalikda olib boradilar. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Learning and sports in harmony</p>
+                    <p>With the help of the sports grounds organized in our academy, our students study and play sports at the same time.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Tezlik va zamonaviylik </p>
-                    <p>Bugungi kundagi IT sohasining yuqori sur'atlarda rivojlanib borayotganini hisobga olgan holda, biz eng zamonaviy va tezkor o'qitish tizimidan foydalanish tarafdorimiz. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Speed and modernity</p>
+                    <p>Taking into consideration the high speed of development of the modern IT sphere, we advocate the use of the most modern and fastest learning system.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Ta'lim va tajriba</p>
-                    <p>Zamonaviy o'qitish tizimi va ta'lim olish mobaynida real loyihalarda qatnashish imkoniyati faqatgina Astrumda mavjud. Biz nafaqat bilim, balki tajriba ham ulashamiz.</p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Education and Experience</p>
+                    <p>A modern training system and the opportunity to participate in real projects during training are available only at Astrum. We share not only knowledge, but also experience.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Bizning mentorlar</p>
-                    <p>Astrum IT Akademiyasida yosh va shu bilan birgalikda kuchli bilimga ega mentorlar faoliyat olib borishadi. O'quvchi darslarni innovatsion ta'lim platformasi orqali o'tganidan so'ng, tushunmagan joylarini yoki qo'shimcha savollarini mentorlardan so'rab olishi mumkin. Bizning mentorlar har bir o'quvchiga yordam berishga doimo tayyor. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Our mentors</p>
+                    <p>Astrum IT Academy employs young mentors who have good knowledge. After the student has completed the courses with the help of the innovative educational platform, he can contact the mentors if there are any additional questions where they do not understand something. Our mentors are always ready to help each student.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">AstroCoin tizimi</p>
-                    <p>Astrum IT Akademiyasida o'quvchilarni rag'batlantirish, ularni o'qishga bo'lgan qiziqishini yana-da oshirish maqsadida AstroCoin tizimi yo'lga qo'yilgan. Bunda o'quvchilar Astrum It Akademiyasining ijtimoiy hayotida, ta'lim jarayonlarida va turli xildagi tadbirlarda o'zlarini ko'rsatgan holda maxsus AstroCoinlarga ega bo'lishlari va ushbu Coinlar orqali marketdan turli xildagi qimmatbaho sovg'alarni xarid qilishlari mumkin.</p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">AstroCoin System</p>
+                    <p>Astrum IT Academy has introduced the AstroCoin system to stimulate students and increase their interest in learning. In doing so, students can earn special AstroCoins by participating in social life, educational processes and various Astrum IT Academy events, as well as by purchasing various valuable gifts on the market using these coins.</p>
                 </div>
             </div>
         </div>

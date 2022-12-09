@@ -48,14 +48,14 @@
                 <div class="carousel-item active">
                     <img src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
+                        <h1>Первая IT Академия в Узбекистане с инновационной системой обучения</h1>
                         {{-- <p>Some representative placeholder content for the first slide.</p> --}}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ asset('images/layout/Glavniy_2.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
+                        <h1>Первая IT Академия в Узбекистане с инновационной системой обучения</h1>
                         {{-- <p>Some representative placeholder content for the second slide.</p> --}}
                     </div>
                 </div>
@@ -73,11 +73,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-5">
-                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Biz haqimizda</p>
-                    <h1 class="fw-bold">Sun'iy intellekt yordamida boshqariladigan ta'lim tizimi va zamonaviy atmosfera sizning muvaffaqiyatingiz garovidir.</h1> <br>
-                    <p class="fw-semibold">Astrum IT Akademiyasi nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va eng katta IT Akademiya bo'lib, bu yerda sun'iy intellekt yordamida ta'lim berishning innovatsion usuli yo'lga qo'yilgan.</p>
-                    <p class="fw-semibold"> Zamonaviy texnologiyalar, 24/7 ishlaydigan o'quv kampusi, mingga yaqing iMac'lar va qulay sharoitlar sizga haqiqiy dasturchi bo'lib yetishish imkonini beradi. </p>
-                    <a id="btn" href="{{ route('ru.about_us') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">О нас</p>
+                    <h1 class="fw-bold">Система обучения, управляемая искусственным интеллектом, и современная атмосфера-залог вашего успеха.</h1> <br>
+                    <p class="fw-semibold">Академия Astrum IT — первая и крупнейшая IT Академия не только в Узбекистане, но и в Средней Азии, где внедрен инновационный метод обучения с использованием искусственного интеллекта.</p>
+                    <p class="fw-semibold">Современные технологии, учебный кампус работающий 24/7, около тысячи iMac'ов и комфортные условия позволяют вырасти в настоящего программиста.</p>
+                    <a id="btn" href="{{ route('ru.about_us') }}" class="btn btn-outline-success p-3 rounded">Подробнее</a>
                 </div>
                 <div class="col-md-12 col-lg-7">
                     <h1 class="about_us">About us</h1>
@@ -99,16 +99,9 @@
 
     <section class="pt-5 mt-5">
         <div class="container pt-5 mt-5">
-            {{-- <div class="row">
-                <div class="text-center">
-                    <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Akademiya joylashuvi</p>
-                    <h1 class="fw-bold">Buyuk g'oyalar eng yaxshi joylarda tug'iladi</h1>
-                    <p class="fw-semibold">Biz esa sizga eng qulay lokatsiyani taqdim etamiz</p>
-                </div>
-            </div> --}}
             <div class="row justify-content-end">
                 <div class="col-sm-12 col-md-9 col-xl-7">
-                    <div class="border shadow bg-white rounded p-4 fw-semibold">
+                    <div class="border shadow bg-white rounded p-3 fw-semibold">
                        <p>Академия Astrum IT расположена на природе, а свежий воздух и бесшумная атмосфера помогут вам хорошо изучить IT-сферу без лишних отвлекательств. Территория академии охраняется круглосуточно, а учебный кампус работает в режиме 24/7. Вы можете прийти в удобное для вас время и продолжить курсы когда угодно.</p>
                     </div>
                 </div>
@@ -157,10 +150,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, как со стороны Front-end, так и со стороны Back-end.</p>
+                            <p class="card-text">Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, <br> как со стороны Front-end, <br> так и со стороны Back-end.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -169,10 +162,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Специалист по информации создает модели основанные на данных, которые помогают принимать повседневные или бизнес решения.</p>
+                            <p class="card-text">Специалист по информации создает модели основанные на данных, <br> которые помогают принимать <br> повседневные или <br> бизнес решения.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +177,7 @@
                             <p class="card-text">Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
 
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                            <a href="{{ route('ru.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -236,8 +229,8 @@
     <section id="mentors" class="pt-5">
         <div class="container">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold text-center">Наши менторы</p>
-            <h1 id="courses_rek" class="text-center fw-bold">Astrum IT Akademiyasida siz sifatli ta'lim olishingiz va sohani puxta egallashingiz uchun eng kuchli va katta tajribaga ega mentorlar yordam berishadi. </h1>
-            <p id="courses_rek_p" class="text-center mb-5">Mentor — sizda tug'ilgan savollarga javob beruvchi shaxs.</p>
+            <h1 id="courses_rek" class="text-center fw-bold">В Академии Astrum IT вам помогут самые сильные менторы с большим опытом, чтобы вы могли получить качественное образование и освоить эту сферу.</h1>
+            <p id="courses_rek_p" class="text-center mb-5">Ментор — это лицо, отвечающее на ваши вопросы.</p>
             <div class="row">
                 <div class="col-sm-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 mt-5">
                     <div class="profile-card">
@@ -336,39 +329,37 @@
                     </div>
                 </div> --}}
             </div>
-            <a href="{{ route('ru.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Barcha jamoa</a>
+            <a href="{{ route('ru.about_us') }}" id="btn" class="btn btn-outline-success p-3 mt-5 rounded">Вся команда</a>
         </div>
     </section>
 
     <section>
         <div class="container">
-            {{-- <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Bizning qadriyatlar</p> --}}
-            <h1 class="fw-bold">Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</h1>
-            {{-- <p>Astrum IT Akademiyasining o'zining qadriyatlari va o'z oldiga qo'ygan maqsadlari bo'lib, bizga o'quvchining soni emas, balki sifati afzalroq.</p> --}}
+            <h1 class="fw-bold">Собственные ценности и цели Академии Astrum IT дают нам преимущество в качестве, а не в количестве учащихся.</h1>
             <div class="row pt-5">
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'quvchilarni tinglaymiz </p>
-                    <p>Biz har doim o'quvchilarning e'tirozlarini va shikoyatlarini tinglaymiz va ularga birgalikda yechim topamiz. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Слушаем учеников</p>
+                    <p>Мы всегда прислушиваемся к возражениям и жалобам учащихся и вместе находим решения.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">O'qish va sport uyg'unlikda </p>
-                    <p>Akademiyamizda tashkil qilingan sport maydonchalari orqali o'quvchilarimiz o'qish va sportni birgalikda olib boradilar. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Учеба и спорт в гармонии</p>
+                    <p>С помощью спортивных площадок организованных в нашей академии, наши студенты учатся и занимаются спортом одновременно.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Tezlik va zamonaviylik </p>
-                    <p>Bugungi kundagi IT sohasining yuqori sur'atlarda rivojlanib borayotganini hisobga olgan holda, biz eng zamonaviy va tezkor o'qitish tizimidan foydalanish tarafdorimiz. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Скорость и современность</p>
+                    <p>Учитывая высокие темпы развития современной IT сферы, мы выступаем за использование самой современной и быстрой системы обучения.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Ta'lim va tajriba</p>
-                    <p>Zamonaviy o'qitish tizimi va ta'lim olish mobaynida real loyihalarda qatnashish imkoniyati faqatgina Astrumda mavjud. Biz nafaqat bilim, balki tajriba ham ulashamiz.</p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Образование и опыт</p>
+                    <p>Современная система обучения и возможность участвовать в реальных проектах во время обучения доступны только в Astrum. Мы делимся не только знаниями, но и опытом.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Bizning mentorlar</p>
-                    <p>Astrum IT Akademiyasida yosh va shu bilan birgalikda kuchli bilimga ega mentorlar faoliyat olib borishadi. O'quvchi darslarni innovatsion ta'lim platformasi orqali o'tganidan so'ng, tushunmagan joylarini yoki qo'shimcha savollarini mentorlardan so'rab olishi mumkin. Bizning mentorlar har bir o'quvchiga yordam berishga doimo tayyor. </p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Наши менторы</p>
+                    <p>В Академии Astrum IT работают молодые менторы, имеющие хорошие знания. После того, как ученик прошел уроки с помощью инновационной образовательной платформы, он может обратиться к менторам при возникновении дополнительных вопросов где они что-то не понимают. Наши менторы всегда готовы помочь каждому ученику.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6 mb-5">
-                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">AstroCoin tizimi</p>
-                    <p>Astrum IT Akademiyasida o'quvchilarni rag'batlantirish, ularni o'qishga bo'lgan qiziqishini yana-da oshirish maqsadida AstroCoin tizimi yo'lga qo'yilgan. Bunda o'quvchilar Astrum It Akademiyasining ijtimoiy hayotida, ta'lim jarayonlarida va turli xildagi tadbirlarda o'zlarini ko'rsatgan holda maxsus AstroCoinlarga ega bo'lishlari va ushbu Coinlar orqali marketdan turli xildagi qimmatbaho sovg'alarni xarid qilishlari mumkin.</p>
+                    <p class="border-start border-dark border-4 ps-3 fs-2 fw-bold">Система AstroCoin</p>
+                    <p>Академия Astrum IT внедрила систему AstroCoin для стимулирования учащихся и повышения их интереса к учебе. При этом, учащиеся могут зарабатывать специальные AstroCoin'ы, участвуя в общественной жизни, образовательных процессах и различных мероприятиях академии Astrum IT, а также покупать различные ценные подарки на маркете с помощью этих монет.</p>
                 </div>
             </div>
         </div>

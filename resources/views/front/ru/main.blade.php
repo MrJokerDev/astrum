@@ -18,106 +18,8 @@
         .navbar {
             width: 100%;
             background-color: #3a3a9257;
-            /* z-index: 9999; */
         }
-
     </style>
-    {{-- <style>
-
-        #loader{
-            width: 100%;
-            height: 100%;
-            animation: rotate 1.5s ease-in-out infinite;
-            position: relative;
-        }
-
-        .set1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 75px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .set2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 75px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .ball{
-            width: 50px;
-            height: 50px;
-            background: dodgerblue;
-            border-radius: 50%;
-        }
-
-        .set1  .ball:nth-child(2){
-            background: orangered;
-            animation: scale 1.5s ease-in-out infinite forwards;
-        }
-
-        .set1  .ball:nth-child(1){
-            background: green;
-            animation: scale 1.5s ease-in-out infinite forwards;
-        }
-
-        .set2 .ball:nth-child(1){
-            background: dodgerblue;
-            animation: scale2 1.5s ease-in-out infinite forwards;
-        }
-
-        .set2 .ball:nth-child(2){
-            background: yellow;
-            animation: scale2 1.5s ease-in-out infinite forwards;
-        }
-
-        @keyframes scale2 {
-            0%{
-                transform: scale(1);
-            }
-            50%{
-                transform: scale(0);
-            }
-            100%{
-                transform: scale(1);
-            }
-        }
-
-
-        @keyframes scale {
-            0%{
-                transform: scale(0);
-            }
-            50%{
-                transform: scale(1);
-            }
-            100%{
-                transform: scale(0);
-            }
-        }
-
-        @keyframes rotate{
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-        }
-
-        #myDiv {
-            display: none;
-        }
-    </style> --}}
 </head>
 {{-- onload="myFunction()" style="margin:0;" --}}
 <body>
@@ -159,25 +61,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('ru.gallery') }}">Картинки</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.job') }}">Bosh ish o'rinlari</a>
-                    </li> --}}
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ru.index') }}#mentors">Mentorlar</a>
-                    </li> --}}
                     <li class="nav-item">
                         <a id="btn teleg" class="btn btn-outline-light border-white border border-3" href="#"><i class="bi bi-telephone"></i> +998 (71) 202 42 22</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a id="btn" style="color: #333; font-weight: 700;" class="btn btn-light border border-3" type="button" href="#">Eng yaxshi kurslar</a>
-                    </li> --}}
                     <li class="nav-item">
                         <div class="dropdown">
                             <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white border border-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            UZ
+                            RU
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="{{ route('ru.index') }}">RU</a>
+                                <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
                                 <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
                             </div>
                         </div>
@@ -268,9 +161,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ru.gallery') }}">Картинки</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ru.job') }}">Bosh ish o'rinlari</a>
-                        </li> --}}
                         
                         
                     </ul>
@@ -317,18 +207,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
-    {{-- <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 1000);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script> --}}
+ 
     @yield('js')
     <script src="{{ asset('js/carusel.js')}}"></script>
 </body>

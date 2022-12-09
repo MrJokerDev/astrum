@@ -13,9 +13,9 @@
     <div class="img-fon position-relative">
         <img id="img-fon" class="img-fluid" src="{{ asset('images/AST04894.jpg') }}" alt="image">
         <div class="container position-absolute top-50 start-50 translate-middle">
-            <p class="text-white"><span class="fw-bold"><a href="{{ route('ru.index') }}" class="text-decoration-none text-white">BOSH SAHIFA</a></span> | <a href="{{ route('ru.courses') }}" class="text-decoration-none text-white">KURSLAR VA TA'LIM</a></p>
-            <h1 class="font_size text-white">O'zingizni bilim darajangizni oshiring va hayotingizni o'zgartiring</h1>
-            <p class="text-white">Bizning kurslarimiz sizga IT sohasini tajriba orqali o'rganishingizda yordam beradi.</p>
+            <p class="text-white"><span class="fw-bold"><a href="{{ route('ru.index') }}" class="text-decoration-none text-white">ГЛАВНАЯ</a></span> | <a href="{{ route('ru.courses') }}" class="text-decoration-none text-white">ОБРАЗОВАНИЕ И КУРСЫ</a></p>
+            <h1 class="font_size text-white">Повышайте свой уровень знаний и меняйте свою жизнь</h1>
+            <p class="text-white">Наши курсы помогут вам освоить IT-сферу с помощью практики.</p>
         </div>
     </div>
 
@@ -27,10 +27,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
+                            <p class="card-text">Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, <br> как со стороны Front-end, <br> так и со стороны Back-end.</p>
                             
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
+                            <a href="{{ route('ru.fullstack') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -39,10 +39,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/2.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Data Science</h4>
-                            <p class="card-text">Ma'lumotlar bo'yicha mutaxassis, <br> biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
+                            <p class="card-text">Специалист по информации создает модели основанные на данных, <br> которые помогают принимать <br> повседневные или <br> бизнес решения.</p>
                             
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
+                            <a href="{{ route('ru.data_science') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>
@@ -51,10 +51,10 @@
                         <img class="card-img-top" src="{{ asset('images/courses/3.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
+                            <p class="card-text">Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
                             
                             <hr class="w-25 border border-success border-2">
-                            <a href="{{ route('ru.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
+                            <a href="{{ route('ru.software_engineering') }}" class="btn btn-outline-success p-3 rounded">More</a>
                         </div>
                     </div>
                 </div>

@@ -174,11 +174,11 @@
                     <li class="nav-item">
                         <div class="dropdown">
                             <button id="lang btn" class="btn btn-outline-light dropdown-toggle border-white border border-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            UZ
+                            Eng
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="{{ route('ru.index') }}">RU</a>
-                                <a class="dropdown-item" href="{{ route('eng.index') }}">EN</a>
+                                <a class="dropdown-item" href="{{ route('uz.index') }}">UZ</a>
                             </div>
                         </div>
                     </li>
