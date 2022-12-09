@@ -363,9 +363,9 @@
 
                         <hr class="mt-5 mb-5">
 
-                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">Zamonaviy sinfxonalari</p>
-                        <h1 class="fw-bold">Bilim olish uchun qulay va kishini hayratga soluvchi zamonaviy sinfxonalar</h1>
-                        <p>Biz dasturlashni o'rgatishda har bir o'quvchiga individual yondashuv muhim deb hisoblaymiz va shuning uchun ham har bir o'quvchi mentorlardan savol so'rashi va yordam olishi mumkin. Aynan 20 kishiga mo'ljallangan sinfxonalari esa o'quvchini ko'proq narsalarni tushunishga va boshqalardan tortinmagan holda muhokamalarda qatnashishiga va fikr almashishiga yordam beradi</p>
+                        <p id="kurs_room" style="color: #62BC9E;" class="fw-bold mt-5">Modern classrooms</p>
+                        <h1 class="fw-bold">Modern and amazing classrooms that are comfortable for learning</h1>
+                        <p>We believe that an individual approach to each student is important when teaching programming, so each student can ask questions of mentors and get help. And classes of exactly 20 people will help the student understand better and participate in discussions and exchange ideas without shying away from others.</p>
 
                     </div>
                     <div class="container-fluid" style="width: 100%">
