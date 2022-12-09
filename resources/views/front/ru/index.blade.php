@@ -135,7 +135,7 @@
     </section>
 
     <section class="section-fon">
-        <div class="container align-items-center">
+        <div class="container align-items-center pt-5 mt-5">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Образование и курсы</p>
             <h1 id="courses_rek" class="text-white">Изучайте IT-сферу в Академии Astrum IT и меняйте свою жизнь к лучшему</h1>
             <p id="courses_rek_p" class="text-white pt-4 fs-5">С помощью искуственного интеллекта курсы программирования в нашей академии систематизированы таким образом, что к моменту окончания учебы у вас будет достаточно знаний и хорошее портфолио</p>

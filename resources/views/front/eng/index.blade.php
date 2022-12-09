@@ -142,7 +142,7 @@
     </section>
 
     <section class="section-fon">
-        <div class="container align-items-center">
+        <div class="container align-items-center pt-5 mt-5">
             <p style="color: rgba(40, 156, 40, 0.521);" class="fw-bold">Education and courses</p>
             <h1 id="courses_rek" class="text-white">Study IT-sphere at Astrum IT Academy and change your life for the better</h1>
             <p id="courses_rek_p" class="text-white pt-4 fs-5">With the help of artificial intelligence programming courses in our academy are systematized in such a way that by the time you graduate you will have enough knowledge and a good portfolio.</p>
