@@ -351,13 +351,13 @@
                         <p>Our training courses are based on the latest programming tools, and unlike the way courses have been taught for the past decades, we believe that the latest technology and a strong training system are important for programmers to build their careers and gain in-depth knowledge.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/1.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/7.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/8.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 

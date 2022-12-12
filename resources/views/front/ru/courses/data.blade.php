@@ -357,13 +357,13 @@
                         <p>Наши учебные курсы основаны на новейших средствах программирования, и в отличие от методов прохождения курсов которым обучали студентов на протяжении последних десятилетий, мы считаем, что новейшие технологии и сильная система обучения важны для программиста, чтобы построить свою карьеру и получить глубокие знания.</p>
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/ruby.png') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/1.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/SQLite.jpg') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/7.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                             <div class="col-md-4 text-center">
-                                <img src="{{ asset('images/python.png') }}" class="w-100 h-auto m-auto" alt="image">
+                                <img src="{{ asset('images/logo_programminig/8.jpg') }}" class="w-100 h-auto m-auto" alt="image">
                             </div>
                         </div>
 
