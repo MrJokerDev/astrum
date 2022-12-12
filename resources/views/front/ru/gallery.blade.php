@@ -81,7 +81,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4">ЛОКАЦИИ КОМПЛЕКСА</h5>
+            <h5 class="fw-bold pb-4 pt-5">ЛОКАЦИИ КОМПЛЕКСА</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
