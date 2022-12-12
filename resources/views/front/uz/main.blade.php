@@ -207,7 +207,7 @@
                 </div>
             </div>
 
-            <div class="map mt-5 mb-5 shadow">
+            <div id="location" class="map mt-5 mb-5 shadow">
                 <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Aa5fc6b59f0b521a61e6064a820c7118f80c70630fcb56c5d8a279fca0f74fda8&amp;source=constructor" width="1280" height="630" frameborder="0"></iframe>
             </div>
 
