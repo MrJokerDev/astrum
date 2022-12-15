@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container pt-5 mt-5">
+    <div class="container pt-5 mt-5 text-center">
         <h1 class="pt-5">Test for Data Science</h1>
         <a href="https://www.classmarker.com/online-test/start/?quiz=3jk63930c5e5b0f6" class="btn btn-primary m-auto">Test</a>
     </div>
