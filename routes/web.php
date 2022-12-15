@@ -16,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function(){
-   return redirect(url('/uz'));
+Route::get('/web', function(){
+   return view('test.fs');
 });
+Route::get('/ds', function(){
+   return view('test.ds');
+});
+
+// Route::get('/', function(){
+//    return redirect(url('/uz'));
+// });
 
 Route::group(['prefix'=>'ru','as'=>'ru.'], function(){
     Route::get('/', [RuIndexController::class, 'index'])->name('index');
