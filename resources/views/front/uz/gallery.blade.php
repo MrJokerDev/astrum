@@ -81,7 +81,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4 pt-5">KOMPLEKS JOYLASHMALAR</h5>
+            <h5 class="fw-bold pb-4 pt-5">KOMPLEKS JOYLASHMALARI</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
@@ -199,7 +199,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALAR</h5>
+            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALARI</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
@@ -270,7 +270,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALAR</h5>
+            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALARI</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
