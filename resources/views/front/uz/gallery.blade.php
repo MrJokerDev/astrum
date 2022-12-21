@@ -74,14 +74,14 @@
     <div class="img-fon position-relative">
         <img id="img-fon" class="img-fluid" src="{{ asset('images/DSC03587.JPG') }}" alt="image">
         <div class="container position-absolute top-50 start-50 translate-middle">
-            <p class="text-center text-white"><span><a class="text-white text-decoration-none fw-bold" href="{{ route('uz.index') }}"> Главная</a></span> | <a class="text-white text-decoration-none" href="{{ route('uz.index') }}">Фото</a></p>
-            <h1 class="text-center text-white">Галерея мест и собитий</h1>
+            <p class="text-center text-white"><span><a class="text-white text-decoration-none fw-bold" href="{{ route('uz.index') }}">BOSH SAHIFA</a></span> | <a class="text-white text-decoration-none" href="{{ route('uz.index') }}">RASMLAR</a></p>
+            <h1 class="text-center text-white">Galereya, joylar va voqealar</h1>
         </div>
     </div>
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4 pt-5">ЛОКАЦИИ КОМПЛЕКСА</h5>
+            <h5 class="fw-bold pb-4 pt-5">KOMPLEKS JOYLASHMALAR</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
@@ -93,7 +93,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -108,7 +108,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -125,7 +125,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -140,7 +140,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -157,7 +157,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -172,7 +172,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -187,7 +187,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -199,7 +199,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4">ЛОКАЦИИ КОМПЛЕКСА</h5>
+            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALAR</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-8 mt-4">
@@ -211,7 +211,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -226,7 +226,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -243,7 +243,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -258,7 +258,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -270,7 +270,7 @@
 
     <section>
         <div class="container">
-            <h5 class="fw-bold pb-4">ЛОКАЦИИ КОМПЛЕКСА</h5>
+            <h5 class="fw-bold pb-4">KOMPLEKS JOYLASHMALAR</h5>
             <!-- Gallery -->
             <div class="row pb-5">
                 <div class="col-md-4 mt-4">
@@ -282,7 +282,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -297,7 +297,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -312,7 +312,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -329,7 +329,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -344,7 +344,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -361,7 +361,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -376,7 +376,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
@@ -391,7 +391,7 @@
                                 alt="Boat on Calm Water"
                             />
                             <div class="overlay">
-                                <p>АРХИТЕКТУРА</p>
+                                <p>ARXITEKTURA</p>
                             </div>
                         </div>
                     </a>
