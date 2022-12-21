@@ -74,7 +74,7 @@
     <div class="img-fon position-relative">
         <img id="img-fon" class="img-fluid" src="{{ asset('images/DSC03587.JPG') }}" alt="image">
         <div class="container position-absolute top-50 start-50 translate-middle">
-            <p class="text-center text-white"><span><a class="text-white text-decoration-none fw-bold" href="{{ route('eng.index') }}"> Главная</a></span> | <a class="text-white text-decoration-none" href="{{ route('eng.index') }}">Фото</a></p>
+            <p class="text-center text-white"><span><a class="text-white text-decoration-none fw-bold" href="{{ route('eng.index') }}"> Home</a></span> | <a class="text-white text-decoration-none" href="{{ route('eng.index') }}">Foto</a></p>
             <h1 class="text-center text-white">Gallery of places and events</h1>
         </div>
     </div>
