@@ -179,7 +179,7 @@
                             <a class="nav-link" target="_blank" href="https://t.me/astrumuz"><i class="bi bi-telegram"></i> Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="info@astrumacademy.org"><i class="bi bi-envelope"></i> Email</a>
+                            <a class="nav-link" target="_blank" href="info@astrum.uz"><i class="bi bi-envelope"></i> Email</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" target="_blank" href="https://tiktok.com/@astrumuz"><i class="bi bi-tiktok"></i> Tik Tok</a>
