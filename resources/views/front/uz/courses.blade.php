@@ -52,10 +52,25 @@
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Software Engineering</h4>
                             <p class="card-text">Software Engineer dasturlar va prilojeniyalar yaratish ustida ishlaydi va ularni ishga tushuradi. Uning asosiy vazifasi yangilanishi va kengaytirilishi mumkin bo'lgan optimallashtirilgan dasturlarni yaratishdir.</p>
-                            
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="call_back pt-5 mt-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h1 class="text-center">Sorovnoma yuborish</h1>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <script data-b24-form="inline/107/cvf8d7" data-skip-moving="true">
+                            (function(w,d,u){
+                            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                            })(window,document,'https://office.astrum.uz/upload/crm/form/loader_107_cvf8d7.js');
+                        </script>
                     </div>
                 </div>
             </div>
