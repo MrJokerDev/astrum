@@ -22,7 +22,7 @@ Route::get('/', function(){
 
 Route::group(['prefix'=>'ru','as'=>'ru.'], function(){
     Route::get('/', [RuIndexController::class, 'index'])->name('index');
-    Route::get('/register', [IndexController::class, 'register'])->name('register');
+    Route::get('/register', [RuIndexController::class, 'register'])->name('register');
     Route::get('/gallery', [RuIndexController::class, 'gallery'])->name('gallery');
     Route::get('/job', [RuIndexController::class, 'job'])->name('job');
     Route::get('/courses', [RuIndexController::class, 'courses'])->name('courses');
@@ -36,7 +36,7 @@ Route::group(['prefix'=>'ru','as'=>'ru.'], function(){
 
 Route::group(['prefix'=>'eng','as'=>'eng.'], function(){
     Route::get('/', [EngIndexController::class, 'index'])->name('index');
-    Route::get('/register', [IndexController::class, 'register'])->name('register');
+    Route::get('/register', [EngIndexController::class, 'register'])->name('register');
     Route::get('/gallery', [EngIndexController::class, 'gallery'])->name('gallery');
     Route::get('/job', [EngIndexController::class, 'job'])->name('job');
     Route::get('/courses', [EngIndexController::class, 'courses'])->name('courses');
