@@ -123,7 +123,7 @@
                                 <a class ="nav-link fw-bold" href="#developers"> Dasturlash tillari </a>
                             </li>
                             <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#kurs_room"> Sinif xonalari </a>
+                                <a class ="nav-link fw-bold" href="#kurs_room"> Sinf xonalari </a>
                             </li>
                             {{-- <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#"> Выпускники </a>

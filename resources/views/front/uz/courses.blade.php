@@ -27,7 +27,7 @@
                         <img class="card-img-top" src="{{ asset('images/courses/1.png')}}" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
+                            <p class="card-text">Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Back-end tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
                             
                             <hr class="w-25 border border-success border-2">
                             <a href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil bilish</a>
