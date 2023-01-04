@@ -330,7 +330,7 @@
                                 <h1>Xamidjonov Komiljon</h1>
                                 <p>Data Science</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Salom, mening ismim Komiljon, men Data Science yo'nalishi bo'yicha mentorman. Men NAPA kompaniyasining o'qituvchilaridan biri bo'lganman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
+                                <p class="">"Salom, mening ismim Komiljon, men Data Science yo'nalishi bo'yicha mentorman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
                             </div>
                         </div>
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p>
