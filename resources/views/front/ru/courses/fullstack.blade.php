@@ -92,7 +92,7 @@
 
                     <p class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>Это специалист, который должен понимать весь набор технологий и компонентов используемых в проекте, как со стороны Front-end, так и со стороны Back-end.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
+                    <a href="{{ route('ru.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/1.png') }}" alt="">
@@ -136,7 +136,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions">Вопросы</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
+                            <a href="{{ route('ru.register') }}" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
@@ -565,7 +565,7 @@
                                 <p class="w-100"><span class="fw-bold">Шукуров Жасур</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 
@@ -582,7 +582,7 @@
                                 <p class="w-100"><span class="fw-bold">Азизова Азиза</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 
@@ -599,7 +599,7 @@
                                 <p class="w-100"><span class="fw-bold">Шомуродов Сарвар</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 

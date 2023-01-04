@@ -90,7 +90,7 @@
                     <p class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>An information scientist creates data-driven models that help make everyday or business decisions.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Register now</button>
+                    <a href="{{ route('ru.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Register now</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/2.png') }}" alt="">
@@ -131,7 +131,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions">Questions</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Register now</a>
+                            <a href="{{ route('ru.register') }}" class="btn btn-danger bg-dark p-3 text-white">Register now</a>
                         </ul>
                     </nav>
                 </div>
@@ -323,7 +323,7 @@
                                 <h1>Khamidjonov Komiljon</h1>
                                 <p>Data Science</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Hi, my name is Komiljon, I am a Mentor of Data Science. I'm a very strict teacher and I don't like broken codes."</p>
+                                <p class="">"Hi, I have real-world project experience in almost all areas where the python programming language has penetrated, including artificial intelligence and backend engineering. I enjoy automating business processes and providing valuable solutions based on data analysis. My interest in developing and implementing various interactive IT education methodologies led me to mentorship. I get motivation from my students' achievements :)"</p>
                             </div>
                         </div>
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Mentor team</p>
@@ -546,7 +546,7 @@
                                 <p class="w-100"><span class="fw-bold">Xamidjonov komiljon</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 
@@ -563,7 +563,7 @@
                                 <p class="w-100"><span class="fw-bold">Arslonova Nodira</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 
@@ -580,7 +580,7 @@
                                 <p class="w-100"><span class="fw-bold">Alimbayeva Asal</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 

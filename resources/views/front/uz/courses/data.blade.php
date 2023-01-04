@@ -94,7 +94,7 @@
                     <p id="skill" class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>Ma'lumotlar bo'yicha mutaxassis, biznes yoki kundalik qaror qabul qilishga yordam beradigan ma'lumotlarga asoslangan modellarni yaratadi.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
+                    <a href="{{ route('uz.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/2.png') }}" alt="">
@@ -108,34 +108,34 @@
             <div class="row">
                 <div class="col-md-4">
                     <nav id="navbar-bg" class="navbar sticky-top rounded p-4">
-                        <ul class ="nav navbar-nav w-100">
+                        <ul class="nav navbar-nav w-100">
                             <li>
                                 Data Science
                             </li>
                             <hr>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#about"> Kurs haqida </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#about"> Kurs haqida </a>
                             </li>
                             <li class ="nav-item">
                                 <a class ="nav-link fw-bold" href="#lessons"> O'quv dasturlari </a>
                             </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#mentors"> Mentorlar </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#mentors"> Mentorlar </a>
                             </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#developers"> Dasturlash tillari </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#developers"> Dasturlash tillari </a>
                             </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#kurs_room"> Sinf xonalari </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#kurs_room"> Sinf xonalari </a>
                             </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#kurs_total"> Dars jadvali </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#kurs_total"> Dars jadvali </a>
                             </li>
-                            <li class ="nav-item">
-                                <a class ="nav-link fw-bold" href="#quetions"> Savollar </a>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#quetions"> Savollar </a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
+                            <a href="{{ route('uz.register') }}" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
                         </ul>
                     </nav>
                 </div>
@@ -553,7 +553,7 @@
                                 <p class="w-100"><span class="fw-bold">Xamidjonov komiljon</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 
@@ -570,7 +570,7 @@
                                 <p class="w-100"><span class="fw-bold">Arslonova Nodira</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 
@@ -587,7 +587,7 @@
                                 <p class="w-100"><span class="fw-bold">Alimbayeva Asal</span><br> Data Science - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 

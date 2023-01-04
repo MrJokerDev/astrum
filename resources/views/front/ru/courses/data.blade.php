@@ -93,7 +93,7 @@
                     <p class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>Специалист по информации создает модели основанные на данных, которые помогают принимать повседневные или бизнес решения.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
+                    <a href="{{ route('ru.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/2.png') }}" alt="">
@@ -137,7 +137,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions">Вопросы</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
+                            <a href="{{ route('ru.register') }}" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
@@ -329,7 +329,7 @@
                                 <h1>Хамиджонов Комилжон</h1>
                                 <p>Data Science</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Привет, меня зовут Комилжон, я ментор по направлению Data Science. Я очень строгий учитель и не люблю неработающие коды."</p>
+                                <p class="">"Привет, У меня есть реальный опыт работы над проектами практически во всех областях, куда проник язык программирования Python, включая искусственный интеллект и бэкэнд-инжиниринг. Мне нравится автоматизировать бизнес-процессы и предлагать ценные решения на основе анализа данных. Мой интерес к разработке и внедрению различных интерактивных методик обучения ИТ привел меня к наставничеству. Меня мотивируют достижения моих учеников :)"</p>
                             </div>
                         </div>
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Команда менторов</p>
@@ -552,7 +552,7 @@
                                 <p class="w-100"><span class="fw-bold">Xamidjonov komiljon</span><br> Data Science - Менторi</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 
@@ -569,7 +569,7 @@
                                 <p class="w-100"><span class="fw-bold">Arslonova Nodira</span><br> Data Science - Менторi</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 
@@ -586,7 +586,7 @@
                                 <p class="w-100"><span class="fw-bold">Alimbayeva Asal</span><br> Data Science - Менторi</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 ms-4 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 

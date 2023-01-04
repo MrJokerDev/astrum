@@ -91,7 +91,7 @@
 
                     <p id="skill" class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>Bu loyihada ishlatiladigan texnologiyalar va komponentlarning butun to'plamini Front-end tomonidan ham Bac-kend tomonidan ham tushunishi kerak bo'lgan mutaxassis.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</button>
+                    <a href="{{ route('uz.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/1.png') }}" alt="">
@@ -135,7 +135,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions"> Savollar </a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
+                            <a href="{{ route('uz.register') }}" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
                         </ul>
                     </nav>
                 </div>
@@ -559,7 +559,7 @@
                                 <p class="w-100"><span class="fw-bold">Shukurov Jasur</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 
@@ -576,7 +576,7 @@
                                 <p class="w-100"><span class="fw-bold">Azizova Aziza</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 
@@ -593,7 +593,7 @@
                                 <p class="w-100"><span class="fw-bold">Shomurodov Sarvar</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</button>
+                                <a href="{{ route('uz.register') }}" class="btn btn-dark bg-dark w-100 text-white">Hoziroq roʻyxatdan oʻting</a>
                             </div>
                         </div>
 

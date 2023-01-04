@@ -54,7 +54,7 @@
 
 <div class="register">
     <h1>
-        <a href="{{ route('uz.index') }}"><i class="bi bi-arrow-left"></i> Главная</a>
+        <a href="{{ route('ru.index') }}"><i class="bi bi-arrow-left"></i> Главная</a>
     </h1>
     <script data-b24-form="inline/107/cvf8d7" data-skip-moving="true">
         (function(w,d,u){

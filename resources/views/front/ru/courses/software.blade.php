@@ -92,7 +92,7 @@
                     <p class="border border-2 rounded-2 border-dark ps-4 p-1">Data scientist:
                         Python, Web Scraping, SQL, API with Flask,Numpy, Pandas</p>
                     <p>Software Engineer работает над созданием программ и приложений и запускает их. Его основной функцией является создание оптимизированных приложений, которых можно обновлять и расширять.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</button>
+                    <a  href="{{ route('ru.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/3.png') }}" alt="">
@@ -136,7 +136,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions">Вопросы</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
+                            <a href="{{ route('ru.register') }}" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a>
                         </ul>
                     </nav>
                 </div>
@@ -544,7 +544,7 @@
                                 <p class="w-100"><span class="fw-bold">Ozodov Sarvar</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 
@@ -561,7 +561,7 @@
                                 <p class="w-100"><span class="fw-bold">Arslonov Berdiyor</span><br> Software Engineering - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Зарегистрируйтесь сейчас</a>
                             </div>
                         </div>
 

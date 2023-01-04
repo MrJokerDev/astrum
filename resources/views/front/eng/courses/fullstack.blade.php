@@ -92,7 +92,7 @@
 
                     <p class="border border-2 rounded-2 border-dark ps-4 p-1">Html, Css, Javascript, ExpressJs Ruby, RubyonRails, SQLITE, Node.JS, ReactJs, Bootstrap, Aws Amazon</p>
                     <p>This is a specialist who must understand the entire set of technologies and components used in the project, both Front-end and Back-end.</p>
-                    <button type="button" class="btn btn-dark mb-5 bg-dark p-3 text-white">Register now</button>
+                    <a href="{{ route('ru.register') }}" class="btn btn-dark mb-5 bg-dark p-3 text-white">Register now</a>
                 </div>
                 <div class="col-md-6">
                     <img class="rounded w-100" src="{{ asset('images/courses/1.png') }}" alt="">
@@ -136,7 +136,7 @@
                                 <a class ="nav-link fw-bold" href="#quetions">Questions</a>
                             </li>
                             <br>
-                            <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Register Now</a>
+                            <a href="{{ route('ru.register') }}" class="btn btn-danger bg-dark p-3 text-white">Register Now</a>
                         </ul>
                     </nav>
                 </div>
@@ -559,7 +559,7 @@
                                 <p class="w-100"><span class="fw-bold">Shukurov Jasur</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 
@@ -576,7 +576,7 @@
                                 <p class="w-100"><span class="fw-bold">Azizova Aziza</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 
@@ -593,7 +593,7 @@
                                 <p class="w-100"><span class="fw-bold">Shomurodov Sarvar</span><br> Full Stack Developer - Mentori</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
                                 </div>
-                                <button class="btn btn-dark bg-dark w-100 text-white">Register now</button>
+                                <a href="{{ route('ru.register') }}" class="btn btn-dark bg-dark w-100 text-white">Register now</a>
                             </div>
                         </div>
 
