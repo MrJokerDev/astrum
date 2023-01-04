@@ -529,8 +529,8 @@
                     <hr class="mt-5 mb-5">
 
                         <p id="kurs_total" style="color: #62BC9E;" class="fw-bold mt-5">Kurs jadvali</p>
-                        <h1 class="fw-bold">Qabul jarayonining tezligi</h1>
-                        <p>Bizning o'quv kurslarimizda joylar  juda tez to'ldib qoladi, shuning uchun biz qabulni oldinroq e'lon qilamiz.</p>
+                        <h1 class="fw-bold">Qabul jarayoning tezligi</h1>
+                        <p>Bizning o'quv kurslarimizda joylar juda tez to'ldib qoladi, shuning uchun biz qabulni oldinroq e'lon qilamiz.</p>
 
                         {{-- <div class="tab">
                             <button class="tablinks btn btn-info text-dark active" onclick="openCity(event, 'moon_1')" id="active"><span class="fw-bold">Fevral</span></button>
@@ -646,9 +646,7 @@
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
                         <img class="card-img-top" src="{{ asset('images/courses/1.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Full stack Developer</h4>
-                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.fullstack') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
@@ -658,9 +656,7 @@
                     <div class="card hvr-float m-auto mt-3" style="width: 18rem;">
                         <img class="card-img-top" src="{{ asset('images/courses/2.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            {{-- <p>Kurs boshlanish voxti - 03/03/2022</p> --}}
                             <h4 class="card-title fw-bold">Software Engineering</h4>
-                            {{-- <p class="fs-5">12 oy</p> --}}
                             <hr class="w-25 border border-success border-2">
                             <a id="btn" href="{{ route('uz.software_engineering') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                         </div>
