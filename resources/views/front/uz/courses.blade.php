@@ -58,20 +58,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="call_back pt-5 mt-5">
-                <div class="row">
-                    
-                    <div class="col-md-6 col-sm-12 m-auto">
-                        <script data-b24-form="inline/107/cvf8d7" data-skip-moving="true">
-                            (function(w,d,u){
-                            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                            })(window,document,'https://office.astrum.uz/upload/crm/form/loader_107_cvf8d7.js');
-                        </script>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

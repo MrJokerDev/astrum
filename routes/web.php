@@ -48,6 +48,7 @@ Route::group(['prefix'=>'eng','as'=>'eng.'], function(){
 
 Route::group(['prefix'=>'uz','as'=>'uz.'], function(){
     Route::get('/', [IndexController::class, 'index'])->name('index');
+    Route::get('/register', [IndexController::class, 'register'])->name('register');
     Route::get('/gallery', [IndexController::class, 'gallery'])->name('gallery');
     Route::get('/job', [IndexController::class, 'job'])->name('job');
     Route::get('/courses', [IndexController::class, 'courses'])->name('courses');

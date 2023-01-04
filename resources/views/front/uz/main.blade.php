@@ -20,20 +20,7 @@
             background-color: #3a3a9257;
             /* z-index: 9999; */
         }
-        .b24-form-wrapper{
-            margin: 0px auto;
-            width: 100%;
-            max-width: 448px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px, rgb(0 0 0 / 12%) 0px 3px 6px 0px;
-        }
-        .b24-form-control-icon-after .b24-form-control{
-            background-color: #fff!important;
-        }
-        .b24-form-btn{
-           background-color: #5d39d8!important;
-        }
+        
     </style>
     {{-- <style>
 
@@ -208,7 +195,7 @@
                 <div class="col-sm-7 col-md-7 col-xl-5 offset-xl-7 offset-md-5 offset-sm-5 align-self-center">
                     <h1 class="text-white">Astrum o'quvchisi bo'lishga tayyormisiz?</h1>
                     <p class="text-white">O'rta Osiyodagi eng katta zamonaviy IT Akademiyaning o'quvchisi bo'lishni va yorqin kelajagingiz tomon ilk qadamlarni qo'yishni xohlaysizmi? Fursatni boy bermang, Astrum kurslariga yoziling va dasturlashni o'rganishni boshlang.</p>
-                    <a href="{{ route('uz.courses') }}" class="btn btn-light p-3 rounded">Ro'yxatdan o'tish</a>
+                    <a href="{{ route('uz.register') }}" class="btn btn-light p-3 rounded">Ro'yxatdan o'tish</a>
                 </div>
             </div>
 

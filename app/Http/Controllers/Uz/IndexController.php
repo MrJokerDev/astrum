@@ -47,4 +47,8 @@ class IndexController extends Controller
         return view('front.uz.news_pages');
     }
 
+    public function register(){
+        return view('front.uz.register');
+    }
+
 }
