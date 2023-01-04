@@ -340,7 +340,7 @@
                                 <div class="position-relative">
                                     <img src="{{ asset('images/mentors/berdiyor.jpg') }}" class="rounded w-100" alt="image">
                                     <span class="position-absolute top-0 start-0 border border-dark rounded text-white bg-dark p-2 ps-3 pe-3 m-2">Mentor</span>
-                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Arslonov Berdiyor</span> <br><span>Software Engineering</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
+                                    <span class="position-absolute bottom-0 start-0 p-3 text-white"><span class="fw-bold">Holmatov Berdiyor</span> <br><span>Software Engineering</span> <hr class="w-25 m-0" style="border: 2px solid #62BC9E;"></span>
                                 </div>
                             </div>
                         </div>
