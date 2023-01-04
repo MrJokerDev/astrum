@@ -61,10 +61,8 @@
 
             <div class="call_back pt-5 mt-5">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <h1 class="text-center">Sorovnoma yuborish</h1>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
+                    
+                    <div class="col-md-6 col-sm-12 m-auto">
                         <script data-b24-form="inline/107/cvf8d7" data-skip-moving="true">
                             (function(w,d,u){
                             var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
