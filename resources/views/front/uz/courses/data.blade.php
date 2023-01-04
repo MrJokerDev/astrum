@@ -330,7 +330,7 @@
                                 <h1>Xamidjonov Komiljon</h1>
                                 <p>Data Science</p>
                                 <hr class="w-25" style="border: 2px solid #62BC9E;">
-                                <p class="">"Salom, mening ismim Komiljon, men Data Science yo'nalishi bo'yicha mentorman. Men juda qattiqqo'l o'qituvchiman va ishlamaydigan kodlarni yoqtirmayman."</p>
+                                <p class="">"Men python dasturlash tili kirib borgan deyarli barcha sohalar, jumladan, sun'iy intellekt va backend engineering bo'yicha ham real loyihalarda tajribaga egaman. Biznes jarayonlarni avtomizatsiya qilish va ma'lumotlar tahlili asosida qimmatli yechimlar berish menga zavq beradi. IT-ta'limga oid turli interaktiv metodikalar ishlab chiqish va amaliyotda qo'llashga bo'lgan qiziqishim meni mentorlik tomon yetakladi. Men motivatsiyani shogirdlarimning yutuqlaridan olaman :)"</p>
                             </div>
                         </div>
                         <p style="color: #62BC9E;" class="fw-bold mt-5">Mentorlar jamoasi</p>
