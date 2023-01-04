@@ -46,4 +46,8 @@ class IndexController extends Controller
     public function news_pages(){
         return view('front.eng.news_pages');
     }
+
+    public function register(){
+        return view('front.eng.register');
+    }
 }
