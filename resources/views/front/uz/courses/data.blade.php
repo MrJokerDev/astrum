@@ -135,7 +135,7 @@
                                 <a class="nav-link fw-bold" href="#quetions"> Savollar </a>
                             </li>
                             <br>
-                            <a href="{{ route('uz.register') }}" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
+                            <a href="{{ route('uz.register') }}" style="z-index: 10" class="btn btn-danger bg-dark p-3 text-white">Hozir roʻyxatdan oʻting</a>
                         </ul>
                     </nav>
                 </div>
