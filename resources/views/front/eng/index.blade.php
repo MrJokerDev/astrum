@@ -28,7 +28,7 @@
     padding: 0rem 0!important;
     min-height: 0vh;
 }
-.carousel-caption h1{
+.carousel-caption .h1{
     width: 50%;
     margin: auto;
     text-shadow: 4px 2px 6px black;
@@ -42,20 +42,29 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                {{-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> --}}
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="{{ asset('images/layout/3.jpg') }}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-home ms-0 text-start w-50 pb-5">Astrum IT Academy offers a great opportunity for you! We have started acceptance processes for Preseason 7.</h1>
+                        <h1 class="ms-0 text-start mb-5 pb-5">
+                            <a href="{{ route('eng.register') }}" class="btn btn-success p-3">Register now</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>The first IT Academy in Uzbekistan with an innovative learning system</h1>
+                        <h1 class="h1">The first IT Academy in Uzbekistan with an innovative learning system</h1>
                         {{-- <p>Some representative placeholder content for the first slide.</p> --}}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ asset('images/layout/Glavniy_2.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>The first IT Academy in Uzbekistan with an innovative learning system</h1>
+                        <h1 class="h1">The first IT Academy in Uzbekistan with an innovative learning system</h1>
                         {{-- <p>Some representative placeholder content for the second slide.</p> --}}
                     </div>
                 </div>
