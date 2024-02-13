@@ -90,17 +90,20 @@ class MentorController extends Controller
             'last_name' => $request->last_name,
         ]);
 
-        foreach ($request->lang_text as $key => $lang_text){
+        if ($request->lang_text !== null){
+            foreach ($request->lang_text as $key => $lang_text){
 
-            $lang = Lang::where('table_info_id', $mentor->id)->where('table_name', 'mentors')->where('lang', $key)->first();
+                $lang = Lang::where('table_info_id', $mentor->id)->where('table_name', 'mentors')->where('lang', $key)->first();
 
-            $lang->update([
-                'table_info_id' => $mentor->id,
-                'table_name' => 'mentors',
-                'lang' => $key,
-                'text_table' => $lang_text
-            ]);
+                $lang->update([
+                    'table_info_id' => $mentor->id,
+                    'table_name' => 'mentors',
+                    'lang' => $key,
+                    'text_table' => $lang_text
+                ]);
+            }
         }
+
 
         if ($request->hasFile('mentor_image') || $request->hasFile('mentor_logo')) {
             $request->validate([
