@@ -88,6 +88,7 @@ class AdminController extends Controller
         Storage::disk('public')->delete('courses/logo' . $logo->course_logo);
         $logo->delete();
 
+        //commit
         return redirect()->back();
     }
 }
