@@ -7,6 +7,7 @@ use App\Models\Course_logo;
 use App\Models\Courses;
 use App\Models\Skill;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class AdminController extends Controller
@@ -69,8 +70,9 @@ class AdminController extends Controller
 
     public function edit($id): View
     {
-        $course_log = Course_logo::where('course_id', $id)->first();
-        $course_info = Course_info::where('course_id', $id)->first();
+        $course_log = Courses::where('id', $id)->get();
+
+        $course_info = Course_info::where('course_id', $id)->get();
 
         return view('admin.info.edit', compact('course_log', 'course_info'));
     }
@@ -80,8 +82,12 @@ class AdminController extends Controller
         //
     }
 
-    public function destroy($id)
+    public function destroy(Course_logo $course_logo, $id)
     {
-        //
+        $logo = $course_logo->where('id', $id)->first();
+        Storage::disk('public')->delete('courses/logo' . $logo->course_logo);
+        $logo->delete();
+
+        return redirect()->back();
     }
 }

@@ -37,4 +37,9 @@ class Courses extends Model
     {
         return $this->hasMany(Lang::class, 'course_id', 'id');
     }
+
+    public function course_logo(): HasMany
+    {
+        return $this->hasMany(Course_logo::class, 'course_id', 'id');
+    }
 }
