@@ -104,23 +104,31 @@ class MentorController extends Controller
 
         if ($request->hasFile('mentor_image') || $request->hasFile('mentor_logo')) {
             $request->validate([
-                'file' => 'image|mimes:jpeg,png,jpg',
+                'mentor_image' => 'image|mimes:jpeg,png,jpg',
+                'mentor_logo' => 'image|mimes:jpeg,png,jpg',
             ]);
+
+            if ($request->hasFile('mentor_image')) {
+                $mentorImage = $request->file('mentor_image')->getClientOriginalName();
+                $request->file('mentor_image')->storeAs('mentors', $mentorImage, 'public');
+            }
+
+            if ($request->hasFile('mentor_logo')) {
+                $mentorLogo = $request->file('mentor_logo')->getClientOriginalName();
+                $request->file('mentor_logo')->storeAs('mentors/logo', $mentorLogo, 'public');
+            }
 
             if ($mentor->mentor_image) {
                 Storage::disk('public')->delete('mentors/' . $mentor->mentor_image);
-            }elseif ($mentor->mentor_logo){
-                Storage::disk('public')->delete('mentors/logo' . $mentor->mentor_logo);
             }
 
-            $mentorImage = $request->file('mentor_image')->getClientOriginalName();
-            $request->file('mentor_image')->storeAs('mentors', $mentorImage, 'public');
-            $mentorLogo = $request->file('mentor_image')->getClientOriginalName();
-            $request->file('mentor_logo')->storeAs('mentors/logo', $mentorLogo, 'public');
+            if ($mentor->mentor_logo) {
+                Storage::disk('public')->delete('mentors/logo/' . $mentor->mentor_logo);
+            }
 
             $mentor->update([
-                'image' => $mentorImage,
-                'logo' => $mentorLogo,
+                'image' => $request->hasFile('mentor_image') ? $mentorImage : $mentor->mentor_image,
+                'logo' => $request->hasFile('mentor_logo') ? $mentorLogo : $mentor->mentor_logo,
             ]);
         }
 
