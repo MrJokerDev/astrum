@@ -119,8 +119,8 @@ class MentorController extends Controller
             $request->file('mentor_logo')->storeAs('mentors/logo', $mentorLogo, 'public');
 
             $mentor->update([
-                'mentor_image' => $mentorImage,
-                'mentor_logo' => $mentorLogo,
+                'image' => $mentorImage,
+                'logo' => $mentorLogo,
             ]);
         }
 
