@@ -10,8 +10,10 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index(){
-    	return view('front.uz.index');
+    public function index()
+    {
+        $courses = Courses::all();
+    	return view('front.uz.index', compact('courses'));
     }
 
 //    public function course($lang, $course)

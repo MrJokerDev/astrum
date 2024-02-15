@@ -53,7 +53,7 @@
                                         @endforeach
                                         </li>
                                         @foreach($course->skills as $skill)
-                                            <li class="list-group-item d-flex">
+                                            <li class="list-group-item">
                                                 @foreach(json_decode($skill->skills) as $text)
                                                     <p>{{ $text }}, </p>
                                                 @endforeach
