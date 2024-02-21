@@ -120,7 +120,7 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-4 text-end">
-                    <p>Astrum IT academy Ltd <?php echo \Carbon\Carbon::now()->year ?> <br> <span class="fw-bold">Terms & Privacy</span></p>
+                    <p>Astrum IT academy Ltd 2022 - <?php echo \Carbon\Carbon::now()->year ?> <br> <span class="fw-bold">Terms & Privacy</span></p>
                 </div>
             </div>
         </div>
