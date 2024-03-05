@@ -78,7 +78,7 @@
                     <h1 class="fw-bold">Sun'iy intellekt yordamida boshqariladigan ta'lim tizimi va zamonaviy atmosfera sizning muvaffaqiyatingiz garovidir.</h1> <br>
                     <p class="fw-semibold">Astrum IT Akademiyasi nafaqat O'zbekistondagi, balki O'rta Osiyodagi birinchi va eng katta IT Akademiya bo'lib, bu yerda sun'iy intellekt yordamida ta'lim berishning innovatsion usuli yo'lga qo'yilgan.</p>
                     <p class="fw-semibold"> Zamonaviy texnologiyalar, 24/7 ishlaydigan o'quv kampusi, mingga yaqing iMac'lar va qulay sharoitlar sizga haqiqiy dasturchi bo'lib yetishish imkonini beradi. </p>
-                    <a id="btn" href="{{ url('{$lang}/about_us') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
+                    <a id="btn" href="{{ route('uz.about_us') }}" class="btn btn-outline-success p-3 rounded">Batafsil</a>
                 </div>
                 <div class="col-md-12 col-lg-7">
                     <h1 class="about_us">About us</h1>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="w-100 text-end">
-                        <a href="{{ url('{$lang}/gallery') }}" class="href_arrow">Rasmlar<i class="bi bi-arrow-right"></i></a>
+                        <a href="{{ route('uz.gallery') }}" class="href_arrow">Rasmlar<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

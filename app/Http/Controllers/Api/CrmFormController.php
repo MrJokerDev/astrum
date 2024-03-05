@@ -12,7 +12,6 @@ class CrmFormController extends Controller
 {
     public function createUser(Request $request)
     {
-        //dd($request);
         $characters = '0123456789';
         $charactersLength = strlen($characters);
         $randomInt = '';

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Mentor extends Model
 {
@@ -12,4 +13,9 @@ class Mentor extends Model
     protected $guarded = [];
 
     public $timestamps = false;
+
+    public function course(): HasMany
+    {
+        return $this->hasMany(Courses::class, 'id');
+    }
 }

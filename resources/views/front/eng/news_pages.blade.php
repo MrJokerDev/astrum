@@ -38,7 +38,7 @@
                 </div>
 
 
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <nav id="navbar-bg" class="navbar sticky-top rounded ps-4 pe-4 w-100">
                         <ul class ="nav navbar-nav w-100">
                             <li class="text-center bg-light p-3 rounded">
@@ -62,11 +62,9 @@
                                     Data science
                                 </a>
                             </li>
-
-                            {{-- <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a> --}}
                         </ul>
                     </nav>
-                </div>
+                </div> --}}
 
             </div>
         </div>

@@ -30,7 +30,6 @@ function createLanguageRoutes($prefix, $controller)
         Route::get('/about_us', [$controller, 'about_us'])->name('about_us');
         Route::get('/news', [$controller, 'news'])->name('news');
         Route::get('/news_page', [$controller, 'news_pages'])->name('news_pages');
-
     });
 }
 

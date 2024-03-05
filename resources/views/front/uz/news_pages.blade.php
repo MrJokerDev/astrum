@@ -38,35 +38,33 @@
                 </div>
 
 
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <nav id="navbar-bg" class="navbar sticky-top rounded ps-4 pe-4 w-100">
                         <ul class ="nav navbar-nav w-100">
                             <li class="text-center bg-light p-3 rounded">
                                 Kurslar
                             </li>
                             <li class ="nav-item mt-3">
-                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="{{ route('uz.fullstack') }}">
+                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="">
                                     <img loading="lazy" src="{{ asset('images/courses/1.png') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Full stack developer
                                 </a>
                             </li>
                             <li class ="nav-item mt-3">
-                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="{{ route('uz.software_engineering') }}">
+                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="">
                                     <img loading="lazy" src="{{ asset('images/courses/2.png') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Software engineerv
                                 </a>
                             </li>
                             <li class ="nav-item mt-3 mb-3">
-                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="{{ route('uz.data_science') }}">
+                                <a class ="d-flex text-dark fw-bold text-decoration-none" href="">
                                     <img loading="lazy" src="{{ asset('images/courses/3.png') }}" class="w-50 h-50 rounded me-2" alt="image">
                                     Data science
                                 </a>
                             </li>
-
-                            {{-- <a href="#" type="button" class="btn btn-danger bg-dark p-3 text-white">Зарегистрируйтесь сейчас</a> --}}
                         </ul>
                     </nav>
-                </div>
+                </div> --}}
 
             </div>
         </div>
