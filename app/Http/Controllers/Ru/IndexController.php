@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Course_logo;
 use App\Models\Courses;
 use App\Models\Lang;
+use App\Models\Mentor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -75,7 +76,8 @@ class IndexController extends Controller
     }
 
     public function about_us(){
-        return view('front.ru.about_us');
+         $mentors = Mentor::all();
+        return view('front.ru.about_us', compact('mentors'));
     }
 
     public function news(){
