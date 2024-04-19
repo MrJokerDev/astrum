@@ -66,9 +66,6 @@ class IndexController extends Controller
     }
 
     public function cybersecurity(){
-//        $course = Courses::where('url', 'cybersecurity')->first();
-//        $mentor_texts = Lang::where('table_name', 'mentors')->where('lang', 'uz')->get();
-//        $logos = Course_logo::where('course_id', $course->id)->get();
         return view('front.cybersecurity.index');
     }
 
