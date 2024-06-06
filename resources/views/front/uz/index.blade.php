@@ -45,18 +45,19 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img loading="lazy" src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1">O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
                     <img loading="lazy" src="{{ asset('images/layout/Glavniy_2.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-home ms-0 text-start w-50 pb-5">Astrum IT Academy sizlar uchun ajoyib imkoniyatni taqdim etadi. Kutib oling bizda Preseason 15 uchun qabul jarayonlari davom etmoqda.</h1>
                         <h1 class="ms-0 text-start mb-5 pb-5">
                             <a href="{{ route('uz.news_pages') }}" class="btn btn-success p-3">Batafsil...</a>
                         </h1>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img loading="lazy" src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="h1">O'zbekistonda innovatsion ta'lim tizimiga ega birinchi IT Akademiya</h1>
                     </div>
                 </div>
             </div>

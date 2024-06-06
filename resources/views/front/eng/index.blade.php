@@ -45,18 +45,18 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img loading="lazy"  src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1">The first IT Academy in Uzbekistan with an innovative learning system</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img loading="lazy"  src="{{ asset('images/layout/Glavniy_2.jpg') }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-home ms-0 text-start w-50 pb-5">Astrum IT Academy offers you a great opportunity. Welcome we have ongoing admission processes in Pre Season 15.</h1>
                         <h1 class="ms-0 text-start mb-5 pb-5">
                             <a href="{{ route('eng.news_pages') }}" class="btn btn-success p-3">More...</a>
                         </h1>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img loading="lazy"  src="{{ asset('images/layout/Glavniy.jpg') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="h1">The first IT Academy in Uzbekistan with an innovative learning system</h1>
                     </div>
                 </div>
             </div>
